@@ -1,6 +1,6 @@
 # UBB FMI-RO
 # Semestrul 1
-- [ALGEBRA]([#ALGEBRA](https://github.com/Razvanix445/ALGEBRA))
+- [ALGEBRA](https://github.com/Razvanix445/ALGEBRA)
 - [ANALIZA MATEMATICA](#ANALIZA)
 - [ARHITECTURA SISTEMELOR DE CALCUL](#ASC)
 - [FUNDAMENTELE PROGRAMARII](#FP)
