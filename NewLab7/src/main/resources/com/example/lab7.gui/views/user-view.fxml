@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<AnchorPane prefHeight="520.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab7.gui.UtilizatorController">
+
+    <!-- Added background color to enhance visibility -->
+    <stylesheets>
+        <URL value="@../styles.css" />
+    </stylesheets>
+
+    <children>
+        <VBox spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <!-- Increased spacing for a cleaner look -->
+            <HBox spacing="15">
+                <Label text="First Name:" />
+                <TextField fx:id="prenumeField" />
+            </HBox>
+
+            <HBox spacing="15">
+                <Label text="Last Name:" />
+                <TextField fx:id="numeField" />
+            </HBox>
+
+            <HBox spacing="15">
+                <Button mnemonicParsing="false" onAction="#handleAddUser" text="Add" />
+            </HBox>
+
+            <SplitPane dividerPositions="0.750965250965251" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                <items>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                        <children>
+                            <TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="663.0"
+                                       AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                    <TableColumn fx:id="tableColumnID" prefWidth="75.0" text="ID" />
+                                    <TableColumn fx:id="tableColumnNume" prefWidth="75.0" text="Nume" />
+                                    <TableColumn fx:id="tableColumnPrenume" prefWidth="75.0" text="Prenume" />
+                                </columns>
+
+                                <!-- Adjusted column resize policy for a cleaner appearance -->
+                                <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                </columnResizePolicy>
+                            </TableView>
+                        </children>
+                    </AnchorPane>
+                </items>
+            </SplitPane>
+
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="665.0">
+                <children>
+                    <HBox prefHeight="34.0" prefWidth="655.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0">
+                        <children>
+                            <Button mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete" />
+                            <Button mnemonicParsing="false" onAction="#handleUpdateUser" text="Update" />
+
+                            <!-- Resized the image for better visibility -->
+                            <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../images/windows_xp.jpg" />
+                                </image>
+                                <HBox.margin>
+                                    <Insets left="20.0" />
+                                </HBox.margin>
+                            </ImageView>
+                        </children>
+                        <padding>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                    </HBox>
+                </children>
+            </AnchorPane>
+        </VBox>
+    </children>
+</AnchorPane>
