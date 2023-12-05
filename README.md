@@ -2,8 +2,8 @@
 # Semestrul 1
 - [ALGEBRA](https://github.com/Razvanix445/ALGEBRA)
 - [ANALIZA MATEMATICA](https://github.com/Razvanix445/ANALIZA)
-- [ARHITECTURA SISTEMELOR DE CALCUL]
-- [FUNDAMENTELE PROGRAMARII]
+- [ARHITECTURA SISTEMELOR DE CALCUL](https://github.com/Razvanix445/ASC)
+- [FUNDAMENTELE PROGRAMARII](https://github.com/Razvanix445/FP)
 - [LOGICA COMPUTIONALA](https://github.com/Razvanix445/LC)
 
 # Semestrul 2
