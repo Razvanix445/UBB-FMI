@@ -1,4 +1,4 @@
-# UBB FMI-RO
+# UBB FMI-RO University-Projects
 # Semestrul 1
 - [ALGEBRA](https://github.com/Razvanix445/ALGEBRA)
 - [ANALIZA MATEMATICA](https://github.com/Razvanix445/ANALIZA)
