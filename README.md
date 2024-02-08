@@ -16,7 +16,7 @@
 
 # Semestrul 3
 - [METODE AVANSATE DE PROGRAMARE](https://github.com/Razvanix445/MAP)
-- [PROBABILITATI SI STATISTICA]
+- [PROBABILITATI SI STATISTICA](https://github.com/Razvanix445/PS)
 - [PROGRAMARE LOGICA SI FUNCTIONALA]
 - [BAZE DE DATE](https://github.com/Razvanix445/BD)
 - [RETELE DE CALCULATOARE](https://github.com/Razvanix445/RC)
