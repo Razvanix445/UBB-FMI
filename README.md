@@ -12,7 +12,7 @@
 - [PROGRAMARE ORIENTATA OBIECT]
 - [SISTEME DE OPERARE]
 - [SISTEME DINAMICE](https://github.com/Razvanix445/Dynamical-Systems)
-- [STRUCTURI DE DATE SI ALGORITMI]
+- [STRUCTURI DE DATE SI ALGORITMI](https://github.com/Razvanix445/Data-Structures-and-Algorithms)
 
 # Semestrul 3
 - [METODE AVANSATE DE PROGRAMARE](https://github.com/Razvanix445/Advanced-Methods-of-Programming)
