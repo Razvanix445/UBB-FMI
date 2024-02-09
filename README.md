@@ -9,8 +9,8 @@
 # Semestrul 2
 - [ALGORITMICA GRAFELOR](https://github.com/Razvanix445/Graph-Algorithms)
 - [GEOMETRIE](https://github.com/Razvanix445/Geometry)
-- [PROGRAMARE ORIENTATA OBIECT]
-- [SISTEME DE OPERARE]
+- [PROGRAMARE ORIENTATA OBIECT](https://github.com/Razvanix445/Object-Oriented-Programming)
+- [SISTEME DE OPERARE](https://github.com/Razvanix445/Operating-Systems)
 - [SISTEME DINAMICE](https://github.com/Razvanix445/Dynamical-Systems)
 - [STRUCTURI DE DATE SI ALGORITMI](https://github.com/Razvanix445/Data-Structures-and-Algorithms)
 
