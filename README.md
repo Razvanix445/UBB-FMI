@@ -7,7 +7,7 @@
 - [LOGICA COMPUTIONALA](https://github.com/Razvanix445/Computational-Logic)
 
 # Semestrul 2
-- [ALGORITMICA GRAFELOR]
+- [ALGORITMICA GRAFELOR](https://github.com/Razvanix445/Graph-Algorithms)
 - [GEOMETRIE]
 - [PROGRAMARE ORIENTATA OBIECT]
 - [SISTEME DE OPERARE]
