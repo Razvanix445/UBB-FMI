@@ -27,3 +27,4 @@
 - [INTELIGENTA ARTIFICIALA](https://github.com/Razvanix445/Artificial-Intelligence)
 - [PROGRAMARE WEB](https://github.com/Razvanix445/Web-Programming)
 - [INGINERIA SISTEMELOR SOFT](https://github.com/Razvanix445/Software-Systems-Engineering)
+- [MODUL PSIHOPEDAGOGIC](https://github.com/Razvanix445/PsychoPedagogical-Module)
