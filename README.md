@@ -1,5 +1,15 @@
 ## UBB FMI-RO University Projects
 
+<style>
+  .project-image {
+    transition: transform 0.3s, filter 0.3s;
+  }
+  .project-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+</style>
+
 ### Semestrul 1
 <table>
   <tr>
