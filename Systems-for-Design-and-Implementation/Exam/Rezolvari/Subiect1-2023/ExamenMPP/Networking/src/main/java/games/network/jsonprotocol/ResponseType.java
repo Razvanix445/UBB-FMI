@@ -1,0 +1,5 @@
+package games.network.jsonprotocol;
+
+public enum ResponseType {
+    OK, ERROR, ADD_POSITION, ADD_CONFIGURATION, ADD_GAME, FIND_PLAYER_BY_ALIAS, GET_ALL_GAMES_FOR_PLAYER, GET_ALL_CONFIGURATIONS, GET_ALL_GAMES;
+}

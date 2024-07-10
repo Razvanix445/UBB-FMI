@@ -1,0 +1,17 @@
+.error-label {
+    -fx-text-fill: red;
+}
+
+.success-label {
+    -fx-text-fill: green;
+}
+
+.center-pane {
+    -fx-background-color: #dddddd;
+    -fx-font-family: 'Comic Sans MS';
+}
+
+.pane {
+    -fx-background-color: #565656;
+    -fx-font-family: 'Comic Sans MS';
+}

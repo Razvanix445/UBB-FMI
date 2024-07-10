@@ -1,0 +1,281 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+
+namespace CSharpRestClient
+{
+	class MainClass
+	{
+		//static HttpClient client = new HttpClient();
+		//pentru jurnalizarea operatiilor efectuate si a datelor trimise/primite
+		static HttpClient client = new HttpClient(new LoggingHandler(new HttpClientHandler()));
+		private static string URL = "http://localhost:8080/app";
+
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Hello World!");
+			RunAsync().Wait();
+		}
+
+
+		static async Task RunAsync()
+		{
+			client.BaseAddress = new Uri(URL);
+			client.DefaultRequestHeaders.Accept.Clear();
+			//client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
+			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+			// Get the string
+			String text = await GetTextAsync("http://localhost:8080/app/greeting");
+			Console.WriteLine("am obtinut {0}", text);
+
+			long id = 1;
+
+			// Get a game by id
+			Console.WriteLine($"Get game {id}");
+			Game game = await GetGameAsync($"{URL}/games/{id}");
+			Console.WriteLine($"Received {game}");
+
+			// Get positions by game
+			Console.WriteLine($"Get positions for game {game}");
+			Position[] positions = await GetPositionsByGameAsync($"{URL}/positions/{id}");
+			/*foreach (Position position in positions)
+			{
+				Console.WriteLine($"Received {position}");
+			}*/
+			Word[] words = await GetWordsByConfigurationAsync($"{URL}/words/{game.Configuration.Id}");
+
+			Console.WriteLine("Game ID: {0}", id);
+			Console.WriteLine("Player Alias: {0}", game.Player.Alias);
+			Console.WriteLine("Positions:");
+			foreach (Position position in positions)
+			{
+				Console.WriteLine("Position {0}: ({1}, {2})", position.PositionIndex, position.CoordinateX, position.CoordinateY);
+			}
+
+			Console.WriteLine("Game Configuration: ");
+			foreach (Word word in words)
+			{
+				Console.WriteLine(word.word);
+			}
+
+			Console.WriteLine("Total Score: {0}", game.Score);
+
+
+			// Update a configuration
+			List<long> numbers = new List<long> { 5L, 2L, 4L, 1L, 3L, 6L, 7L, 10L, 9L, 8L };
+
+			ConfigurationWord[] configurationWords = GetConfigurationWordsByConfigurationAsync($"{URL}/configurationwords/{game.Configuration.Id}").Result;
+			Console.WriteLine("\nUpdating configuration ...");
+			for (int i = 0; i < configurationWords.Length; i++)
+			{
+				configurationWords[i].word_number = numbers[i];
+			}
+			foreach (ConfigurationWord configurationWord in configurationWords)
+			{
+				UpdateConfigurationWordAsync($"{URL}/configurations/{configurationWord.Id}", configurationWord).Wait();
+			}
+
+			Word[] wordsUpdated = GetWordsByConfigurationAsync($"{URL}/words/{game.Configuration.Id}").Result;
+			Console.WriteLine("Updated Configuration: ");
+			foreach (Word word in wordsUpdated)
+			{
+				Console.WriteLine(word.word);
+			}
+
+			Console.ReadLine();
+		}
+
+		static async Task<String> GetTextAsync(string path)
+		{
+			String product = null;
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				product = await response.Content.ReadAsStringAsync();
+			}
+			return product;
+		}
+
+		static async Task<Game> GetGameAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Game>();
+			}
+			return null;
+		}
+
+		static async Task<Position[]> GetPositionsByGameAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Position[]>();
+			}
+			return null;
+		}
+
+		static async Task<Word[]> GetWordsByConfigurationAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Word[]>();
+			}
+			return null;
+		}
+
+		static async Task<ConfigurationWord[]> GetConfigurationWordsByConfigurationAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<ConfigurationWord[]>();
+			}
+			return null;
+		}
+
+		static async Task<Configuration> GetConfigurationAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Configuration>();
+			}
+			return null;
+		}
+
+		static async Task<ConfigurationWord> UpdateConfigurationWordAsync(string path, ConfigurationWord configurationWord)
+		{
+			HttpResponseMessage response = await client.PutAsJsonAsync(path, configurationWord);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<ConfigurationWord>();
+			}
+			return null;
+		}
+	}
+
+	public class Player
+	{
+		[JsonProperty("alias")]
+		public string Alias { get; set; }
+
+		public override string ToString()
+		{
+			return $"Player{{ Alias={Alias} }}";
+		}
+	}
+
+	public class Game
+	{
+		[JsonProperty("player")]
+		public Player Player { get; set; }
+		[JsonProperty("configuration")]
+		public Configuration Configuration { get; set; }
+		[JsonProperty("noOfSeconds")]
+		public long NoOfSeconds { get; set; }
+		[JsonProperty("score")]
+		public long Score { get; set; }
+		public override string ToString()
+		{
+			return $"Game: {{ Player: {Player}, Configuration: {Configuration}, NoOfSeconds: {NoOfSeconds}, Score: {Score} }}";
+		}
+	}
+
+	public class Position
+	{
+		[JsonProperty("game")]
+		public Game Game { get; set; }
+		[JsonProperty("coordinateX")]
+		public long CoordinateX { get; set; }
+		[JsonProperty("coordinateY")]
+		public long CoordinateY { get; set; }
+		[JsonProperty("positionIndex")]
+		public long PositionIndex { get; set; }
+
+		public override string ToString()
+		{
+			return $"Position{{ Game={Game}, CoordinateX={CoordinateX}, CoordinateY={CoordinateY}, PositionIndex={PositionIndex} }}";
+		}
+	}
+
+	public class Configuration
+	{
+		[JsonProperty("id")]
+		public long Id { get; set; }
+		public override string ToString()
+		{
+			return $"Configuration: {{ Id: {Id} }}";
+		}
+	}
+
+	public class ConfigurationWord
+	{
+		[JsonProperty("id")]
+		public long Id { get; set; }
+		[JsonProperty("configuration")]
+		public Configuration configuration;
+		[JsonProperty("word")]
+		public Word word;
+		[JsonProperty("wordNumber")]
+		public long word_number;
+		public override string ToString()
+		{
+			return $"ConfigurationWord: {{ Id: {Id}, configuration: {configuration}, word: {word}, wordNumber: {word_number} }}";
+		}
+	}
+
+	public class Word
+	{
+		[JsonProperty("id")]
+		public long Id { get; set; }
+		[JsonProperty("word")]
+		public string word { get; set; }
+		public override string ToString()
+		{
+			return $"Word: {{ Id: {Id}, word: {word} }}";
+		}
+	}
+
+	public class LoggingHandler : DelegatingHandler
+    {
+        public LoggingHandler(HttpMessageHandler innerHandler)
+            : base(innerHandler)
+        {
+        }
+
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            Console.WriteLine("Request:");
+            Console.WriteLine(request.ToString());
+            if (request.Content != null)
+            {
+                Console.WriteLine(await request.Content.ReadAsStringAsync());
+            }
+            Console.WriteLine();
+
+            HttpResponseMessage response = await base.SendAsync(request, cancellationToken);
+
+            Console.WriteLine("Response:");
+            Console.WriteLine(response.ToString());
+            if (response.Content != null)
+            {
+                Console.WriteLine(await response.Content.ReadAsStringAsync());
+            }
+            Console.WriteLine();
+
+            return response;
+        }
+    }
+
+}

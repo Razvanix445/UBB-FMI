@@ -1,0 +1,197 @@
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+
+namespace CSharpRestClient
+{
+	class MainClass
+	{
+		//static HttpClient client = new HttpClient();
+		//pentru jurnalizarea operatiilor efectuate si a datelor trimise/primite
+		static HttpClient client = new HttpClient(new LoggingHandler(new HttpClientHandler()));
+		private static string URL = "http://localhost:8080/games/players";
+
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Hello World!");
+			RunAsync().Wait();
+		}
+
+
+		static async Task RunAsync()
+		{
+			client.BaseAddress = new Uri(URL);
+			client.DefaultRequestHeaders.Accept.Clear();
+			//client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
+			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+			// Get the string
+			String text = await GetTextAsync("http://localhost:8080/games/players/greeting");
+			Console.WriteLine("am obtinut {0}", text);
+
+			/*// Get a player by alias
+			string alias = "player1";
+			Console.WriteLine($"Get player {alias}");
+			Player player = await GetPlayerAsync($"{URL}/{alias}");
+			Console.WriteLine($"Received {player}");*/
+
+			string alias = "player1";
+
+			// Get games by player
+			Console.WriteLine($"Get games for player {alias}");
+			Game[] games = await GetGamesByPlayerAsync($"{URL}/{alias}/games");
+			foreach (var game in games)
+			{
+				Console.WriteLine($"Received {game}");
+			}
+
+			// Add a configuration
+			Configuration configuration = new Configuration { Hint = "Hint", CoordinateX = 1, CoordinateY = 2 };
+			Console.WriteLine("Add configuration");
+			Configuration addedConfiguration = await AddConfigurationAsync($"{URL}/configurations", configuration);
+			Console.WriteLine($"Received {addedConfiguration}");
+
+			Console.ReadLine();
+		}
+
+		static async Task<String> GetTextAsync(string path)
+		{
+			String product = null;
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				product = await response.Content.ReadAsStringAsync();
+			}
+			return product;
+		}
+
+		static async Task<Player> GetPlayerAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Player>();
+			}
+			return null;
+		}
+
+		static async Task<Game[]> GetGamesByPlayerAsync(string path)
+		{
+			HttpResponseMessage response = await client.GetAsync(path);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Game[]>();
+			}
+			return null;
+		}
+
+		static async Task<Configuration> AddConfigurationAsync(string path, Configuration configuration)
+		{
+			HttpResponseMessage response = await client.PostAsJsonAsync(path, configuration);
+			if (response.IsSuccessStatusCode)
+			{
+				return await response.Content.ReadAsAsync<Configuration>();
+			}
+			return null;
+		}
+	}
+
+	public class Player
+	{
+		[JsonProperty("alias")]
+		public string Alias { get; set; }
+
+		public override string ToString()
+		{
+			return $"Player{{ Alias={Alias} }}";
+		}
+	}
+
+	public class Game
+	{
+		[JsonProperty("player")]
+		public Player Player { get; set; }
+		[JsonProperty("isWon")]
+		public bool IsWon { get; set; }
+		[JsonProperty("noOfTries")]
+		public long NoOfTries { get; set; }
+		[JsonProperty("startingTime")]
+		public DateTime StartingTime { get; set; }
+		[JsonProperty("configuration")]
+		public Configuration Configuration { get; set; }
+
+		public override string ToString()
+		{
+			return $"Game: {{ Player: {Player}, IsWon: {IsWon}, NoOfTries: {NoOfTries}, StartingTime: {StartingTime}, Configuration: {Configuration} }}";
+		}
+	}
+
+	public class Position
+	{
+		[JsonProperty("game")]
+		public Game Game { get; set; }
+		[JsonProperty("coordinateX")]
+		public long CoordinateX { get; set; }
+		[JsonProperty("coordinateY")]
+		public long CoordinateY { get; set; }
+		[JsonProperty("positionIndex")]
+		public long PositionIndex { get; set; }
+
+		public override string ToString()
+		{
+			return $"Position{{ Game={Game}, CoordinateX={CoordinateX}, CoordinateY={CoordinateY}, PositionIndex={PositionIndex} }}";
+		}
+	}
+
+	public class Configuration
+	{
+		[JsonProperty("hint")]
+		public string Hint { get; set; }
+		[JsonProperty("coordinateX")]
+		public long CoordinateX { get; set; }
+		[JsonProperty("coordinateY")]
+		public long CoordinateY { get; set; }
+
+		public override string ToString()
+		{
+			return $"Configuration: {{ Hint: {Hint}, CoordinateX: {CoordinateX}, CoordinateY: {CoordinateY} }}";
+		}
+	}
+
+	public class LoggingHandler : DelegatingHandler
+    {
+        public LoggingHandler(HttpMessageHandler innerHandler)
+            : base(innerHandler)
+        {
+        }
+
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            Console.WriteLine("Request:");
+            Console.WriteLine(request.ToString());
+            if (request.Content != null)
+            {
+                Console.WriteLine(await request.Content.ReadAsStringAsync());
+            }
+            Console.WriteLine();
+
+            HttpResponseMessage response = await base.SendAsync(request, cancellationToken);
+
+            Console.WriteLine("Response:");
+            Console.WriteLine(response.ToString());
+            if (response.Content != null)
+            {
+                Console.WriteLine(await response.Content.ReadAsStringAsync());
+            }
+            Console.WriteLine();
+
+            return response;
+        }
+    }
+
+}
