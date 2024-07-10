@@ -15,7 +15,7 @@
 - [GEOMETRIE](https://github.com/Razvanix445/Geometry)
 
 # Semestrul 3
-- [METODE AVANSATE DE PROGRAMARE](https://github.com/Razvanix445/Advanced-Methods-of-Programming)
+- [METODE AVANSATE DE PROGRAMARE](https://github.com/Razvanix445/UBB-FMI/tree/main/Advanced-Methods-of-Programming)
 - [BAZE DE DATE](https://github.com/Razvanix445/Databases)
 - [PROGRAMARE LOGICA SI FUNCTIONALA](https://github.com/Razvanix445/Logic-and-Functional-Programming)
 - [RETELE DE CALCULATOARE](https://github.com/Razvanix445/Computer-Networks)
