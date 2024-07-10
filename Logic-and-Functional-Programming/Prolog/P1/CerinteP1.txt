@@ -1,0 +1,44 @@
+% 1a Sa se scrie un predicat care intoarce diferenta a doua multimi.
+
+% 1b Sa se scrie un predicat care adauga intr-o lista dupa fiecare element par valoarea 1.
+
+% 2a Sa se scrie un predicat care determina cel mai mic multiplu comun 
+% al elementelor unei liste formate din numere intregi.
+
+% 2b Sa se scrie un predicat care adauga dupa 1-ul, al 2-lea, al 4-lea, al 8-lea 
+% element al unei liste o valoare v data.
+
+% 3a Sa se scrie un predicat care transforma o lista intr-o multime, in ordinea primei aparitii.
+% Exemplu: [1, 2, 3, 1, 2] e transformat in [1, 2, 3].
+
+% 3b Sa se scrie o functie care descompune o lista de numere intr-o lista de forma 
+% [lista-de-numere-pare lista-de-numere-impare] (deci lista cu doua elemente care sunt liste de intregi), 
+% si va intoarce si numarul elementelor pare si impare.
+
+% 4a Sa se scrie un predicat care substituie intr-o lista un element printr-o alta lista.
+
+% 4b Sa se elimine elementul de pe pozitia a n-a a unei liste liniare.
+
+% 5a Sa se scrie un predicat care sterge toate aparitiile unui anumit atom dintr-o lista.
+
+% 5b Definiti un predicat care, dintr-o lista de atomi, produce o lista de perechi (atom n), unde atom apare
+% in lista initiala de n ori.
+% De exemplu: numar([1, 2, 1, 2, 1, 3, 1], X) va produce X = [[1, 4], [2, 2], [3, 1]].
+
+% 6a Sa se scrie un predicat care elimina dintr-o lista toate elementele care se repeta.
+% De exemplu: [1, 2, 1, 4, 1, 3 ,4] => [2, 4].
+
+% 6b Sa se elimine toate aparitiile elementului maxim dintr-o lista de numere intregi.
+
+% 7a Sa se scrie un predicat care intoarce reuniunea a doua multimi.
+
+% 7b Sa se scrie un predicat care, primind o lista, intoarce multimea tuturor perechilor din lista.
+% De exemplu: [a, b, c, d] => [[a, b], [a, c], [a, d], [b, c], [b, d], [c, d]].
+
+% 8a Sa se scrie un predicat care testeaza daca o lista este multime.
+
+% 8b Sa se scrie un predicat care elimina primele 3 aparitii ale unui element intr-o lista. 
+% Daca elementul apare mai putin de 3 ori, se va elimina de cate ori apare.
+
+% 9a Sa se scrie un predicat care intoarce intersectia a doua multimi.
+

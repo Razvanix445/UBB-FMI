@@ -1,0 +1,12 @@
+1. Care din urmatoarele poate fi adresa de broadcast?
+2. cu cele 2 switchuri
+3. care din urmatoarele adrese poate fi adresa de broadcast pt o clasa de 2048 dimensiune
+4. mask si adresa de broadcast pt ceva
+5. adresa de dimensiune maxima ce are ceva mask
+6. dimensiunea minima ce contine nuj ce adrese
+7. in cate clase cu ceva netmask se poate imparti clasa de dimensiune maxima ce incepe la...
+8. in cate clase de ? netmask pot forma din clasele private (alea A B C)
+9. orice de la tcp
+10. snat dnat 
+11. care dintre adresele astea nu poate fi DG: localhost, ceva, 223.225.225.225, 192.168.10.0 (sigur localhost nu poate fi)
+12. 

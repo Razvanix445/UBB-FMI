@@ -1,0 +1,85 @@
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <stdio.h>
+#include <netinet/in.h>
+#include <netinet/ip.h>
+#include <string.h>
+
+int main() {
+  int s;
+  struct sockaddr_in server, client;
+  int c, l;
+
+  s = socket(AF_INET, SOCK_STREAM, 0);
+  if (s < 0) {
+    printf("Eroare la crearea socketului server\n");
+    return 1;
+  }
+
+  memset(&server, 0, sizeof(server));
+  server.sin_port = htons(53298);
+  server.sin_family = AF_INET;
+  server.sin_addr.s_addr = INADDR_ANY;
+
+  if (bind(s, (struct sockaddr *) &server, sizeof(server)) < 0) {
+    printf("Eroare la bind\n");
+    return 1;
+  }
+
+  listen(s, 5);
+
+  l = sizeof(client);
+  memset(&client, 0, sizeof(client));
+
+  while (1) {
+    c = accept(s, (struct sockaddr *) &client, &l);
+    printf("S-a conectat un client.\n");
+    if (fork() == 0) {
+	  char sirDeCaractere[1024], caracter;
+	  uint16_t pozitii[1024], numarPozitii = 0;
+	  uint16_t lenSir;
+          recv(c, &lenSir, sizeof(lenSir), MSG_WAITALL);
+          recv(c, sirDeCaractere, ntohs(lenSir), MSG_WAITALL);
+          recv(c, caracter, sizeof(char), MSG_WAITALL);
+
+          lenSir = ntohs(lenSir);
+          printf("LungimeSir: %d\n", lenSir);
+          printf("Sirul de caractere: %s\n", sirDeCaractere);
+          printf("Caracterul: %c\n", caracter);
+
+          numarPozitii = ntohs(numarPozitii);
+
+          for (int i = 0; sirDeCaractere[i] != '\0'; i++) {
+	    printf("sirDeCaractere[i]: %c\n", sirDeCaractere[i]);
+      	    if (sirDeCaractere[i] == caracter) {
+		            //printf("pozitii[numarPozitii]: %d\n", pozitii[numarPozitii]);
+                printf("sirDeCaractere[i]: %c, caracter: %c", sirDeCaractere[i], caracter);
+                pozitii[numarPozitii] = i;
+		//printf("pozitii[numarPozitii]: %d\n", pozitii[numarPozitii]);
+        	printf("numarPozitii: %d\n", numarPozitii);
+		numarPozitii++;
+      	    }
+            else {
+                printf("sirDeCaractere[i]: %c, caracter: %c\n", sirDeCaractere[i], caracter);
+            }
+    	 }
+
+    	//send(c, text, sizeof(text), 0);
+          printf("NumarPozitii dupa calculare: %d\n", numarPozitii);
+	  numarPozitii = htonl(numarPozitii);
+	  printf("Am trimis numarPozitii: %d la client\n", numarPozitii);
+    	  send(c, &numarPozitii, sizeof(numarPozitii), 0);
+	  numarPozitii = ntohl(numarPozitii);
+	  //printf("Dupa ntohl: %d\n", numarPozitii);
+
+    if (numarPozitii > 0) {
+        for (int i = 0; i < numarPozitii; i++)
+            pozitii[i] = htonl(pozitii[i]);
+      	send(c, pozitii, sizeof(int) * numarPozitii, 0);
+    }
+	  close(c);
+	  return 0;
+    }
+  }
+}
+

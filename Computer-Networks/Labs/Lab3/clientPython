@@ -1,0 +1,44 @@
+import socket
+import struct
+
+def main():
+    host = '127.0.0.1'  # Replace with the server IP address
+    port = 53298
+
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client_socket.connect((host, port))
+
+    input_string = "Hello, World!"  # Replace with your input string
+    character_to_find = 'o'  # Replace with the character you want to find
+
+    # Convert string length to network byte order (big-endian)
+    str_len = len(input_string)
+    str_len = struct.pack('!I', str_len)
+
+    # Send the length of the string
+    client_socket.sendall(str_len)
+
+    # Send the string
+    client_socket.sendall(input_string.encode())
+
+    # Send the character to find
+    client_socket.sendall(character_to_find.encode())
+
+    # Receive the number of positions and convert it from network byte order
+    num_positions_data = client_socket.recv(4)
+    num_positions = struct.unpack('!I', num_positions_data)[0]
+
+    print(f"Number of positions: {num_positions}")
+
+    # Receive and print the positions
+    positions_data = client_socket.recv(4 * num_positions)
+    positions = struct.unpack('!' + 'I' * num_positions, positions_data)
+
+    print(f"Positions of character '{character_to_find}' in the string:")
+    for position in positions:
+        print(position)
+
+    client_socket.close()
+
+if __name__ == "__main":
+    main()

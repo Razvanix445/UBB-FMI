@@ -1,0 +1,42 @@
+ARP request - intreaba toate dispozitivele si cauta o adresa MAC pe baza unei adrese IP.
+
+Tipuri de trafic:
+1. Unicast: 1 trimite, 1 primeste
+2. Broadcast: 1 trimite, toti primesc
+3. Multicast: 1 trimite, mai multi primesc
+4. Anycast: 1 trimite, oricare primeste
+
+0.0.0.0 - cea mai mică adresă IP
+255.255.255.255 - adresă IP de tip broadcast
+127.0.0.1 - adresa de localhost
+Default Gateway - adresa IP a routerului
+
+Adrese care încep cu bitul 0 - de tip A    /8
+1.0.0.0 - 126.255.255.255
+Adrese care încep cu biții 10 - de tip B    /16
+128.0.0.0 - 191.255.255.255
+Adrese care încep cu biții 110 - de tip C    /24
+192.0.0.0 - 223.255.255.255
+
+Clase false/private:
+A - 10.0.0.0 - 10.255.255.255 /8
+B - 172.16.0.0 - 172.31.255.255 /16
+C - 192.168.0.0 - 192.168.255.255 /24
+
+Adresa de broadcast: OR (adresa IP si wildcard)
+Adresa de retea: AND (adresa IP si netmask)
+
+TTL (time to live) - fiecare pachet are un TTL. Routerul decrementează TTL când un pachet trece prin el. Când TTL este 0, routerul îl aruncă.
+
+De recapitulat NAT, SNAT, DNAT.
+De recapitulat DNS.
+
+starea legăturilor - Dijkstra - RIP
+vectori distanță   - Bellman-Ford
+
+IPv6 - 128 biți
+
+DNS:
+- cel puțin un server DNS setat pe un computer
+- așteaptă request-uri UDP pe portul :53
+- poate stoca informații text despre un domain
