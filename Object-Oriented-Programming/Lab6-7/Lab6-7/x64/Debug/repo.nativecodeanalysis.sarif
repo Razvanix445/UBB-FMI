@@ -1,0 +1,1780 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Film', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/Film.h"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 2,
+                  "endLine": 34,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::{ctor}",
+                  "decoratedName": "??0Film@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26436",
+          "message": {
+            "text": "The type 'class Repo' with a virtual function needs either public virtual or protected non-virtual destructor (c.35)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 12,
+                  "endLine": 7,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::adaugaFilm",
+                  "decoratedName": "?adaugaFilm@Repo@@UEAAXAEBVFilm@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 64,
+                  "endLine": 9,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::adaugaFilm",
+                  "decoratedName": "?adaugaFilm@Repo@@UEAAXAEBVFilm@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 27,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::stergeFilm",
+                  "decoratedName": "?stergeFilm@Repo@@UEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 21,
+                  "endLine": 17,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::stergeFilm",
+                  "decoratedName": "?stergeFilm@Repo@@UEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 4,
+                  "endLine": 17,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::stergeFilm",
+                  "decoratedName": "?stergeFilm@Repo@@UEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 2,
+                  "endLine": 32,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 2,
+                  "endLine": 32,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 63,
+                  "endLine": 28,
+                  "endColumn": 63
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 52,
+                  "endLine": 30,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 52
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 52
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 66,
+                  "endLine": 32,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::modificaFilm",
+                  "decoratedName": "?modificaFilm@Repo@@UEAAXVFilm@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 52
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 58
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 66
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 66
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 30,
+                  "endLine": 37,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::exista",
+                  "decoratedName": "?exista@Repo@@AEAA_NAEBVFilm@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 35,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 37,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 37,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 37,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'film' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 7,
+                  "endLine": 46,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::cautaFilm",
+                  "decoratedName": "?cautaFilm@Repo@@QEAAAEBVFilm@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 66,
+                  "endLine": 50,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::cautaFilm",
+                  "decoratedName": "?cautaFilm@Repo@@QEAAAEBVFilm@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 50,
+                            "startColumn": 54
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 50,
+                            "startColumn": 66
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 50,
+                            "startColumn": 66
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 50,
+                            "startColumn": 66
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'film' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 7,
+                  "endLine": 57,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::cautaPozitieDupaTitlu",
+                  "decoratedName": "?cautaPozitieDupaTitlu@Repo@@QEBAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 57,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 50,
+                  "endLine": 62,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Repo::cautaPozitieDupaTitlu",
+                  "decoratedName": "?cautaPozitieDupaTitlu@Repo@@QEBAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 53,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 61,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'mesaj' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 3,
+                  "endLine": 77,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "<<",
+                  "decoratedName": "??6@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV01@AEBVExceptieRepo@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+                          },
+                          "region": {
+                            "startLine": 77,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/Film.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "fe9f0a4e1c24471dca915f8742d61b395eac3367e0db82fb4f1582019ef3be6e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/repo.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0ab2fa900aac01baab7c9aaf831a38fec98dd6adc5d0b4fd7cb1b2cb855129a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab6-7/lab6-7/lab6-7/repo.h"
+          },
+          "hashes": {
+            "sha-256": "05adbc85e0dc701ed74b0371225a5af33daa95a0335d4f6df84fe77b4b8d404e"
+          }
+        }
+      ]
+    }
+  ]
+}

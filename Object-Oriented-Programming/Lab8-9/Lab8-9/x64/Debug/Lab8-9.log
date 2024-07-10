@@ -1,0 +1,36 @@
+﻿  service.cpp
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(10,15): error C2511: 'void Service::adaugaFilm(const std::string &,const std::string &,const int,const std::string &)': overloaded member function not found in 'Service'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.h(14,7): message : see declaration of 'Service'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,2): error C2065: 'ActiuniUndo': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,41): error C2065: 'UndoAdauga': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,59): error C2671: 'Service::adaugaFilm': static member functions do not have 'this' pointers
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,29): error C2672: 'std::make_unique': no matching overloaded function found
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3403,6): message : could be 'void std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3397,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(const size_t)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(14,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,2): error C2065: 'ActiuniUndo': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,41): error C2065: 'UndoSterge': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,29): error C2672: 'std::make_unique': no matching overloaded function found
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3403,6): message : could be 'void std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3397,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(const size_t)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(21,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,2): error C2065: 'ActiuniUndo': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,41): error C2065: 'UndoModifica': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,29): error C2672: 'std::make_unique': no matching overloaded function found
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3403,6): message : could be 'void std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3397,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(const size_t)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392,57): message : or       'std::unique_ptr<_Ty,std::default_delete<_Ty>> std::make_unique(_Types &&...)'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(29,41): message : 'std::make_unique': invalid template argument for '_Ty', type expected
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(117,15): error C2039: 'undo': is not a member of 'Service'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.h(14,7): message : see declaration of 'Service'
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(118,6): error C2065: 'ActiuniUndo': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(119,2): error C2065: 'ActiuniUndo': undeclared identifier
+C:\Users\razva\source\repos\Lab8-9\Lab8-9\service.cpp(120,2): error C2065: 'ActiuniUndo': undeclared identifier

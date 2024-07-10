@@ -1,0 +1,1754 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Film', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/Film.h"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 2,
+                  "endLine": 34,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::{ctor}",
+                  "decoratedName": "??0Film@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::adaugaFilm",
+                  "decoratedName": "?adaugaFilm@Service@@QEBAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::adaugaFilm",
+                  "decoratedName": "?adaugaFilm@Service@@QEBAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::adaugaFilm",
+                  "decoratedName": "?adaugaFilm@Service@@QEBAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::stergeFilm",
+                  "decoratedName": "?stergeFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 55
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::modificaFilm",
+                  "decoratedName": "?modificaFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::modificaFilm",
+                  "decoratedName": "?modificaFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::modificaFilm",
+                  "decoratedName": "?modificaFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::modificaFilm",
+                  "decoratedName": "?modificaFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 55
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::modificaFilm",
+                  "decoratedName": "?modificaFilm@Service@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 55
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 55
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 54
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 54
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Service::getAll' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 30,
+                  "endLine": 28,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::getAll",
+                  "decoratedName": "?getAll@Service@@QEBAAEBV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::cautaFilm",
+                  "decoratedName": "?cautaFilm@Service@@QEBA?BVFilm@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'film' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 7,
+                  "endLine": 40,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::filtreazaDupaGen",
+                  "decoratedName": "?filtreazaDupaGen@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 40,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'film' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 7,
+                  "endLine": 51,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::filtreazaDupaAnAparitie",
+                  "decoratedName": "?filtreazaDupaAnAparitie@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                          },
+                          "region": {
+                            "startLine": 51,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 39,
+                  "endLine": 112,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 29,
+                  "endLine": 112,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 16,
+                  "endLine": 113,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 16,
+                  "endLine": 114,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 5,
+                  "endLine": 114,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 5,
+                  "endLine": 115,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'functieDeComparare' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 8,
+                  "endLine": 90,
+                  "endColumn": 70
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 22,
+                  "endLine": 110,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 27,
+                  "endLine": 111,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::sorteaza",
+                  "decoratedName": "?sorteaza@Service@@QEAA?AV?$vector@VFilm@@V?$allocator@VFilm@@@std@@@std@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Service', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 11,
+                  "endLine": 122,
+                  "endColumn": 11
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Service::{dtor}",
+                  "decoratedName": "??1Service@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/Film.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "fe9f0a4e1c24471dca915f8742d61b395eac3367e0db82fb4f1582019ef3be6e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab6-7/Lab6-7/Lab6-7/service.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0e86451fed4f1c1f3425d9ea70c39213d2f9f98a9ea8b4bf776f2f0f711a72f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab6-7/lab6-7/lab6-7/service.h"
+          },
+          "hashes": {
+            "sha-256": "15f22c86dd6eba97a21d046d1b0614c5b8f288d8b48bc8e61c7a92ab0a107768"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab6-7/lab6-7/lab6-7/repo.h"
+          },
+          "hashes": {
+            "sha-256": "05adbc85e0dc701ed74b0371225a5af33daa95a0335d4f6df84fe77b4b8d404e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab6-7/lab6-7/lab6-7/validator.h"
+          },
+          "hashes": {
+            "sha-256": "e8b2830278fd4648e8763a0fda6a68ab797f761725b8dfc9b6d2f9e667a274b5"
+          }
+        }
+      ]
+    }
+  ]
+}

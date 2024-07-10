@@ -1,0 +1,21 @@
+[2023-04-13 10:12:44] [info] Start Program:
+Path:"C:\Users\razva\source\repos\Lab6-7\Lab6-7\x64\Debug\Lab6-7.exe"
+Arguments:
+Working directory: "C:\Users\razva\source\repos\Lab6-7\Lab6-7\"
+Modules: Selected: C:\Users\razva\source\repos\Lab6-7\Lab6-7\x64\Debug\Lab6-7.exe Excluded: 
+Sources: Selected: C:\Users\razva\source\repos\Lab6-7\Lab6-7\Lab6-7 Excluded: consola.cpp 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\razva\AppData\Local\Temp\41quid3e.5r2 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-04-13 10:12:44] [info] Module: C:\Users\razva\source\repos\Lab6-7\Lab6-7\x64\Debug\Lab6-7.exe is selected because it matches selected pattern: C:\Users\razva\source\repos\Lab6-7\Lab6-7\x64\Debug\Lab6-7.exe
+[2023-04-13 10:12:44] [info] ----------------------------------------------------
+[2023-04-13 10:12:44] [info] Coverage binary generated in file: C:\Users\razva\AppData\Local\Temp\41quid3e.5r2
+[2023-04-13 10:12:44] [info] ----------------------------------------------------

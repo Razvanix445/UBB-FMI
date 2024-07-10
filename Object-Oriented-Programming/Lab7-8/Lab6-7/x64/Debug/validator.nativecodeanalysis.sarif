@@ -1,0 +1,494 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Film', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 2,
+                  "endLine": 36,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::{ctor}",
+                  "decoratedName": "??0Film@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Validator::valideaza",
+                  "decoratedName": "?valideaza@Validator@@QEAAXAEBVFilm@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 5,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 6,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 6,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'mesaj' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 3,
+                  "endLine": 18,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "<<",
+                  "decoratedName": "??6@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV01@AEBVExceptieValidare@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b67d1b49383e69a23862da2e4c79b39abc08bd510443c42e880092fe7990a7ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/validator.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d701c4fe1bfd6341732bcf184a76c06f03f1affcb15db01cb8bf9e8aecb56a69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/validator.h"
+          },
+          "hashes": {
+            "sha-256": "e8b2830278fd4648e8763a0fda6a68ab797f761725b8dfc9b6d2f9e667a274b5"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\razva\source\repos\Lab7-8\Lab6-7\</FILEPATH>
+      <FILENAME>Film.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Film', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Film::{ctor}</FUNCTION>
+    <DECORATED>??0Film@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\razva\source\repos\Lab7-8\Lab6-7\</FILEPATH>
+      <FILENAME>consola.h</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'UI::UI' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>UI::{ctor}</FUNCTION>
+    <DECORATED>??0UI@@QEAA@AEAVService@@@Z</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

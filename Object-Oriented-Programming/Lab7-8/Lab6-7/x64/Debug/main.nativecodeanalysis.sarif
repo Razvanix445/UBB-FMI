@@ -1,0 +1,154 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Film', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 2,
+                  "endLine": 36,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::{ctor}",
+                  "decoratedName": "??0Film@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'UI::UI' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/consola.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 2,
+                  "endLine": 49,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UI::{ctor}",
+                  "decoratedName": "??0UI@@QEAA@AEAVService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b67d1b49383e69a23862da2e4c79b39abc08bd510443c42e880092fe7990a7ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/consola.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "220cba1ee9dfd53216b85ee502790e59d04c9454a883b0ba812fc04ab8b17f5e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "7cd37502d069df2c49bf0e522d4fe61dc01e0ec81cfc2e68c6af7bcfcd81f0ad"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/repo.h"
+          },
+          "hashes": {
+            "sha-256": "5d92352925cf1edd9c2ccc040c8dbddf1b300dfcbd4a7e6b52193bbf8bfb177f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/templatevectordinamic.h"
+          },
+          "hashes": {
+            "sha-256": "b24c77477f29a832563d3feaeaca6facc1f4b6c820d03430d2ba5a591e646c12"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/teste.h"
+          },
+          "hashes": {
+            "sha-256": "00a63c9a3a63a4ad7949680cdbb210d7c343012500a92cb84ab6f02b7d1e00ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/service.h"
+          },
+          "hashes": {
+            "sha-256": "722a7c6527687b1141a5a3183a849d4c6dbccca326de915772456cefe92137c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/razva/source/repos/lab7-8/lab6-7/validator.h"
+          },
+          "hashes": {
+            "sha-256": "e8b2830278fd4648e8763a0fda6a68ab797f761725b8dfc9b6d2f9e667a274b5"
+          }
+        }
+      ]
+    }
+  ]
+}

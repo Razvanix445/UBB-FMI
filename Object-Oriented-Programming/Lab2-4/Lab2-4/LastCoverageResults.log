@@ -1,0 +1,21 @@
+[2023-03-23 10:54:39] [info] Start Program:
+Path:"C:\Users\razva\source\repos\Lab2-4\x64\Debug\Lab2-4.exe"
+Arguments:
+Working directory: "C:\Users\razva\source\repos\Lab2-4\Lab2-4\"
+Modules: Selected: C:\Users\razva\source\repos\Lab2-4\x64\Debug\Lab2-4.exe Excluded: C:\Users\razva\source\repos\Lab2-4\Lab2-4\consola.c 
+Sources: Selected: C:\Users\razva\source\repos\Lab2-4\Lab2-4 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\razva\AppData\Local\Temp\5yp1wtcm.l2a 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-03-23 10:54:39] [info] Module: C:\Users\razva\source\repos\Lab2-4\x64\Debug\Lab2-4.exe is selected because it matches selected pattern: C:\Users\razva\source\repos\Lab2-4\x64\Debug\Lab2-4.exe
+[2023-03-23 10:54:39] [info] ----------------------------------------------------
+[2023-03-23 10:54:39] [info] Coverage binary generated in file: C:\Users\razva\AppData\Local\Temp\5yp1wtcm.l2a
+[2023-03-23 10:54:39] [info] ----------------------------------------------------

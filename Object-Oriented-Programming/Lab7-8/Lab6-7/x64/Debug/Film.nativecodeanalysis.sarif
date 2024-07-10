@@ -1,0 +1,132 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Film', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 2,
+                  "endLine": 36,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::{ctor}",
+                  "decoratedName": "??0Film@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Film::getAnAparitie' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.cpp"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 11,
+                  "endLine": 3,
+                  "endColumn": 11
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::getAnAparitie",
+                  "decoratedName": "?getAnAparitie@Film@@QEBAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Film::setAnAparitie' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 12,
+                  "endLine": 23,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Film::setAnAparitie",
+                  "decoratedName": "?setAnAparitie@Film@@QEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b67d1b49383e69a23862da2e4c79b39abc08bd510443c42e880092fe7990a7ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/razva/source/repos/Lab7-8/Lab6-7/Film.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d82dc1d13fb9abeeeb2060f11d334685d0e096730ceba8be16f57287796b2276"
+          }
+        }
+      ]
+    }
+  ]
+}

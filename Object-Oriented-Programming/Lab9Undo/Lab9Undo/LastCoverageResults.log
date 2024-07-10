@@ -1,0 +1,21 @@
+[2023-05-09 11:08:21] [info] Start Program:
+Path:"C:\Users\razva\source\repos\Lab9Undo\x64\Debug\Lab9Undo.exe"
+Arguments:
+Working directory: "C:\Users\razva\source\repos\Lab9Undo\Lab9Undo\"
+Modules: Selected: C:\Users\razva\source\repos\Lab9Undo\x64\Debug\Lab9Undo.exe Excluded: 
+Sources: Selected: C:\Users\razva\source\repos\Lab9Undo\Lab9Undo Excluded: main.cpp consola.cpp consola.h 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\razva\AppData\Local\Temp\nwssofz1.hyn 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-05-09 11:08:21] [info] Module: C:\Users\razva\source\repos\Lab9Undo\x64\Debug\Lab9Undo.exe is selected because it matches selected pattern: C:\Users\razva\source\repos\Lab9Undo\x64\Debug\Lab9Undo.exe
+[2023-05-09 11:08:21] [info] ----------------------------------------------------
+[2023-05-09 11:08:21] [info] Coverage binary generated in file: C:\Users\razva\AppData\Local\Temp\nwssofz1.hyn
+[2023-05-09 11:08:21] [info] ----------------------------------------------------

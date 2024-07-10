@@ -1,0 +1,3 @@
+﻿  Ex1Model1.cpp
+C:\Users\razva\source\repos\Ex1Model1\Ex1Model1\Ex1Model1.cpp(262,25): warning C4101: 'ex': unreferenced local variable
+  Ex1Model1.vcxproj -> C:\Users\razva\source\repos\Ex1Model1\x64\Debug\Ex1Model1.exe

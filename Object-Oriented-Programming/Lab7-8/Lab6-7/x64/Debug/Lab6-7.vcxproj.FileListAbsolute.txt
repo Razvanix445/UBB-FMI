@@ -1,0 +1,4 @@
+C:\Users\razva\source\repos\Lab6-7\x64\Debug\Lab6-7.exe.lastcodeanalysissucceeded
+C:\Users\razva\source\repos\Lab6-7\Lab6-7\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\razva\source\repos\Lab7-8\x64\Debug\Lab7.exe.lastcodeanalysissucceeded
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\x64\Debug\NativeCodeAnalysis.read.1.tlog

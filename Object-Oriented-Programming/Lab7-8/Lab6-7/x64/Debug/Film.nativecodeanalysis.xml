@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\razva\source\repos\Lab7-8\Lab6-7\</FILEPATH>
+      <FILENAME>Film.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Film', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Film::{ctor}</FUNCTION>
+    <DECORATED>??0Film@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\razva\source\repos\Lab7-8\Lab6-7\</FILEPATH>
+      <FILENAME>Film.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Film::getAnAparitie' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Film::getAnAparitie</FUNCTION>
+    <DECORATED>?getAnAparitie@Film@@QEBAHXZ</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\razva\source\repos\Lab7-8\Lab6-7\</FILEPATH>
+      <FILENAME>Film.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Film::setAnAparitie' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Film::setAnAparitie</FUNCTION>
+    <DECORATED>?setAnAparitie@Film@@QEAAXH@Z</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

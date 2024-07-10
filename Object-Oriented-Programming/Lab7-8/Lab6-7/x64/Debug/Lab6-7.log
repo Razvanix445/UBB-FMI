@@ -1,0 +1,291 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Lab6-7.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+  Lab6-7.vcxproj -> C:\Users\razva\source\repos\Lab7-8\x64\Debug\Lab7.exe
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\Film.h(36): warning C26432: If you define or delete any default operation in the type 'class Film', define or delete them all (c.21).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.h(49): warning C26440: Function 'UI::UI' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(31): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(31): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(31): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(40): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(57): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(57): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(57): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(96): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(114): warning C26494: Variable 'ordineSortare' is uninitialized. Always initialize an object (type.5).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(142): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(142): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(142): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(143): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(143): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(143): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(144): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(144): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(144): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(145): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(145): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(145): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(146): warning C26823: Dereferencing a possibly null pointer 'allotemp.13' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(146): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(146): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(175): warning C26823: Dereferencing a possibly null pointer '(this->UI::service)' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\consola.cpp(202): warning C26432: If you define or delete any default operation in the type 'class UI', define or delete them all (c.21).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(101): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(213): warning C26440: Function 'VectorDinamic<Film>::begin' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(218): warning C26440: Function 'VectorDinamic<Film>::end' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(264): warning C26440: Function 'IteratorVector<Film>::operator*' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(269): warning C26440: Function 'IteratorVector<Film>::operator++' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(255): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\Film.cpp(3): warning C26440: Function 'Film::getAnAparitie' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\Film.cpp(23): warning C26440: Function 'Film::setAnAparitie' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(3): warning C26455: Default constructor should not throw. Declare it 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(9): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(30): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(31): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(32): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(28): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(30): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(32): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(50): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(62): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(71): warning C26432: If you define or delete any default operation in the type 'class Repo', define or delete them all (c.21).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\repo.cpp(77): warning C26823: Dereferencing a possibly null pointer 'mesaj' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(80): warning C26455: Default constructor should not throw. Declare it 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(80): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(203): warning C26440: Function 'VectorDinamic<Film>::pop_back' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(208): warning C26440: Function 'VectorDinamic<Film>::operator[]' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(209): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\Film.h(18): warning C26495: Variable 'Film::anAparitie' is uninitialized. Always initialize a member variable (type.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(185): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(185): warning C26400: Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(189): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(11): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(11): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(11): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(17): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(22): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(22): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(22): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(24): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(28): warning C26440: Function 'Service::getAll' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(90): warning C26429: Symbol 'functieDeComparare' is never tested for nullness, it can be marked as not_null (f.23).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(110): warning C26493: Don't use C-style casts (type.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(111): warning C26493: Don't use C-style casts (type.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\service.cpp(122): warning C26432: If you define or delete any default operation in the type 'class Service', define or delete them all (c.21).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(128): warning C26439: This kind of function should not throw. Declare it 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(87): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(5): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(5): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(5): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(30): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(30): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(30): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(32): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(32): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(32): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(34): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(34): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(34): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(36): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(36): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(36): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(38): warning C26823: Dereferencing a possibly null pointer 'allotemp.13' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(38): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(38): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(48): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(48): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(48): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(50): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(50): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(50): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(52): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(52): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(52): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(55): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(55): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(55): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(59): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(59): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(59): warning C26823: Dereferencing a possibly null pointer 'allotemp.16' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(71): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(71): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(71): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(96): warning C26496: The variable 'pozitieGasita' does not change after construction, mark it as const (con.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(90): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(90): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(90): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(92): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(92): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(92): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(94): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(94): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(94): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(96): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(99): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(109): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(109): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(109): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(111): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(111): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(111): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(127): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(127): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(127): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(131): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(131): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(131): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(139): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(139): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(139): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(151): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(151): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(151): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(152): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(152): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(152): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(153): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(153): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(153): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(154): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(154): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(154): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(155): warning C26823: Dereferencing a possibly null pointer 'allotemp.13' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(155): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(155): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(157): warning C26823: Dereferencing a possibly null pointer 'allotemp.16' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(161): warning C26823: Dereferencing a possibly null pointer 'allotemp.17' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(173): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(173): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(173): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(174): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(174): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(174): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(175): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(175): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(175): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(177): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(177): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(177): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(185): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(185): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(185): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(186): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(186): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(186): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(187): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(187): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(187): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(217): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(222): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(218): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(223): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(224): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(208): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(208): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(208): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(209): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(209): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(209): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(210): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(210): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(210): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(211): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(211): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(211): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(212): warning C26823: Dereferencing a possibly null pointer 'allotemp.13' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(212): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(212): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(215): warning C26823: Dereferencing a possibly null pointer 'allotemp.16' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(239): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(240): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(241): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(242): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(243): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(246): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(247): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(248): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(249): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(250): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(253): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(254): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(255): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(256): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(257): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(260): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(261): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(262): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(263): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(264): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(267): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(268): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(269): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(270): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(271): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(274): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(275): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(276): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(277): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(278): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(280): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(281): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(282): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(283): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(284): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(286): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(287): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(288): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(289): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(290): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(231): warning C26823: Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(231): warning C26823: Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(231): warning C26823: Dereferencing a possibly null pointer 'allotemp.3' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(232): warning C26823: Dereferencing a possibly null pointer 'allotemp.4' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(232): warning C26823: Dereferencing a possibly null pointer 'allotemp.5' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(232): warning C26823: Dereferencing a possibly null pointer 'allotemp.6' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(233): warning C26823: Dereferencing a possibly null pointer 'allotemp.7' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(233): warning C26823: Dereferencing a possibly null pointer 'allotemp.8' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(233): warning C26823: Dereferencing a possibly null pointer 'allotemp.9' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(234): warning C26823: Dereferencing a possibly null pointer 'allotemp.10' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(234): warning C26823: Dereferencing a possibly null pointer 'allotemp.11' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(234): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(235): warning C26823: Dereferencing a possibly null pointer 'allotemp.13' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(235): warning C26823: Dereferencing a possibly null pointer 'allotemp.14' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(235): warning C26823: Dereferencing a possibly null pointer 'allotemp.15' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(346): warning C26846: Don't pass an invalid pointer to a function. Parameter 0 'v3' in call to 'VectorDinamic<int>::size' is invalid (lifetime.3).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(354): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(300): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(304): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(308): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(312): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(316): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(320): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(327): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(332): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(337): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(343): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(350): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(328): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(338): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(344): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(351): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(339): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\teste.cpp(345): warning C26458: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(90): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(90): warning C26823: Dereferencing a possibly null pointer '(other->VectorDinamic<int>::elemente)' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(101): warning C26401: Do not delete a raw pointer that is not an owner<T> (i.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(101): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(113): warning C26401: Do not delete a raw pointer that is not an owner<T> (i.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(113): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(114): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(117): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(117): warning C26823: Dereferencing a possibly null pointer '(other->VectorDinamic<int>::elemente)' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(165): warning C26440: Function 'VectorDinamic<int>::get' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(166): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(170): warning C26440: Function 'VectorDinamic<int>::set' can be declared 'noexcept' (f.6).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(171): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(198): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(189): warning C26401: Do not delete a raw pointer that is not an owner<T> (i.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(189): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(187): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\TemplateVectorDinamic.h(187): warning C26823: Dereferencing a possibly null pointer '(this->VectorDinamic<int>::elemente)' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\validator.cpp(12): warning C26823: Dereferencing a possibly null pointer 'allotemp.12' (lifetime.1).
+C:\Users\razva\source\repos\Lab7-8\Lab6-7\validator.cpp(18): warning C26823: Dereferencing a possibly null pointer 'mesaj' (lifetime.1).
