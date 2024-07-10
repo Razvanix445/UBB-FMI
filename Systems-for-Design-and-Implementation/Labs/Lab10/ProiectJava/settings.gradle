@@ -1,0 +1,9 @@
+rootProject.name = 'ProiectJava'
+include 'ChatClient'
+include 'TransportClient'
+include 'TransportModel'
+include 'TransportPersistence'
+include 'TransportServices'
+include 'TransportNetworking'
+include 'TransportServer'
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="0d281b3a-7541-45e0-a3a5-e2c1564eb3f2" name="transport.db Mapping">
+      <data-sources db="e6fcad97-32ca-49f6-a4db-320f4351a253" />
+    </mapping>
+  </component>
+</project>

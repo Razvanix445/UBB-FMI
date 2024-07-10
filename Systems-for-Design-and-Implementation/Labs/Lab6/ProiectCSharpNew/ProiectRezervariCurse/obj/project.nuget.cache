@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "Iqrmj1c12ngCUzPh9M/TmcZ2YpLDv0+8iyOQKsDoqbSWzBQ8BHht0rv3rtUgQfYmb1YovwG3/JLgDqYoMnhLDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\ProiectRezervariCurse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\razva\\.nuget\\packages\\datagridextensions\\2.6.0\\datagridextensions.2.6.0.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\log4net\\2.0.16\\log4net.2.0.16.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.118\\stub.system.data.sqlite.core.netframework.1.0.118.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.data.sqlite\\1.0.118\\system.data.sqlite.1.0.118.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.118\\system.data.sqlite.ef6.1.0.118.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.data.sqlite.linq\\1.0.118\\system.data.sqlite.linq.1.0.118.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\ProiectRezervariCurse.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\ProiectRezervariCurse.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\ProiectRezervariCurse.csproj",
+        "projectName": "ProiectRezervariCurse",
+        "projectPath": "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\ProiectRezervariCurse.csproj",
+        "packagesPath": "C:\\Users\\razva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\razva\\RiderProjects\\ProiectCSharpNew\\ProiectRezervariCurse\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\razva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "DataGridExtensions": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.16, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

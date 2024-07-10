@@ -1,0 +1,30 @@
+.customFont {
+    -fx-font-size: 16px;
+    -fx-font-family: 'Comic Sans MS';
+}
+
+.buttonTransparent {
+    -fx-background-color: transparent;
+    /*-fx-border-color: transparent;*/
+}
+
+.buttonTransparent:hover {
+    -fx-background-color: grey;
+    /*-fx-border-color: transparent;*/
+}
+
+.grey-color {
+    -fx-background-color: #787878;
+}
+
+.button-transparent {
+    -fx-background-color: transparent;
+}
+
+.light-grey-color {
+    -fx-background-color: #D3D3D3;
+}
+
+.another-grey-color {
+    -fx-background-color: #AAAAAA;
+}

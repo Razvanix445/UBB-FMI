@@ -1,0 +1,12 @@
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\bin\Debug\ProiectCSharp.exe.config
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\bin\Debug\ProiectCSharp.exe
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\bin\Debug\ProiectCSharp.pdb
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.csproj.AssemblyReference.cache
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.Properties.Resources.resources
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.csproj.GenerateResource.cache
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectC.0CE451CD.Up2Date
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.exe
+C:\Users\razva\RiderProjects\ProiectCSharp\ProiectCSharp\obj\Debug\ProiectCSharp.pdb

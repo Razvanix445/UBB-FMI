@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ChatClient" />
+            <option value="$PROJECT_DIR$/TransportClient" />
+            <option value="$PROJECT_DIR$/TransportModel" />
+            <option value="$PROJECT_DIR$/TransportNetworking" />
+            <option value="$PROJECT_DIR$/TransportPersistence" />
+            <option value="$PROJECT_DIR$/TransportServer" />
+            <option value="$PROJECT_DIR$/TransportServices" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

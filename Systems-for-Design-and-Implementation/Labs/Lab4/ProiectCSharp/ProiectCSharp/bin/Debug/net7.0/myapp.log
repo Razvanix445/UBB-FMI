@@ -1,0 +1,341 @@
+2024-03-19 19:53:18,297 [1] INFO Program - Hello, World!
+2024-03-19 19:53:39,332 [1] INFO Program - Hello, World!
+2024-03-21 19:36:47,734 [1] INFO Program - Hello, World!
+2024-03-21 19:36:47,763 [1] ERROR Program - Connection failed
+2024-03-21 19:37:50,096 [1] INFO Program - Hello, World!
+2024-03-21 19:37:50,119 [1] ERROR Program - Connection failed: Object reference not set to an instance of an object.
+2024-03-21 19:41:38,854 [1] INFO Program - Hello, World!
+2024-03-21 19:41:38,877 [1] ERROR DbUtils - Connection string is null. Exiting.
+2024-03-21 19:41:38,877 [1] INFO Program - Connection opened
+2024-03-21 19:46:48,001 [1] INFO Program - Hello, World!
+2024-03-21 19:46:48,022 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 19:46:48,070 [1] INFO Program - Connection opened
+2024-03-21 19:48:14,733 [1] INFO Program - Hello, World!
+2024-03-21 19:48:14,755 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 19:48:14,797 [1] INFO Program - Test connection successful
+2024-03-21 19:52:04,313 [1] INFO Program - Hello, World!
+2024-03-21 19:52:04,335 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 19:52:04,380 [1] INFO Program - Test connection successful
+2024-03-21 19:52:04,381 [1] ERROR Program - Fetch data failed: Cannot access a disposed object.
+Object name: 'SQLiteConnection'.
+2024-03-21 19:54:02,830 [1] INFO Program - Hello, World!
+2024-03-21 19:54:02,853 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 19:54:02,896 [1] INFO Program - Test connection successful
+2024-03-21 19:54:02,897 [1] ERROR Program - Fetch data failed: Cannot access a disposed object.
+Object name: 'SQLiteConnection'.
+2024-03-21 20:21:12,378 [1] INFO Program - Hello, World!
+2024-03-21 20:21:12,401 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:21:12,446 [1] INFO Program - Test connection successful
+2024-03-21 20:21:54,435 [1] INFO Program - Hello, World!
+2024-03-21 20:21:54,458 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:21:54,500 [1] INFO Program - Test connection successful
+2024-03-21 20:21:54,501 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 20:21:54,501 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 20:32:16,806 [1] INFO Program - Hello, World!
+2024-03-21 20:32:16,830 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:32:16,874 [1] INFO Program - Test connection successful
+2024-03-21 20:32:16,874 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 20:32:16,875 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 20:32:16,875 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:32:16,887 [1] INFO Program - ReservationManager{CityName='newName', password='newPassword'}
+2024-03-21 20:32:16,888 [1] INFO Program - ReservationManager{CityName='Razvan', password='123456'}
+2024-03-21 20:32:16,888 [1] INFO Program - ReservationManager{CityName='Laurentiu', password='parolata'}
+2024-03-21 20:51:44,609 [1] INFO Program - Hello, World!
+2024-03-21 20:51:44,631 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:51:44,679 [1] INFO Program - Test connection successful
+2024-03-21 20:51:44,679 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 20:51:44,680 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 20:51:44,680 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:51:44,692 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 20:51:44,692 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Saving ReservationManager ReservationManager{CityName='newNameCSharp', password='newPasswordCSharp'}
+2024-03-21 20:51:44,692 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:51:44,715 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 20:51:44,715 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:51:44,720 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 1
+2024-03-21 20:51:44,720 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:58:10,609 [1] INFO Program - Hello, World!
+2024-03-21 20:58:10,633 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:58:10,680 [1] INFO Program - Test connection successful
+2024-03-21 20:58:10,681 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 20:58:10,682 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Updating ReservationManager ReservationManager{CityName='newNameCSharp', password='updatedPasswordCSharp'}
+2024-03-21 20:58:10,682 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:58:10,697 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 20:58:10,697 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 20:58:10,703 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 1
+2024-03-21 20:58:10,704 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:00:05,908 [1] INFO Program - Hello, World!
+2024-03-21 21:00:05,932 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:00:05,978 [1] INFO Program - Test connection successful
+2024-03-21 21:00:05,979 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 21:00:05,980 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Updating ReservationManager ReservationManager{CityName='newNameCSharp', password='updatedPasswordCSharp'}
+2024-03-21 21:00:05,980 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:00:06,007 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 21:00:06,007 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:00:06,013 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 1
+2024-03-21 21:00:06,014 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:01:01,010 [1] INFO Program - Hello, World!
+2024-03-21 21:01:01,034 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:01:01,079 [1] INFO Program - Test connection successful
+2024-03-21 21:01:01,080 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 21:01:01,080 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Deleting ReservationManager with id 19
+2024-03-21 21:01:01,081 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 19
+2024-03-21 21:01:01,081 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:01:01,093 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:01:01,112 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 21:01:01,112 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:01:01,119 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 1
+2024-03-21 21:01:01,119 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:21:48,631 [1] INFO Program - Hello, World!
+2024-03-21 21:21:48,653 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:21:48,700 [1] INFO Program - Test connection successful
+2024-03-21 21:21:48,700 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:21:48,704 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Saving Trip Trip{destination='newDestinationCSharp', dateDeparture=11/11/2029 6:00:00 PM, noOfAvailableSeats=100}
+2024-03-21 21:21:48,704 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:21:48,731 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding all Trips
+2024-03-21 21:21:48,731 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:30:51,267 [1] INFO Program - Hello, World!
+2024-03-21 21:30:51,291 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:30:51,343 [1] INFO Program - Test connection successful
+2024-03-21 21:30:51,344 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:30:51,349 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Updating Trip Trip{destination='newDestinationCSharp', dateDeparture=11/11/2029 6:00:00 PM, noOfAvailableSeats=100}
+2024-03-21 21:30:51,350 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:30:51,380 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding all Trips
+2024-03-21 21:30:51,380 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:30:51,387 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:30:51,387 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:32:15,142 [1] INFO Program - Hello, World!
+2024-03-21 21:32:15,165 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:32:15,210 [1] INFO Program - Test connection successful
+2024-03-21 21:32:15,210 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:32:15,211 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Deleting Trip with id 10
+2024-03-21 21:32:15,212 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 10
+2024-03-21 21:32:15,212 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:32:15,224 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:32:15,242 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding all Trips
+2024-03-21 21:32:15,242 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:32:15,249 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:32:15,250 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:15,979 [1] INFO Program - Hello, World!
+2024-03-21 21:54:16,006 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:16,056 [1] INFO Program - Test connection successful
+2024-03-21 21:54:16,057 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Initializing ReservationManagerDBRepository
+2024-03-21 21:54:16,059 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Saving ReservationManager ReservationManager{CityName='newNameCSharp', password='newPasswordCSharp'}
+2024-03-21 21:54:16,059 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:16,087 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding all Reservation Managers
+2024-03-21 21:54:16,087 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:16,095 [1] INFO ProiectCSharp.repository.database.ReservationManagerDBRepository - Finding ReservationManager with id 1
+2024-03-21 21:54:16,095 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:45,844 [1] INFO Program - Hello, World!
+2024-03-21 21:54:45,869 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:45,916 [1] INFO Program - Test connection successful
+2024-03-21 21:54:45,916 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Initializing ReservationDBRepository
+2024-03-21 21:54:45,917 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:54:45,917 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:54:45,917 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding all Reservations
+2024-03-21 21:54:45,917 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:45,928 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 1
+2024-03-21 21:54:45,928 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:54:45,933 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:54:45,933 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,035 [1] INFO Program - Hello, World!
+2024-03-21 21:58:50,058 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,104 [1] INFO Program - Test connection successful
+2024-03-21 21:58:50,104 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Initializing ReservationDBRepository
+2024-03-21 21:58:50,105 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:58:50,105 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 21:58:50,105 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding all Reservations
+2024-03-21 21:58:50,105 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,115 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 1
+2024-03-21 21:58:50,115 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,119 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:58:50,120 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,126 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 21:58:50,126 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,128 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:58:50,128 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,130 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 3
+2024-03-21 21:58:50,130 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,131 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 2
+2024-03-21 21:58:50,131 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,133 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 5
+2024-03-21 21:58:50,133 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,134 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 21:58:50,134 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,135 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 6
+2024-03-21 21:58:50,135 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,137 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 21:58:50,137 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,138 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 7
+2024-03-21 21:58:50,138 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,140 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 21:58:50,140 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,141 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 8
+2024-03-21 21:58:50,141 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,142 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 21:58:50,143 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,144 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 9
+2024-03-21 21:58:50,144 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,145 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 21:58:50,145 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,151 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 21:58:50,151 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 21:58:50,153 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 21:58:50,153 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:16,918 [1] INFO Program - Hello, World!
+2024-03-21 22:03:16,941 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:16,983 [1] INFO Program - Test connection successful
+2024-03-21 22:03:16,984 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Initializing ReservationDBRepository
+2024-03-21 22:03:16,985 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:03:16,985 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:03:16,985 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:16,985 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,002 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Saving Reservation Reservation{trip=Trip{destination='newDestination', dateDeparture=11/11/2029 7:25:25 PM, noOfAvailableSeats=18}, reservedSeats=System.Collections.Generic.List`1[System.Int64], clientName='newClientNameCSharp'}
+2024-03-21 22:03:17,002 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,048 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding all Reservations
+2024-03-21 22:03:17,049 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,052 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 1
+2024-03-21 22:03:17,052 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,053 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:03:17,053 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,055 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:03:17,055 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,056 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:03:17,056 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,057 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 3
+2024-03-21 22:03:17,057 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,058 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 2
+2024-03-21 22:03:17,058 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,060 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 5
+2024-03-21 22:03:17,060 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,061 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,061 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,062 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 6
+2024-03-21 22:03:17,062 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,063 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,063 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,064 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 7
+2024-03-21 22:03:17,065 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,066 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,066 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,067 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 8
+2024-03-21 22:03:17,067 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,068 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,068 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,069 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 9
+2024-03-21 22:03:17,069 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,070 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,070 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,071 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 10
+2024-03-21 22:03:17,072 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,073 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:03:17,073 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,075 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:03:17,075 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:03:17,076 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:03:17,076 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,527 [1] INFO Program - Hello, World!
+2024-03-21 22:06:43,549 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,592 [1] INFO Program - Test connection successful
+2024-03-21 22:06:43,593 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Initializing ReservationDBRepository
+2024-03-21 22:06:43,594 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:06:43,594 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:06:43,594 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,594 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,608 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,608 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,613 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Updating Reservation Reservation{trip=Trip{destination='newDestination', dateDeparture=11/11/2029 7:25:25 PM, noOfAvailableSeats=18}, reservedSeats=System.Collections.Generic.List`1[System.Int64], clientName='updatedClientNameCSharp'}
+2024-03-21 22:06:43,614 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,691 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding all Reservations
+2024-03-21 22:06:43,691 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,694 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 1
+2024-03-21 22:06:43,694 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,696 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:06:43,696 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,697 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:06:43,698 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,699 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:06:43,699 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,700 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 3
+2024-03-21 22:06:43,700 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,701 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 2
+2024-03-21 22:06:43,702 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,703 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 5
+2024-03-21 22:06:43,703 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,704 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,704 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,705 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 6
+2024-03-21 22:06:43,705 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,707 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,707 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,708 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 7
+2024-03-21 22:06:43,708 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,709 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,709 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,711 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 8
+2024-03-21 22:06:43,711 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,712 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,712 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,713 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 9
+2024-03-21 22:06:43,714 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,715 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,715 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,717 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 10
+2024-03-21 22:06:43,717 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,718 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:06:43,718 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,720 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:06:43,720 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:06:43,722 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:06:43,722 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,781 [1] INFO Program - Hello, World!
+2024-03-21 22:08:14,803 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,848 [1] INFO Program - Test connection successful
+2024-03-21 22:08:14,849 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Initializing ReservationDBRepository
+2024-03-21 22:08:14,849 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:08:14,850 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Initializing TripDBRepository
+2024-03-21 22:08:14,850 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,850 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,864 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Deleting Reservation with id 10
+2024-03-21 22:08:14,865 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 10
+2024-03-21 22:08:14,865 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,867 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,867 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,870 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,904 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding all Reservations
+2024-03-21 22:08:14,905 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,908 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 1
+2024-03-21 22:08:14,908 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,909 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:08:14,909 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,911 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:08:14,911 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,912 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:08:14,912 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,914 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 3
+2024-03-21 22:08:14,914 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,915 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 2
+2024-03-21 22:08:14,915 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,916 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 5
+2024-03-21 22:08:14,916 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,918 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,918 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,920 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 6
+2024-03-21 22:08:14,920 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,922 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,922 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,923 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 7
+2024-03-21 22:08:14,924 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,925 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,925 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,926 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 8
+2024-03-21 22:08:14,927 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,928 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,928 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,929 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 9
+2024-03-21 22:08:14,929 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,931 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 5
+2024-03-21 22:08:14,931 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,933 [1] INFO ProiectCSharp.repository.database.ReservationDBRepository - Finding Reservation with id 2
+2024-03-21 22:08:14,933 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;
+2024-03-21 22:08:14,934 [1] INFO ProiectCSharp.repository.database.TripDBRepository - Finding Trip with id 1
+2024-03-21 22:08:14,934 [1] INFO DbUtils - Connection string: Data Source=C:/Users/razva/IdeaProjects/databases/transport.db;Version=3;

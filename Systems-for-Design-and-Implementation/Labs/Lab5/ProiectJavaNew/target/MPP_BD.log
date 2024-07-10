@@ -1,0 +1,29 @@
+01 Apr 2024 20:09:21,490 INFO  repository.database.ReservationManagerDBRepository 23 <init> - Initializing ReservationManagerDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,495 INFO  repository.database.ReservationDBRepository 22 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,497 INFO  repository.database.TripDBRepository 21 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,498 INFO  repository.database.TripDBRepository 21 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,499 INFO  repository.database.SeatDBRepository 25 <init> - Initializing SeatDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,499 INFO  repository.database.ReservationDBRepository 22 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:21,499 INFO  repository.database.TripDBRepository 21 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db}
+01 Apr 2024 20:09:25,078 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:25,078 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:25,079 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:25,680 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:25,681 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:25,681 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:28,328 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:28,329 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:28,329 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:28,330 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:28,331 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:28,331 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:28,345 TRACE service.Service 105 getReservationsByTrip - Exit
+01 Apr 2024 20:09:28,345 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:28,345 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:28,345 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:28,346 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:28,346 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:28,346 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+01 Apr 2024 20:09:28,347 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/razva/IdeaProjects/databases/transport.db
+01 Apr 2024 20:09:28,347 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+01 Apr 2024 20:09:28,347 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="976.0" styleClass="customFont" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <BorderPane layoutX="133.0" layoutY="70.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="grey-color" stylesheets="@../styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Trips" textAlignment="CENTER" wrappingWidth="137.759765625">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="125.0" styleClass="light-grey-color" stylesheets="@../styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search Trip">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="destinationField" promptText="Destination...">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="datePicker" promptText="Date...">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="hourField" promptText="Hour...">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handleSearch" styleClass="buttonTransparent" stylesheets="@../styles.css">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="100.0" styleClass="light-grey-color" stylesheets="@../styles.css" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;Manager&gt;" />
+                  <Text fx:id="managerNameText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Text>
+               </children></VBox>
+         </right>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="grey-color" stylesheets="@../styles.css" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleExit" styleClass="buttonTransparent" stylesheets="@../styles.css" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Emergency Exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="center-pane" stylesheets="@../error-label.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="200.0" prefHeight="300.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="seatsTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="200.0">
+                           <columns>
+                              <TableColumn fx:id="seatNumberColumn" minWidth="50.0" prefWidth="100.0" text="Seat No.">
+                                 <cellValueFactory>
+                                    <PropertyValueFactory property="seatNumber" />
+                                 </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn fx:id="clientNameColumn" minWidth="50.0" prefWidth="75.0" text="Name">
+                                 <cellValueFactory>
+                                    <PropertyValueFactory property="clientName" />
+                                 </cellValueFactory>
+                              </TableColumn>
+                           </columns></TableView>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" prefHeight="150.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox fx:id="firstVBox" alignment="CENTER" prefHeight="200.0" prefWidth="51.0">
+                              </VBox>
+                              <VBox fx:id="secondVBox" alignment="CENTER" prefHeight="200.0" prefWidth="51.0">
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="51.0">
+                              </VBox>
+                              <VBox fx:id="thirdVBox" alignment="CENTER" prefHeight="200.0" prefWidth="51.0">
+                              </VBox>
+                              <VBox fx:id="fourthVBox" alignment="CENTER" prefHeight="200.0" prefWidth="51.0">
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="clientNameField" alignment="CENTER" maxWidth="-Infinity" minWidth="150.0" prefWidth="170.0" promptText="Client Name...">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin></TextField>
+                              <Button maxWidth="-Infinity" minWidth="100.0" mnemonicParsing="false" onAction="#handleReserve" prefWidth="120.0" styleClass="buttonTransparent" stylesheets="@../styles.css" text="Reserve Seat" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="300.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="destinationColumn" maxWidth="-Infinity" minWidth="200.0" prefWidth="400.0" text="Destination" />
+                      <TableColumn fx:id="departureTimeColumn" maxWidth="-Infinity" minWidth="200.0" prefWidth="300.0" text="Departure Time" />
+                      <TableColumn fx:id="noOfAvailableSeatsColumn" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="-1.0" text="No. of Available Seats" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
