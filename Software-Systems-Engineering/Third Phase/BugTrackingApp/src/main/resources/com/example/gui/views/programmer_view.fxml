@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.ProgrammerController">
+    <children>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Programmer Window" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="-350.0" right="200.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bug Tracking System" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Comic Sans MS" size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="75.0" styleClass="light-grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="120.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="14.0" />
+                            </font>
+                        </Text>
+                        <Button minHeight="35.0" minWidth="35.0" mnemonicParsing="false" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="35.0" top="5.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button minHeight="35.0" minWidth="35.0" mnemonicParsing="false">
+                            <VBox.margin>
+                                <Insets bottom="35.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button minHeight="35.0" minWidth="35.0" mnemonicParsing="false">
+                            <VBox.margin>
+                                <Insets bottom="35.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button minHeight="35.0" minWidth="35.0" mnemonicParsing="false">
+                            <VBox.margin>
+                                <Insets bottom="35.0" top="5.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </left>
+            <right>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="30.0" styleClass="light-grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER" />
+            </right>
+            <bottom>
+                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="50.0" prefHeight="50.0" styleClass="grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleExit" text="Exit" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets right="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Assigned Bugs" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Comic Sans MS" size="16.0" />
+                                    </font>
+                                </Text>
+                                <TableView fx:id="assignedBugTableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="assignedBugTableColumnName" prefWidth="138.4000335931778" text="Name" />
+                                        <TableColumn fx:id="assignedBugTableColumnDescription" prefWidth="138.4000335931778" text="Description" />
+                                        <TableColumn fx:id="assignedBugTableColumnStatus" prefWidth="139.19992065429688" text="Status" />
+                                        <TableColumn fx:id="assignedBugTableColumnTimestamp" prefWidth="139.19992065429688" text="Timestamp" />
+                                    </columns>
+                                </TableView>
+                                <Button mnemonicParsing="false" text="Eliminate Bug" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Comic Sans MS" size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="550.0" prefWidth="450.0" styleClass="another-grey-color" stylesheets="@../style/style.css">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bugs" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Comic Sans MS" size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <TableView fx:id="bugTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <columns>
+                                        <TableColumn fx:id="bugTableColumnName" prefWidth="101.59991455078125" text="Name" />
+                                        <TableColumn fx:id="bugTableColumnDescription" prefWidth="186.79998779296875" text="Description" />
+                                        <TableColumn fx:id="bugTableColumnTimestamp" prefWidth="127.199951171875" text="Status" />
+                                        <TableColumn fx:id="bugTableColumnStatus" prefWidth="135.20001220703125" text="Deadline" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

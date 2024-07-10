@@ -1,0 +1,75 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-opacity: 0.7;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+}
+
+.background_image {
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.bottom_box {
+    /*-fx-background-image: url('/com/example/gui/images/grey_background_login2.jpg');*/
+}
+
+.hbox {
+    -fx-border-color: #DEDEDE;
+    -fx-background-color: #FFFCFC;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.pane {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-opacity: 0.5;
+    -fx-background-image: url('/com/example/gui/images/login.png');
+    -fx-background-size: cover;
+}
+
+.pane_inverse {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-opacity: 0.5;
+    -fx-background-image: url('/com/example/gui/images/login_inverse.png');
+    -fx-background-size: cover;
+}
+
+.line_pane {
+    -fx-background-color: #DEDEDE;
+    -fx-border-color: #DEDEDE;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+
+.grey-color {
+    -fx-background-color: #565656;
+}
+
+.button-transparent {
+    -fx-background-color: transparent;
+}
+
+.light-grey-color {
+    -fx-background-color: #D3D3D3;
+}
+
+.another-grey-color {
+    -fx-background-color: #AAAAAA;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}

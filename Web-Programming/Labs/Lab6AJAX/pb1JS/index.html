@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="getPlecari()">
+<h1>Traseul trenurilor</h1>
+<div class="container">
+    <span>
+        <label>Statii plecare:</label>
+        <select id="orasPlecare" multiple size=6 onchange="getSosiri(this.value)">
+        </select>
+    </span>
+    <span>
+        <label>Statii sosire:</label>
+        <select id="orasSosire" multiple size=6>
+            <option>(nothing to show!)</option>
+        </select>
+    </span>
+</div>
+</body>
+</html>

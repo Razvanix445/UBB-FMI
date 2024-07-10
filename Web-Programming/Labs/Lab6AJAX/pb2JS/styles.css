@@ -1,0 +1,14 @@
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#prev-btn, #next-btn {
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 18px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: darkslategrey;
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+ul, #explorer {
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    height: 400px;
+    margin: 10px;
+    background-color: lightgrey;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 32px;
+}

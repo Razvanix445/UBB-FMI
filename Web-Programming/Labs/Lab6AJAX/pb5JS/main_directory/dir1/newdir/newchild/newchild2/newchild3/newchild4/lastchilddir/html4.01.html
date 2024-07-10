@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Formular de Aplicare pentru Locuri de Muncă</title>
+</head>
+
+<body bgcolor="#f0fff0">
+<div align="center">
+    <h1>Formular de Aplicare pentru Locuri de Munca</h1>
+    <h3>Formular realizat respectand standardele actuale</h3>
+    <h4><em>Data aplicării: <label for="dataAplicare"></label></em><input type="text" id="dataAplicare" name="nume"></h4>
+</div>
+<div align="center">
+    <form action="submit_confirmation.html">
+        <table bgcolor="#00008b">
+            <tr>
+                <td bgcolor="#f0fff0">
+                    <div>
+                        <table border="1">
+                            <!--                DATE PERSONALE-->
+                            <caption><b>Date personale</b></caption>
+                            <tr>
+                                <th><label for="nume">Nume:</label></th>
+                                <th><input type="text" id="nume" name="nume"></th>
+                                <th><label for="email">Email:</label></th>
+                                <th><input type="text" id="email" name="email"></th>
+                                <th><label for="telefon">Telefon:</label></th>
+                                <th><input type="text" id="telefon" name="telefon" maxlength="10"></th>
+                            </tr>
+                            <tr>
+                                <th rowspan="2"><label for="adresa">Adresă:</label></th>
+                                <th><input type="text" id="adresa" name="adresa"></th>
+                                <th><label for="judet">Județ:</label></th>
+                                <th>
+                                    <select id="judet" name="judet">
+                                        <option value="Alba">Alba</option>
+                                        <option value="Arad">Arad</option>
+                                        <option value="Arges">Argeș</option>
+                                        <option value="Oradea">Bihor</option>
+                                        <option value="Bistrita-Nasaud">Bistrița-Năsăud</option>
+                                        <option value="Buzau">Buzău</option>
+                                        <option value="Cluj" selected>Cluj</option>
+                                        <option value="Galati">Galați</option>
+                                        <option value="Ialomita">Ialomița</option>
+                                        <option value="Satu Mare">Satu Mare</option>
+                                        <option value="Maramureș">Maramureș</option>
+                                        <option value="Timis">Timiș</option>
+                                        <option value="Bucuresti">București</option>
+                                    </select>
+                                </th>
+                                <th><label for="oras">Oraș:</label></th>
+                                <th><input type="text" id="oras" name="oras" value="Cluj-Napoca" readonly></th>
+                            </tr>
+                            <tr>
+                                <th><input type="text" id="blocNumar" name="blocNumar"></th>
+                                <td colspan="1">
+                                    <label>Sex:</label>
+                                    <label for="masculin"><input type="radio" id="masculin" name="sex" value="M" checked>Masculin</label>
+                                    <label for="feminin"><input type="radio" id="feminin" name="sex" value="F">Feminin</label>
+                                </td>
+                                <td colspan="2"><input type="button" value="^_^ Nu poți să mă selectezi ^_^" disabled></td>
+                            </tr>
+                            <tr>
+                                <th><label for="data">Dată:</label></th>
+                                <td colspan="1"><input type="text" id="data" name="data"></td>
+                                <td colspan="3">
+                                    <p id="message">NU APĂSA <span id="clickable" onclick="alert('Ai apăsat butonul!')"><u>AICI</u></span> NICIDECUM!</p>
+                                </td>
+                                <td colspan="1">
+                                    <a href="https://www.example.com" target="_blank">Nu apăsa aici!</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <hr>
+                        <table bgcolor="#faebd7">
+                            <!--                EDUCATIE-->
+                            <caption><b>Educație</b></caption>
+                            <tr>
+                                <td colspan="1" valign="top"><label for="scoala">Școală:</label></td>
+                                <td><input type="text" id="scoala" name="scoala" size="20"></td>
+                                <td colspan="1" valign="top"><label for="liceu">Liceu:</label></td>
+                                <td><input type="text" id="liceu" name="liceu" size="20"></td>
+                                <td colspan="1" valign="top"><label for="facultate">Facultate:</label></td>
+                                <td><input type="text" id="facultate" name="facultate" size="20"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" bgcolor="#556b2f"><label><textarea name="message" rows="10" cols="95"></textarea></label></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--                PERSONALITATE-->
+                    <hr><p><b>Date personale</b></p><hr>
+                    <p>În ce măsură îți place (da, nu, nu știu):</p>
+                    <table border="1" bgcolor="#5f9ea0">
+                        <tr>
+                            <td bgcolor="#a9a9a9">
+                                <ol type="A" start="1">
+                                    <li>Să faci experimente științifice.</li>
+                                    <li>Să conduci un departament administrativ.</li>
+                                    <li>Să folosești microscopul.</li>
+                                    <li>Să lucrezi la birou.</li>
+                                    <li>Să lucrezi în echipă.</li>
+                                </ol>
+                            </td>
+                            <td  bgcolor="#add8e6">
+                                <ul type="circle">
+                                    <li><label for="a"></label><input type="text" id="a" name="a"></li>
+                                    <li><label for="b"></label><input type="text" id="b" name="b"></li>
+                                    <li><label for="c"></label><input type="text" id="c" name="c"></li>
+                                    <li><label for="d"></label><input type="text" id="d" name="d"></li>
+                                    <li><label for="e"></label><input type="text" id="e" name="e"></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Fjords Image" width="240" height="160" align="middle">
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td bgcolor="#a9a9a9">
+                                <label for="salariu">Salariu lunar dorit ($):</label>
+                                <input type="text" id="salariu" name="salariu" value="2000">
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Selectează mâncarea care îți place:</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="mancare1" name="mancare1" value="mancare1">
+                                <label for="mancare1">Pizza</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="mancare2" name="mancare2" value="mancare2">
+                                <label for="mancare2">Paste</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="mancare3" name="mancare3" value="mancare3">
+                                <label for="mancare3">Burgeri</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="mancare4" name="mancare4" value="mancare4">
+                                <label for="mancare4">Salate</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="mancare5" name="mancare5" value="mancare5">
+                                <label for="mancare5">Deserturi</label>
+                            </td>
+                    </table>
+                    <!--                ATRIBUTII-->
+                    <hr><p><b>Atribuții la locul de muncă</b></p><hr>
+                    <ol type="I">
+                        <li>Gestionarea relațiilor cu clienții
+                            <ul>
+                                <li>Interacționarea directă cu clienții pentru a răspunde la întrebări sau a oferi asistență</li>
+                                <li>Urmărirea feedback-ului clienților și soluționarea problemelor ridicate</li>
+                            </ul>
+                        </li>
+                        <li>Coordonarea echipei de vânzări
+                            <ul>
+                                <li>Stabilirea obiectivelor echipei și monitorizarea progresului acestora</li>
+                                <li>Formarea și dezvoltarea membrilor echipei</li>
+                            </ul>
+                        </li>
+                        <li>Elaborarea strategiilor de marketing
+                            <ul>
+                                <li>Analiza pieței și a concurenței</li>
+                                <li>Definirea publicului țintă și a mesajului de marketing</li>
+                            </ul>
+                        </li>
+                        <li>Participarea la întâlniri cu potențiali clienți
+                            <ul>
+                                <li>Pregătirea prezentărilor și a materialelor de vânzare</li>
+                                <li>Conducerea discuțiilor și răspunsul la întrebări</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><label for="files" title="Curriculum Vitae">Atașează CV: </label></td>
+                            <td><input type="file" id="files" name="files"></td>
+                            <td width="270"></td>
+                            <td><input type="reset" value="Resetează"></td>
+                            <td><input type="submit" value="Trimite"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>

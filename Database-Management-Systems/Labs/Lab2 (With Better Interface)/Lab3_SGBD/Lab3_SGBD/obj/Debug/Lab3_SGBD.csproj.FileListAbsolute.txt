@@ -1,0 +1,10 @@
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.csproj.AssemblyReference.cache
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.Properties.Resources.resources
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.csproj.GenerateResource.cache
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\bin\Debug\Lab3_SGBD.exe.config
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\bin\Debug\Lab3_SGBD.exe
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\bin\Debug\Lab3_SGBD.pdb
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.exe
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.pdb
+C:\Users\razva\RiderProjects\Lab3_SGBD\Lab3_SGBD\obj\Debug\Lab3_SGBD.ui.Form1.resources

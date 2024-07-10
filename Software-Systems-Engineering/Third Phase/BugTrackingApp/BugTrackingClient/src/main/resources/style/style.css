@@ -1,0 +1,108 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-opacity: 0.7;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+}
+
+.text-field-underlined {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #787878 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.combobox-underlined {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #787878 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.background_image {
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.table_view {
+    -fx-background-color: #F5F5F5;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-font-size: 18px;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b3d9ff;
+    -fx-text-fill: #333;
+}
+
+.scroll-bar {
+    -fx-background-color: #ccc;
+}
+
+.combo_box {
+    -fx-font-size: 18px;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.hbox {
+    -fx-border-color: #DEDEDE;
+    -fx-background-color: #FFFCFC;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.pane {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-opacity: 0.5;
+    -fx-background-image: url('/com/example/gui/images/login.png');
+    -fx-background-size: cover;
+}
+
+.pane_inverse {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-opacity: 0.5;
+    -fx-background-image: url('/com/example/gui/images/login_inverse.png');
+    -fx-background-size: cover;
+}
+
+.line_pane {
+    -fx-background-color: #DEDEDE;
+    -fx-border-color: #DEDEDE;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+
+.grey-color {
+    -fx-background-color: #565656;
+    -fx-border-radius: 0;
+}
+
+.button-transparent {
+    -fx-background-color: transparent;
+}
+
+.light-grey-color {
+    -fx-background-color: #D3D3D3;
+}
+
+.another-grey-color {
+    -fx-background-color: #AAAAAA;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}

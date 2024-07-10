@@ -1,0 +1,52 @@
+<!--Sa se scrie o pagina HTML ce contine doua liste cu mai multe elemente fiecare, create cu ajutorul tagului <select>.
+    La un dubluclick pe un element al primei liste, acesta va fi mutat in lista a doua si invers.
+    Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <select id="lista1" size="3" ondblclick="mutaElement('lista1', 'lista2')" style="background-color: #6f82ff; color: white; margin-right: 10px;">
+            <option value="1">Element 1 din lista 1</option>
+            <option value="2">Element 2 din lista 1</option>
+            <option value="3">Element 3 din lista 1</option>
+            <option value="4">Element 4 din lista 1</option>
+            <option value="5">Element 5 din lista 1</option>
+            <option value="6">Element 6 din lista 1</option>
+        </select>
+
+        <select id="lista2" size="3" ondblclick="mutaElement('lista2', 'lista1')" style="background-color: #6f82ff; color: white; margin-left: 10px;">
+            <option value="7">Element 1 din lista 2</option>
+            <option value="8">Element 2 din lista 2</option>
+            <option value="9">Element 3 din lista 2</option>
+            <option value="10">Element 4 din lista 2</option>
+            <option value="11">Element 5 din lista 2</option>
+            <option value="12">Element 6 din lista 2</option>
+        </select>
+    </div>
+
+    <style>
+        body {
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        select {
+            width: 1000px;
+            height: 500px;
+            font-size: 30px;
+        }
+    </style>
+
+    <script>
+        function mutaElement(sursaId, destinatieId) {
+            var sursa = document.getElementById(sursaId);
+            var destinatie = document.getElementById(destinatieId);
+            var optiuneSelectata = sursa.options[sursa.selectedIndex];
+            sursa.remove(sursa.selectedIndex);
+            destinatie.add(optiuneSelectata);
+        }
+    </script>
+
+</body>
+</html>

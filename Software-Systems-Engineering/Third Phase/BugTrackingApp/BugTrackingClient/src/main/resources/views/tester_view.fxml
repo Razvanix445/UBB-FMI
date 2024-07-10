@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bugtracking.client.gui.TesterController">
+    <children>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bug Tracking System" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Comic Sans MS" size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="75.0" styleClass="light-grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleOpenProfile" textAlignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/profile.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </VBox>
+            </left>
+            <right>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="30.0" styleClass="light-grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER" />
+            </right>
+            <bottom>
+                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="50.0" prefHeight="50.0" styleClass="grey-color" stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                         <children>
+                            <Text fx:id="errorMessageLabel" strokeType="OUTSIDE" strokeWidth="0.0">
+                               <HBox.margin>
+                                  <Insets left="20.0" />
+                               </HBox.margin>
+                               <font>
+                                  <Font name="Comic Sans MS" size="18.0" />
+                               </font>
+                            </Text>
+                         </children>
+                      </HBox>
+                        <Button mnemonicParsing="false" onAction="#handleExit" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets right="30.0" />
+                            </HBox.margin>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="200.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Report a Bug" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="20.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Comic Sans MS" size="24.0" />
+                                    </font>
+                                </Text>
+                                <GridPane alignment="CENTER" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <VBox.margin>
+                                        <Insets bottom="50.0" top="50.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <TextField fx:id="bugNameField" promptText="Name...">
+                                             <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                             </font>
+                                        </TextField>
+                                        <TextField fx:id="bugDescriptionField" promptText="Description..." GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                             </font>
+                                        </TextField>
+                                      <ComboBox fx:id="bugProgrammerComboBox" maxWidth="1.7976931348623157E308" promptText="Programmer..." styleClass="combo_box" stylesheets="@../style/style.css" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                            </children>
+                                            <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                            </padding>
+                                </GridPane>
+                                <Button mnemonicParsing="false" onAction="#handleReport" text="Report Bug" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" top="10.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Comic Sans MS" size="18.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="550.0" styleClass="another-grey-color" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bugs" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Comic Sans MS" size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <TableView fx:id="bugTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="table_view" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="bugTableColumnName" prefWidth="101.59991455078125" text="Name" />
+                                        <TableColumn fx:id="bugTableColumnDescription" prefWidth="186.79998779296875" text="Description" />
+                                        <TableColumn fx:id="bugTableColumnTimestamp" prefWidth="135.20001220703125" text="Deadline" />
+                                        <TableColumn fx:id="bugTableColumnStatus" prefWidth="127.199951171875" text="Status" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

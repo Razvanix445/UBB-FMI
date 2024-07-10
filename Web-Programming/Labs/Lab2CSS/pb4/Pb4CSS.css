@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    display: flex;
+    width: 84px;
+    height: 84px;
+    background-image: url(img.png);
+}
+
+#icon1{
+    background-position: 0px 0px
+}
+#icon1:hover {
+    background-position: 0px -84px
+}
+
+#icon2{
+    background-position: -84px 0px
+}
+#icon2:hover {
+    background-position: -84px 0px
+}
+
+#icon3{
+    background-position: -168px 0px
+}
+#icon3:hover {
+    background-position: -168px -84px
+}
+
+#icon4{
+    background-position: -252px 0px
+}
+#icon4:hover {
+    background-position: -252px -84px
+}
+
+#icon5{
+    background-position: -336px 0px
+}
+#icon5:hover {
+    background-position: -336px -84px
+}
+
+#icon6{
+    background-position: -420px 0px
+}
+#icon6:hover {
+    background-position: -420px -84px
+}
+
+#icon7{
+    background-position: -504px 0px
+}
+#icon7:hover {
+    background-position: -504px -84px
+}
+
+#icon8{
+    background-position: -588px 0px
+}
+#icon8:hover {
+    background-position: -588px -84px
+}
+
+#icon9{
+    background-position: -672px 0px
+}
+#icon9:hover {
+    background-position: -672px -84px
+}
+
+#icon10{
+    background-position: -754px 0px
+}
+#icon10:hover {
+    background-position: -754px -84px
+}

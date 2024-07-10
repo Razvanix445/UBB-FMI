@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="getPlecari()">
+<h1>Traseul trenurilor</h1>
+<div class="container">
+    <span>
+        <label>Statii plecare:</label>
+        <select id="orasPlecare" multiple size=6 onchange="getSosiri(this.value)">
+        </select>
+    </span>
+    <span>
+        <label>Statii sosire:</label>
+        <select id="orasSosire" multiple size=6>
+            <option>(nothing to show!)</option>
+        </select>
+    </span>
+</div>
+</body>
+</html>

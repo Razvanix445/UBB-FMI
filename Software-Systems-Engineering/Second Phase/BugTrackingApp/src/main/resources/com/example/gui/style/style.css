@@ -1,0 +1,15 @@
+.grey-color {
+    -fx-background-color: #565656;
+}
+
+.button-transparent {
+    -fx-background-color: transparent;
+}
+
+.light-grey-color {
+    -fx-background-color: #D3D3D3;
+}
+
+.another-grey-color {
+    -fx-background-color: #AAAAAA;
+}

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+
+	<appSettings>
+		<add key="ConnectionString" value="Server=LAPTOP-C75FCJ0Q; Database=Filme; Integrated Security=true;"/>
+		<add key="WindowTitle" value="Aplicatie Filme" />
+		<add key="ChildTable" value="Filme"/>
+		<add key="ParentPrimaryKey" value="RegizorID"/>
+		<add key="ChildForeignKey" value="RegizorID"/>
+		<add key="ChildPrimaryKey" value="FilmID"/>
+		<add key="ChildColumns" value="FilmID,Titlu,DataLansare,Descriere,ContentRating,UserRating,Buget,Incasari"/>
+		<add key="ParentQuery" value="SELECT * FROM Regizori"/>
+		<add key="ChildQuery" value="SELECT FilmID, Titlu, DataLansare, Descriere, ContentRating, UserRating, Buget, Incasari FROM Filme WHERE RegizorID = @ParentId"/>
+		<add key="ChildInsertQuery" value="INSERT INTO Filme (Titlu, DataLansare, Descriere, ContentRating, UserRating, Buget, Incasari, RegizorID) VALUES (@Titlu, @DataLansare, @Descriere, @ContentRating, @UserRating, @Buget, @Incasari, @ParentId)"/>
+		<add key="ChildUpdateQuery" value="UPDATE Filme SET Titlu = @Titlu, DataLansare = @DataLansare, Descriere = @Descriere, ContentRating = @ContentRating, UserRating = @UserRating, Buget = @Buget, Incasari = @Incasari WHERE FilmID = @PrimaryKeyValue"/>
+	</appSettings>
+</configuration>
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+
+	<appSettings>
+		<add key="ConnectionString" value="Server=LAPTOP-C75FCJ0Q; Database=Filme; Integrated Security=true;"/>
+		<add key="WindowTitle" value="Aplicatie Filme" />
+		<add key="ChildTable" value="Filme"/>
+		<add key="ParentPrimaryKey" value="StudioID"/>
+		<add key="ChildForeignKey" value="StudioID"/>
+		<add key="ChildPrimaryKey" value="FilmID"/>
+		<add key="ChildColumns" value="FilmID,Titlu,DataLansare,Descriere,ContentRating,UserRating,Buget,Incasari"/>
+		<add key="ParentQuery" value="SELECT * FROM Studiouri"/>
+		<add key="ChildQuery" value="SELECT FilmID, Titlu, DataLansare, Descriere, ContentRating, UserRating, Buget, Incasari FROM Filme WHERE StudioID = @ParentId"/>
+		<add key="ChildInsertQuery" value="INSERT INTO Filme (Titlu, DataLansare, Descriere, ContentRating, UserRating, Buget, Incasari, StudioID) VALUES (@Titlu, @DataLansare, @Descriere, @ContentRating, @UserRating, @Buget, @Incasari, @ParentId)"/>
+		<add key="ChildUpdateQuery" value="UPDATE Filme SET Titlu = @Titlu, DataLansare = @DataLansare, Descriere = @Descriere, ContentRating = @ContentRating, UserRating = @UserRating, Buget = @Buget, Incasari = @Incasari WHERE FilmID = @PrimaryKeyValue"/>
+	</appSettings>
+</configuration>
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+
+	<appSettings>
+		<add key="ConnectionString" value="Server=LAPTOP-C75FCJ0Q; Database=Filme; Integrated Security=true;"/>
+		<add key="WindowTitle" value="Aplicatie Filme" />
+		<add key="ChildTable" value="Nominalizari"/>
+		<add key="ParentPrimaryKey" value="EvenimentID"/>
+		<add key="ChildForeignKey" value="EvenimentID"/>
+		<add key="ChildPrimaryKey" value="NominalizareID"/>
+		<add key="ChildColumns" value="NominalizareID,Categorie"/>
+		<add key="ParentQuery" value="SELECT * FROM Evenimente"/>
+		<add key="ChildQuery" value="SELECT NominalizareID, Categorie FROM Nominalizari WHERE EvenimentID = @ParentId"/>
+		<add key="ChildInsertQuery" value="INSERT INTO Nominalizari (Categorie, EvenimentID) VALUES (@Categorie, @ParentId)"/>
+		<add key="ChildUpdateQuery" value="UPDATE Nominalizari SET Categorie = @Categorie WHERE NominalizareID = @PrimaryKeyValue"/>
+	</appSettings>
+</configuration>
+
+
+
+// These are the tables used
+
+CREATE TABLE Regizori(
+	RegizorID INT PRIMARY KEY IDENTITY(1,1),
+	NumeRegizor VARCHAR(30) NOT NULL,
+	PrenumeRegizor VARCHAR(30),
+	DataNasterii DATE
+)
+
+CREATE TABLE Studiouri(
+	StudioID INT PRIMARY KEY IDENTITY(1,1),
+	Denumire VARCHAR(30),
+	Adresa VARCHAR(100),
+	NumarAngajati INT
+)
+
+CREATE TABLE Filme(
+	FilmID INT PRIMARY KEY IDENTITY(1,1),
+	Titlu VARCHAR(30),
+	DataLansare DATE,
+	Descriere VARCHAR(200),
+	ContentRating VARCHAR(30),
+	UserRating FLOAT(3),
+	RegizorID INT FOREIGN KEY REFERENCES Regizori(RegizorID),
+	Buget INT,
+	Incasari INT,
+	StudioID INT FOREIGN KEY REFERENCES Studiouri(StudioID)
+)
+
+CREATE TABLE Evenimente (
+	EvenimentID INT PRIMARY KEY IDENTITY(1,1),
+	NumeEveniment VARCHAR(100)
+)
+
+CREATE TABLE Nominalizari(
+	NominalizareID INT PRIMARY KEY IDENTITY(1,1),
+	Categorie VARCHAR(100),
+	EvenimentID INT FOREIGN KEY REFERENCES Evenimente(EvenimentID)
+)

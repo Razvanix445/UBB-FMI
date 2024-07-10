@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formular de Aplicare pentru Locuri de Muncă</title>
+</head>
+
+<body>
+<fieldset>
+  <div>
+    <h1>Formular de Aplicare pentru Locuri de Muncă</h1>
+    <h3>Formular realizat respectând standardele actuale</h3>
+    <h4><em>Data aplicării: <label for="dataAplicare"></label></em><input type="datetime-local" id="dataAplicare" name="nume"></h4>
+  </div>
+    <form action="submit_confirmation.html">
+      <table>
+        <tr>
+          <td>
+            <fieldset>
+              <div>
+                <table>
+                  <!--                DATE PERSONALE-->
+                  <caption><b>Date personale</b><hr></caption>
+                  <tr>
+                    <th><label for="nume">Nume:</label></th>
+                    <th><input type="text" id="nume" name="nume" placeholder="John Doe"></th>
+                    <th><label for="email">Email:</label></th>
+                    <th><input type="email" id="email" name="email" placeholder="exemplu@yahoo.com"></th>
+                    <th><label for="telefon">Telefon:</label></th>
+                    <th><input type="tel" id="telefon" name="telefon" placeholder="012-3456-789" maxlength="10"></th>
+                  </tr>
+                  <tr>
+                    <th rowspan="2"><label for="adresa">Adresă:</label></th>
+                    <th><input type="text" id="adresa" name="adresa" placeholder="Stradă..."></th>
+                    <th><label for="judet">Județ:</label></th>
+                    <th>
+                      <select id="judet" name="judet">
+                        <option value="Alba">Alba</option>
+                        <option value="Arad">Arad</option>
+                        <option value="Arges">Argeș</option>
+                        <option value="Oradea">Bihor</option>
+                        <option value="Bistrita-Nasaud">Bistrița-Năsăud</option>
+                        <option value="Buzau">Buzău</option>
+                        <option value="Cluj" selected>Cluj</option>
+                        <option value="Galati">Galați</option>
+                        <option value="Ialomita">Ialomița</option>
+                        <option value="Satu Mare">Satu Mare</option>
+                        <option value="Maramureș">Maramureș</option>
+                        <option value="Timis">Timiș</option>
+                        <option value="Bucuresti">București</option>
+                      </select>
+                    </th>
+                    <th><label for="oras">Oraș:</label></th>
+                    <th><input type="text" id="oras" name="oras" value="Cluj-Napoca" readonly></th>
+                  </tr>
+
+                  <tr>
+                    <th><input type="text" id="blocNumar" name="blocNumar" placeholder="Bloc, Număr..."></th>
+                    <td colspan="1">
+                      <label>Sex:</label>
+                      <label for="masculin"><input type="radio" id="masculin" name="sex" value="M" checked>Masculin</label>
+                      <label for="feminin"><input type="radio" id="feminin" name="sex" value="F">Feminin</label>
+                    </td>
+                    <td colspan="2"><input type="button" value="^_^ Nu poți să mă selectezi ^_^" disabled></td>
+                    <td colspan="1">
+                      <label for="favcolor">Selectează culoarea favorită:<input type="color" id="favcolor" name="favcolor"></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="data">Dată:</label></th>
+                    <td colspan="1"><input type="date" id="data" name="data"></td>
+                    <td colspan="3">
+                      <p id="message">NU APĂSA <span id="clickable" onclick="alert('Ai apăsat butonul!')"><u>AICI</u></span> NICIDECUM!</p>
+                    </td>
+                    <td colspan="1">
+                      <a href="https://www.example.com" target="_blank">Nu apăsa aici!</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <table>
+                  <!--                EDUCATIE-->
+                  <caption><b>Educație</b><hr></caption>
+                  <tr>
+                    <td colspan="1"><label for="scoala">Școală:</label></td>
+                    <td><input type="text" id="scoala" name="scoala" size="20"></td>
+                    <td colspan="1"><label for="liceu">Liceu:</label></td>
+                    <td><input type="text" id="liceu" name="liceu" size="20"></td>
+                    <td colspan="1"><label for="facultate">Facultate:</label></td>
+                    <td><input type="text" id="facultate" name="facultate" size="20"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="6"><label><textarea name="message" rows="10" cols="95" placeholder="Introduceți alte date suplimentare..."></textarea></label></td>
+                  </tr>
+                </table>
+              </div>
+            </fieldset>
+            <fieldset>
+              <!--                PERSONALITATE-->
+              <legend>Personalitate</legend>
+              <p>În ce măsură îți place:</p>
+              <table>
+                <tr>
+                  <td>
+                    <ol type="A" start="1">
+                      <li>Să faci experimente științifice.</li>
+                      <li>Să conduci un departament administrativ.</li>
+                      <li>Să folosești microscopul.</li>
+                      <li>Să lucrezi la birou.</li>
+                      <li>Să lucrezi în echipă.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li><input type="range" id="a" name="a" value="1" min="0" max="2"></li>
+                      <li><input type="range" id="b" name="b" value="1" min="0" max="2"></li>
+                      <li><input type="range" id="c" name="c" value="1" min="0" max="2"></li>
+                      <li><input type="range" id="d" name="d" value="1" min="0" max="2"></li>
+                      <li><input type="range" id="e" name="e" value="1" min="0" max="2"></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Fjords Image" width="240" height="160">
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td>
+                    <label for="salariu">Salariu lunar dorit ($):</label>
+                    <input type="number" id="salariu" name="salariu" min="2000" max="20000" step="50" value="2000">
+                  </td>
+                </tr>
+              </table>
+              <p>Selectează mâncarea care îți place:</p>
+              <table>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="mancare1" name="mancare1" value="mancare1">
+                    <label for="mancare1">Pizza</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="mancare2" name="mancare2" value="mancare2">
+                    <label for="mancare2">Paste</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="mancare3" name="mancare3" value="mancare3">
+                    <label for="mancare3">Burgeri</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="mancare4" name="mancare4" value="mancare4">
+                    <label for="mancare4">Salate</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="mancare5" name="mancare5" value="mancare5">
+                    <label for="mancare5">Deserturi</label>
+                  </td>
+              </table>
+            </fieldset>
+
+            <fieldset>
+              <!--                ATRIBUTII-->
+              <legend>Atribuții la locul de muncă</legend>
+              <ol type="I">
+                <li>Gestionarea relațiilor cu clienții
+                  <ul>
+                    <li>Interacționarea directă cu clienții pentru a răspunde la întrebări sau a oferi asistență</li>
+                    <li>Urmărirea feedback-ului clienților și soluționarea problemelor ridicate</li>
+                  </ul>
+                </li>
+                <li>Coordonarea echipei de vânzări
+                  <ul>
+                    <li>Stabilirea obiectivelor echipei și monitorizarea progresului acestora</li>
+                    <li>Formarea și dezvoltarea membrilor echipei</li>
+                  </ul>
+                </li>
+                <li>Elaborarea strategiilor de marketing
+                  <ul>
+                    <li>Analiza pieței și a concurenței</li>
+                    <li>Definirea publicului țintă și a mesajului de marketing</li>
+                  </ul>
+                </li>
+                <li>Participarea la întâlniri cu potențiali clienți
+                  <ul>
+                    <li>Pregătirea prezentărilor și a materialelor de vânzare</li>
+                    <li>Conducerea discuțiilor și răspunsul la întrebări</li>
+                  </ul>
+                </li>
+              </ol>
+            </fieldset>
+            <hr>
+            <table>
+              <tr>
+                <td><label for="files" title="Curriculum Vitae">Atașează CV: </label></td>
+                <td><input type="file" id="files" name="files" multiple></td>
+                <td></td>
+                <td><input type="reset" value="Resetează"></td>
+                <td><input type="submit" value="Trimite"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+</fieldset>
+</body>
+</html>

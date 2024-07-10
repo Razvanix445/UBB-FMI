@@ -1,0 +1,132 @@
+<!--Intr-o pagina HTML exista o lista descrisa cu ajutorul tagului <ol>. Fiecare element din lista (<li>) contine
+    o imagine (<img>), si un link (<a>). Elemente listei, mai putin primul dintre ele, nu sunt vizibile initial
+    (se poate folosi in acest sens CSS). Afisarea unui element din lista presupune afisarea imaginii si a textului
+    ca link peste imagine (a se vedea ca exemplu carouselul din pagina facultatii). Dupa n secunde printr-un efect
+    de tranzitie va fi afisat urmatorul element din lista. Se vor implementa si doua butoane Next si Previous care
+    vor permite afisarea elementelor urmatoare sau anterioare fara a se astepta trecerea celor n secunde. Nu se vor
+    folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #myList {
+            position: relative;
+            z-index: 1;
+        }
+        #myList li {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #myList li:first-child {
+            display: flex;
+        }
+        #myList a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        #myList a:hover {
+            color: #0056b3;
+        }
+        img {
+            width: 600px;
+            height: 600px;
+            padding-bottom: 10px;
+        }
+        #prev, #next {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        #prev {
+            margin-right: 10px;
+        }
+        #prev:hover, #next:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ol id="myList">
+            <li>
+                <img src="https://www.cs.ubbcluj.ro/wp-content/uploads/Bufnea-Darius.jpg"><a href="#">Link 1</a></li>
+            <li>
+                <img src="https://www.cs.ubbcluj.ro/wp-content/uploads/Mircea-Gabriel-small.jpg"><a href="#">Link 2</a></li>
+            <li>
+                <img src="https://www.cs.ubbcluj.ro/wp-content/uploads/Manuela-Petrescu-2.jpg"><a href="#">Link 3</a></li>
+            <li>
+                <img src="https://www.cs.ubbcluj.ro/wp-content/uploads/Boian-Rares-133x100.jpg"><a href="#">Link 4</a></li>
+            <li>
+                <img src="https://www.cs.ubbcluj.ro/wp-content/uploads/Czibula-Istvan.jpg"><a href="#">Link 5</a></li>
+        </ol>
+    </div>
+    <div id="buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        var listItems = document.querySelectorAll('#myList li');
+        var currentIndex = 0;
+        var numItems = listItems.length;
+        var intervalNo;
+
+        function showNextItem() {
+            listItems[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % numItems;
+            listItems[currentIndex].style.display = 'flex';
+            resetInterval();
+        }
+
+        function showPrevItem() {
+            listItems[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex - 1 + numItems) % numItems;
+            listItems[currentIndex].style.display = 'flex';
+            resetInterval();
+        }
+
+        document.getElementById('next').addEventListener('click', showNextItem);
+        document.getElementById('prev').addEventListener('click', showPrevItem);
+
+        function resetInterval() {
+            clearInterval(intervalNo);
+            intervalNo = setInterval(showNextItem, 5000);
+        }
+
+        resetInterval();
+
+    </script>
+</body>
+</html>

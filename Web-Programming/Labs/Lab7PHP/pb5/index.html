@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to the Secure Photo Gallery</h1>
+    <div class="upload-section">
+        <h2>Upload Your Picture</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    <hr>
+    <div class="profile-section">
+        <h2>Your Profile</h2>
+        <?php include 'profile.php'; ?>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\bin\Debug\ModelBiscuitiSGBD.exe.config
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\bin\Debug\ModelBiscuitiSGBD.exe
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\bin\Debug\ModelBiscuitiSGBD.pdb
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\bin\Debug\System.Data.SqlClient.dll
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\bin\Debug\System.Data.SqlClient.xml
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.csproj.AssemblyReference.cache
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.Properties.Resources.resources
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.csproj.GenerateResource.cache
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBis.EC7BF106.Up2Date
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.exe
+C:\Users\razva\RiderProjects\ModelBiscuitiSGBD\ModelBiscuitiSGBD\obj\Debug\ModelBiscuitiSGBD.pdb

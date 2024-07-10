@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .rectangle:nth-child(2) {
+            width: 150px;
+        }
+        .rectangle:nth-child(3) {
+            width: 200px;
+        }
+        .rectangle:nth-child(4) {
+            width: 250px;
+        }
+        .rectangle:nth-child(5) {
+            width: 300px;
+        }
+        .shadow {
+            border-bottom: 25px solid #555;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 128px;
+        }
+        .shadow:nth-child(2) {
+            width: 220px;
+        }
+        .shadow:nth-child(3) {
+            width: 200px;
+        }
+        .shadow:nth-child(4) {
+            width: 250px;
+        }
+        .shadow:nth-child(5) {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow"></div>
+    <div class="rectangle"></div>
+    <div class="shadow"></div>
+    <div class="rectangle"></div>
+    <div class="shadow"></div>
+    <div class="rectangle"></div>
+</body>
+</html>

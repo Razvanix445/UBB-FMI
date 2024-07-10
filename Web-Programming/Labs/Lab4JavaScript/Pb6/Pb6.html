@@ -1,0 +1,138 @@
+<!--O pagina HTML va contine un tabel cu n linii si n coloane. Celulele tabelului contin numere de la 1 la n2 intr-o
+ordine aleatoare. Una dintre celule este libera. Folosind JavaScript sa se creeze in cadrul paginii un joc de tip
+puzzle care la apasarea tastelor sageti va interschimba celula libera cu celula adiacenta (corespunzatoare tastei
+sus, jos, stanga, dreapta apasata). Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.
+Puzzle-ul initial:
+3	8	9	5
+7	13	6	15
+10		14	4
+2	11	1	12
+
+Puzzle-ul rezolvat:
+1	2	3	4
+5	6	7	8
+9	10	11	12
+13	14	15-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+        }
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table id="puzzle"></table>
+
+    <script>
+        var n = 4;
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ''];
+
+        for (var i = numbers.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+        }
+
+        var puzzle = [];
+        for (var i = 0; i < n; i++) {
+            puzzle[i] = [];
+            for (var j = 0; j < n; j++) {
+                puzzle[i][j] = numbers[i * n + j];
+            }
+        }
+
+        function drawPuzzle() {
+            var table = document.getElementById('puzzle');
+            table.innerHTML = '';
+            for (var i = 0; i < n; i++) {
+                var row = document.createElement('tr');
+                for (var j = 0; j < n; j++) {
+                    var cell = document.createElement('td');
+                    cell.textContent = puzzle[i][j];
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function swap(i1, j1, i2, j2) {
+            var temp = puzzle[i1][j1];
+            puzzle[i1][j1] = puzzle[i2][j2];
+            puzzle[i2][j2] = temp;
+        }
+
+        function isSolved() {
+            var previous = 0;
+            for (var i = 0; i < n; i++) {
+                for (var j = 0; j < n; j++) {
+                    if (puzzle[i][j] === '') {
+                        if (i !== n - 1 || j !== n - 1) {
+                            return false;
+                        }
+                    } else {
+                        if (puzzle[i][j] < previous) {
+                            return false;
+                        }
+                        previous = puzzle[i][j];
+                    }
+                }
+            }
+            return true;
+        }
+
+        function handleKeydown(event) {
+            var i, j;
+            for (i = 0; i < n; i++) {
+                for (j = 0; j < n; j++) {
+                    if (puzzle[i][j] === '') break;
+                }
+                if (j < n) break;
+            }
+            switch (event.key) {
+                case 'ArrowUp':
+                    if (i < n - 1) swap(i, j, i + 1, j);
+                    break;
+                case 'ArrowDown':
+                    if (i > 0) swap(i, j, i - 1, j);
+                    break;
+                case 'ArrowLeft':
+                    if (j < n - 1) swap(i, j, i, j + 1);
+                    break;
+                case 'ArrowRight':
+                    if (j > 0) swap(i, j, i, j - 1);
+                    break;
+            }
+            drawPuzzle();
+            if (isSolved()) {
+                alert('You won!');
+            }
+        }
+
+        drawPuzzle();
+
+        window.addEventListener('keydown', handleKeydown);
+    </script>
+
+</body>
+</html>

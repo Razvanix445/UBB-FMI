@@ -1,0 +1,9 @@
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\bin\Debug\Lab1_SGBD.exe.config
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\bin\Debug\Lab1_SGBD.exe
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\bin\Debug\Lab1_SGBD.pdb
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.csproj.AssemblyReference.cache
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.csproj.CoreCompileInputs.cache
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.exe
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.pdb
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.ui.UI.resources
+C:\Users\razva\source\repos\Lab1_SGBD\Lab1_SGBD\obj\Debug\Lab1_SGBD.csproj.GenerateResource.cache

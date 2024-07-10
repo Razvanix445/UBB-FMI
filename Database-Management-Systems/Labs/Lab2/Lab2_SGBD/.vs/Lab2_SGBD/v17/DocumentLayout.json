@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\lab2_sgbd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|c:\\users\\razva\\source\\repos\\lab2_sgbd\\lab2_sgbd\\ui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\ui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|c:\\users\\razva\\source\\repos\\lab2_sgbd\\lab2_sgbd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|c:\\users\\razva\\source\\repos\\lab2_sgbd\\lab2_sgbd\\configurations.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\configurations.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\lab2_sgbd\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\lab2_sgbd\\validator\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\validator\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\lab2_sgbd\\service\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC9B0CD-DAED-4EE0-B590-9463B3902A29}|Lab2_SGBD\\Lab2_SGBD.csproj|solutionrelative:lab2_sgbd\\service\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 274,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\Program.cs",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\Program.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\Program.cs",
+              "RelativeToolTip": "Lab2_SGBD\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T16:31:50.144Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\ui\\Form.cs",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\ui\\Form.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\ui\\Form.cs",
+              "RelativeToolTip": "Lab2_SGBD\\ui\\Form.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAxwBsBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T16:36:11.459Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\service\\Service.cs",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\service\\Service.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\service\\Service.cs",
+              "RelativeToolTip": "Lab2_SGBD\\service\\Service.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T16:47:14.563Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\repository\\Repository.cs",
+              "RelativeToolTip": "Lab2_SGBD\\repository\\Repository.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T16:47:15.415Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\validator\\Validator.cs",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\validator\\Validator.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\validator\\Validator.cs",
+              "RelativeToolTip": "Lab2_SGBD\\validator\\Validator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T16:47:16.478Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "configurations.txt",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\configurations.txt",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\configurations.txt",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\configurations.txt",
+              "RelativeToolTip": "Lab2_SGBD\\configurations.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-30T14:29:16.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\App.config",
+              "RelativeDocumentMoniker": "Lab2_SGBD\\App.config",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab2_SGBD\\Lab2_SGBD\\App.config",
+              "RelativeToolTip": "Lab2_SGBD\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-30T14:28:54.75Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

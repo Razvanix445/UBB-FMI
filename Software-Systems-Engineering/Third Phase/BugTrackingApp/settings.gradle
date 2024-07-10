@@ -1,0 +1,8 @@
+rootProject.name = 'BugTrackingApp'
+include 'BugTrackingClient'
+include 'BugTrackingModel'
+include 'BugTrackingNetworking'
+include 'BugTrackingPersistence'
+include 'BugTrackingServer'
+include 'BugTrackingServices'
+

@@ -1,0 +1,12 @@
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\bin\Debug\ExamenSGBD.exe.config
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\bin\Debug\ExamenSGBD.exe
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\bin\Debug\ExamenSGBD.pdb
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.csproj.AssemblyReference.cache
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.Properties.Resources.resources
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.csproj.GenerateResource.cache
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.exe
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.pdb
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\bin\Debug\System.Data.SqlClient.dll
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\bin\Debug\System.Data.SqlClient.xml
+C:\Users\razva\RiderProjects\ExamenSGBD\ExamenSGBD\obj\Debug\ExamenSGBD.csproj.Up2Date

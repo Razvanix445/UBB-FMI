@@ -1,0 +1,70 @@
+* {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 23px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#userTable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#userTable th, #userTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#userTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#formular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#formular input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#saveButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    transition-duration: 0.4s;
+}
+
+#saveButton:hover {
+    background-color: white;
+    color: black;
+}

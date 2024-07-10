@@ -1,0 +1,150 @@
+<!--Sa se scrie o pagina HTML ce contine un tabel cu cel putin trei coloane si cel putin trei linii.
+    Prima coloana reprezinta antetul. Cand utilizatorul va da click pe o celula din antet, elementele din
+    tabel se vor sorta crescator sau descrescator in functie de valorile prezente pe linia corespunzatoare
+    antetului pe care s-a dat click. Codul JavaScript va fi reutilizabil si va permite crearea unui comportament
+    de tabel sortabil pentru mai multe tabele existente in cadrul paginii. Nu se vor folosi biblioteci de functii,
+    jQuery, pluginuri, etc. Exemplu de tabel ce se doreste a fi sortat (sortarea se va face alfabetic dupa numele
+    fructului, dupa pret sau dupa cantitate):
+    Fructe	Mere	Pere
+    Pret	3	4
+    Cantitate	8	6
+    Dupa rezolvarea problemei, implementati o noua varianta in care capul de tabel este orizontal, nu vertical.
+    Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<table id="fruitTable">
+    <tr>
+        <th>Fructe</th>
+        <th>Mere</th>
+        <th>Pere</th>
+        <th>Prune</th>
+        <th>Nuci</th>
+        <th>Piersici</th>
+    </tr>
+    <tr>
+        <td>Pret</td>
+        <td>3</td>
+        <td>140</td>
+        <td>4</td>
+        <td>3</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Cantitate</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>1</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Nr. Disponibile</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<table id="vegetableTable">
+    <tr>
+        <th>Vegetables</th>
+        <th>Carrots</th>
+        <th>Peas</th>
+        <th>Beans</th>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Available</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+<script>
+    $(document).ready(function(){
+        function sortTable(columnIndex, tableId) {
+            var table = $('#' + tableId);
+            var rows = $('tr', table);
+            var direction = table.attr('data-direction');
+            if (direction === undefined) {
+                table.attr('data-direction', 'asc');
+                direction = 'asc';
+            } else if (direction === 'asc') {
+                table.attr('data-direction', 'desc');
+            } else if (direction === 'desc') {
+                table.attr('data-direction', 'asc');
+            }
+
+            rows.slice(1).sort(function(a, b) {
+                var x = $('td', a).eq(columnIndex).text();
+                var y = $('td', b).eq(columnIndex).text();
+                var xVal = isNaN(parseFloat(x)) ? x.toLowerCase() : parseFloat(x);
+                var yVal = isNaN(parseFloat(y)) ? y.toLowerCase() : parseFloat(y);
+                if (direction === 'asc') {
+                    return (xVal < yVal) ? -1 : (xVal > yVal) ? 1 : 0;
+                } else if (direction === 'desc') {
+                    return (xVal > yVal) ? -1 : (xVal < yVal) ? 1 : 0;
+                }
+            }).appendTo(table);
+        }
+
+        $('#fruitTable th').each(function(index) {
+            $(this).click(function() {
+                sortTable(index, 'fruitTable');
+            });
+        });
+
+        $('#vegetableTable th').each(function(index) {
+            $(this).click(function() {
+                sortTable(index, 'vegetableTable');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

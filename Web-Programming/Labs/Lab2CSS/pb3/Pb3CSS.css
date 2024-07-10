@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#parinte {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+#header {
+    min-height: 100px;
+    background-color: red;
+    text-align: center;
+}
+
+#menu {
+    min-height: 25px;
+    background-color: yellow;
+}
+
+#continut {
+    min-height: calc(100vh - 185px);
+    background-color: green;
+}
+
+#footer {
+    min-height: 60px;
+    background-color: pink;
+    text-align: center;
+    bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+li {
+    width: 18%;
+    border-left: 2px solid;
+    display: block;
+}
+
+p {
+    text-indent: 25px;
+}

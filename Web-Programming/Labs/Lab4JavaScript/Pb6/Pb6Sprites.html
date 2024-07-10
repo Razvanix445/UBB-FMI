@@ -1,0 +1,145 @@
+<!--Cerinta facultativa pentru cei ce se “plictisesc” :): Dupa implementarea initiala, se va crea o a doua varianta
+    a jocului, unde, in loc de numere, celulele tabelului vor contine sprite-uri CSS obtinute din cadrul unei aceleasi
+    imagini patrate. Numarul n se va da la inceputul jocului, la fel si URL-ul imaginii ce se va folosi in sprite-urile
+    CSS ca si fundal pe celulele tabelului. Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+        }
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<table id="puzzle"></table>
+
+<script>
+    var n = 4;
+    var imageUrl = 'Sprite.png';
+    var numbers = Array.from({length: n * n - 1}, (_, i) => i + 1);
+
+    for (var i = numbers.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+    }
+
+    var puzzle = [];
+    for (var i = 0; i < n; i++) {
+        puzzle[i] = [];
+        for (var j = 0; j < n; j++) {
+            puzzle[i][j] = numbers[i * n + j];
+        }
+    }
+
+    function generateSprite(value) {
+        var cell = document.createElement('td');
+        cell.style.backgroundImage = 'url(' + imageUrl + ')';
+        cell.style.backgroundSize = (n * 100) + '%';
+        var position = value - 1;
+        var x = position % n;
+        var y = Math.floor(position / n);
+        cell.style.backgroundPosition = (x * 100 / (n - 1)) + '% ' + (y * 100 / (n - 1)) + '%';
+        return cell;
+    }
+
+    function drawPuzzle() {
+        var table = document.getElementById('puzzle');
+        table.innerHTML = '';
+        for (var i = 0; i < n; i++) {
+            var row = document.createElement('tr');
+            for (var j = 0; j < n; j++) {
+                var cell;
+                if (puzzle[i][j] === '') {
+                    cell = document.createElement('td');
+                } else {
+                    cell = generateSprite(puzzle[i][j]);
+                }
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+    }
+
+    function swap(i1, j1, i2, j2) {
+        var temp = puzzle[i1][j1];
+        puzzle[i1][j1] = puzzle[i2][j2];
+        puzzle[i2][j2] = temp;
+    }
+
+    function isSolved() {
+        var previous = 0;
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+                if (puzzle[i][j] === '') {
+                    if (i !== n - 1 || j !== n - 1) {
+                        return false;
+                    }
+                } else {
+                    if (puzzle[i][j] < previous) {
+                        return false;
+                    }
+                    previous = puzzle[i][j];
+                }
+            }
+        }
+        return true;
+    }
+
+    function handleKeydown(event) {
+        var i, j;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < n; j++) {
+                if (puzzle[i][j] === '') break;
+            }
+            if (j < n) break;
+        }
+        switch (event.key) {
+            case 'ArrowUp':
+                if (i < n - 1) swap(i, j, i + 1, j);
+                break;
+            case 'ArrowDown':
+                if (i > 0) swap(i, j, i - 1, j);
+                break;
+            case 'ArrowLeft':
+                if (j < n - 1) swap(i, j, i, j + 1);
+                break;
+            case 'ArrowRight':
+                if (j > 0) swap(i, j, i, j - 1);
+                break;
+        }
+        drawPuzzle();
+        if (isSolved()) {
+            alert('You won!');
+        }
+    }
+    var randomRow = Math.floor(Math.random() * n);
+    var randomCol = Math.floor(Math.random() * n);
+    puzzle[randomRow][randomCol] = '';
+    drawPuzzle();
+
+    window.addEventListener('keydown', handleKeydown);
+</script>
+
+</body>
+</html>

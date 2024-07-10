@@ -1,0 +1,17 @@
+input {
+    background-image: url("img.png");
+    width: 514px;
+    height: 25px;
+    background-size: 26px;
+    border: none;
+    font-family: "Comic Sans MS", serif;
+    font-size: smaller;
+    padding-left: 5px;
+    letter-spacing: 2.27ch;
+    white-space: pre;
+    margin: 10px;
+}
+
+#cnp {
+    width: 332px;
+}

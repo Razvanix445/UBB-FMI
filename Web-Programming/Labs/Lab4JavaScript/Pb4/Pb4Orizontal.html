@@ -1,0 +1,156 @@
+<!--Sa se scrie o pagina HTML ce contine un tabel cu cel putin trei coloane si cel putin trei linii.
+    Prima coloana reprezinta antetul. Cand utilizatorul va da click pe o celula din antet, elementele din
+    tabel se vor sorta crescator sau descrescator in functie de valorile prezente pe linia corespunzatoare
+    antetului pe care s-a dat click. Codul JavaScript va fi reutilizabil si va permite crearea unui comportament
+    de tabel sortabil pentru mai multe tabele existente in cadrul paginii. Nu se vor folosi biblioteci de functii,
+    jQuery, pluginuri, etc. Exemplu de tabel ce se doreste a fi sortat (sortarea se va face alfabetic dupa numele
+    fructului, dupa pret sau dupa cantitate):
+    Fructe	Mere	Pere
+    Pret	3	4
+    Cantitate	8	6
+    Dupa rezolvarea problemei, implementati o noua varianta in care capul de tabel este orizontal, nu vertical.
+    Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table id="fruitTable">
+    <tr>
+        <th>Fructe</th>
+        <th>Mere</th>
+        <th>Pere</th>
+        <th>Prune</th>
+        <th>Nuci</th>
+        <th>Piersici</th>
+    </tr>
+    <tr>
+        <td>Pret</td>
+        <td>3</td>
+        <td>140</td>
+        <td>4</td>
+        <td>3</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Cantitate</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>1</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Nr. Disponibile</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<table id="vegetableTable">
+    <tr>
+        <th>Vegetables</th>
+        <th>Carrots</th>
+        <th>Peas</th>
+        <th>Beans</th>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Available</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+<script>
+    function sortTable(columnIndex, tableId) {
+        var table, rows, switching, i, x, y, shouldSwitch, direction, switchCount = 0;
+        table = document.getElementById(tableId);
+        switching = true;
+        direction = "asc";
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[columnIndex];
+                y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+                var xVal = isNaN(parseFloat(x.innerHTML)) ? x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
+                var yVal = isNaN(parseFloat(y.innerHTML)) ? y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
+                if (direction == "asc") {
+                    if (xVal > yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (direction == "desc") {
+                    if (xVal < yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchCount ++;
+            } else {
+                if (switchCount == 0 && direction == "asc") {
+                    direction = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+    document.querySelectorAll('#fruitTable th').forEach((header, index) => {
+        header.addEventListener('click', () => sortTable(index, 'fruitTable'));
+    });
+
+    document.querySelectorAll('#vegetableTable th').forEach((header, index) => {
+        header.addEventListener('click', () => sortTable(index, 'vegetableTable'));
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+li {
+    margin-left: 80px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bob {
+    width: 20%;
+    position: relative;
+    background: aqua;
+    border-radius: .4em;
+}
+
+.alice {
+    width: 20%;
+    position: relative;
+    background: deepskyblue;
+    border-radius: .4em;
+}
+
+.bob:before {
+    background-image: url('spritesheet2.png');
+    background-position: 0px 0px;
+    background-size: 120px 80px;
+    display: inline-block;
+    width: 235px;
+    height: 75px;
+    content: '';
+    margin-left: -80px;
+    margin-right: 50px;
+}
+
+.alice:before {
+    background-image: url('spritesheet2.png');
+    background-position: 55px 70px;
+    background-size: 120px 80px;
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    content: '';
+    margin-left: -80px;
+    margin-right: 50px;
+}
+
+.alice:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: deepskyblue;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
+
+.bob:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: aqua;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}

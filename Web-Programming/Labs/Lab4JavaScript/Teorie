@@ -1,0 +1,133 @@
+JavaScript - limbaj multiparadigmă, object-oriented, procedural, declarativ
+Arrow Function - similar cu lambda din Python, funcții anonime, funcții lambda
+
+DOM - Document Object Model, reprezentare a documentului HTML ca un arbore de obiecte
+Document.Write - metoda care scrie text într-un document HTML
+
+element
+.innerHTML - proprietate care setează sau returnează conținutul HTML al unui element
+.text - proprietate care setează sau returnează textul unui element
+.value - proprietate care setează sau returnează valoarea unui element de input
+
+<script>
+...
+</script>
+- e bine sa punem script la finalul paginii pentru a nu bloca incarcarea paginii
+
+console.log() - metoda care afișează un mesaj în consolă
+"5" + 5 = "55" - concatenare
+parseInt() - metoda care convertește un string într-un număr întreg
+
+Difference between var and let:
+- var are scope global sau local, let are doar scope local
+- var poate fi redeclarata, let nu (hoisting = variabilele sunt ridicate la începutul codului, chiar dacă sunt declarate mai târziu)
+- var este hoisted, let nu
+
+Functii:
+function numeFunctie(parametri) {
+    // cod
+    return valoare;
+}
+
+Events:
+<button onclick="numeFunctie()">Click me</button>
+
+Event Handlers:
+- onclick - evenimentul care se declanșează la click pe un element
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+Event Listeners:
+- addEventListener() - metoda care atașează un eveniment unui element
+document.getElementById("myBtn").addEventListener("click", function() {
+    alert("Hello World!");
+});
+
+Event Object:
+- event - obiect care conține informații despre evenimentul care a avut loc
+document.getElementById("myBtn").addEventListener("click", function(event) {
+    alert(event.type);
+});
+
+Difference between == and ===:
+- == - egalitate, === - egalitate strictă (verifică și tipul de date)
+
+Objects:
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+};
+
+Arrays:
+var cars = ["Saab", "Volvo", "BMW"];
+
+Loops:
+for (var i = 0; i < 5; i++) {
+    // cod
+}
+
+for (var car of cars) {
+    // cod
+}
+
+Classes:
+class Car {
+    constructor(brand) {
+        this.carname = brand;
+    }
+    present() {
+        return 'I have a ' + this.carname;
+    }
+}
+
+Inheritance:
+class Model extends Car {
+    constructor(brand, mod) {
+        super(brand);
+        this.model = mod;
+    }
+    show() {
+        return this.present() + ', it is a ' + this.model;
+    }
+}
+
+Promises:
+- obiect care reprezintă o valoare care poate fi disponibilă acum, în viitor sau niciodată
+var promise = new Promise(function(resolve, reject) {
+    // cod
+    resolve(); - in caz de succes
+    reject();  - in caz de eroare
+});
+
+Async/Await:
+- async - funcție care returnează un obiect Promise
+- await - așteaptă ca o expresie să se rezolve
+
+try {
+    // cod
+} catch (error) {
+    // cod
+}
+
+JSON:
+- JavaScript Object Notation
+var obj = { name: "John", age: 30, city: "New York" };
+
+
+setTimeout() - metoda care apelează o funcție sau evaluează o expresie după un anumit interval de timp
+setInterval() - metoda care apelează o funcție sau evaluează o expresie la intervale regulate (milisecunde)
+
+Document.QuerySelector() - metoda care returnează primul element care corespunde unui selector CSS
+Document.QuerySelectorAll() - metoda care returnează toate elementele care corespund unui selector CSS
+
+Document.GetElementById() - metoda care returnează un element după id
+Document.GetElementsByClassName() - metoda care returnează toate elementele după clasă
+Document.GetElementsByTagName() - metoda care returnează toate elementele după nume de tag
+Document.GetElementsByName() - metoda care returnează toate elementele după nume
+
+Document.CreateElement() - metoda care creează un element HTML
+Document.CreateTextNode() - metoda care creează un nod text
+
+Document.AppendChild() - metoda care adaugă un nod la sfârșitul listei de copii a unui nod părinte
+Document.RemoveChild() - metoda care elimină un nod dintr-un element

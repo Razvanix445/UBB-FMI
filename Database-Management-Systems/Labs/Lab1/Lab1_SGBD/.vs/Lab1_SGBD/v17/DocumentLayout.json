@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\lab1_sgbd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|solutionrelative:lab1_sgbd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|c:\\users\\razva\\source\\repos\\lab1_sgbd\\lab1_sgbd\\validator\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|solutionrelative:lab1_sgbd\\validator\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|c:\\users\\razva\\source\\repos\\lab1_sgbd\\lab1_sgbd\\ui\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|solutionrelative:lab1_sgbd\\ui\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\lab1_sgbd\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|solutionrelative:lab1_sgbd\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\lab1_sgbd\\service\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD051E-2B87-447F-8B11-90E9D29A25C3}|Lab1_SGBD\\Lab1_SGBD.csproj|solutionrelative:lab1_sgbd\\service\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 265,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\Program.cs",
+              "RelativeDocumentMoniker": "Lab1_SGBD\\Program.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\Program.cs",
+              "RelativeToolTip": "Lab1_SGBD\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T09:12:30.932Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Console.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\ui\\Console.cs",
+              "RelativeDocumentMoniker": "Lab1_SGBD\\ui\\Console.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\ui\\Console.cs",
+              "RelativeToolTip": "Lab1_SGBD\\ui\\Console.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAuwNcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:06:13.472Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\service\\Service.cs",
+              "RelativeDocumentMoniker": "Lab1_SGBD\\service\\Service.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\service\\Service.cs",
+              "RelativeToolTip": "Lab1_SGBD\\service\\Service.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwCoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T14:57:37.269Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Lab1_SGBD\\repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\repository\\Repository.cs",
+              "RelativeToolTip": "Lab1_SGBD\\repository\\Repository.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T14:51:21.353Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\validator\\Validator.cs",
+              "RelativeDocumentMoniker": "Lab1_SGBD\\validator\\Validator.cs",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Lab1_SGBD\\Lab1_SGBD\\validator\\Validator.cs",
+              "RelativeToolTip": "Lab1_SGBD\\validator\\Validator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T15:00:10.36Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

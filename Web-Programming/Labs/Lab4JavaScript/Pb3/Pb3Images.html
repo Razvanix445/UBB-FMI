@@ -1,0 +1,106 @@
+<!--Sa se implementeze folosind JavaScript urmatoarea problema. O matrice cu numar par de elemente,
+    reprezentata vizual sub forma unui tabel, contine perechi de numere initial ascunse. Daca utilizatorul
+    da click pe doua celule ale tabelului ce contin numere egale acestea vor fi afisate si vor ramane afisate.
+    Daca numerele continute in cele doua celule nu sunt egale, vor fi ascunse din nou dupa un numar de 2, 3 secunde.
+    Jocul se termina cand toate perechile de numere au fost ghicite. Dupa prima implementare a jocului, se va crea
+    o noua versiune in care numerele vor fi inlocuite cu imagini (ce contin fructe spre exemplu, sau “profi” de
+    pe pagina facultatii). Problema mai este recunoscuta si sub numele de Memory Game. Nu se vor folosi biblioteci
+    de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            height: 100vh;
+        }
+        .cell {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table id="game-board"></table>
+
+    <script>
+        var board = [
+            ['https://www.cs.ubbcluj.ro/wp-content/uploads/Czibula-Istvan.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Manuela-Petrescu-2.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Bufnea-Darius.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Boian-Rares-133x100.jpg'],
+            ['https://www.cs.ubbcluj.ro/wp-content/uploads/Czibula-Istvan.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Manuela-Petrescu-2.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Bufnea-Darius.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Boian-Rares-133x100.jpg'],
+            ['https://www.cs.ubbcluj.ro/wp-content/uploads/Mircea-Gabriel-small.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Serban-Camelia.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Suciu-Mihai.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Grigoreta-Cojocar.jpg'],
+            ['https://www.cs.ubbcluj.ro/wp-content/uploads/Mircea-Gabriel-small.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Serban-Camelia.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Suciu-Mihai.jpg', 'https://www.cs.ubbcluj.ro/wp-content/uploads/Grigoreta-Cojocar.jpg']
+        ];
+        board = board.flat().sort(() => Math.random() - 0.5);
+        var selectedCells = [];
+        var foundPairs = 0;
+
+        function createBoard() {
+            var table = document.getElementById('game-board');
+            for (var i = 0; i < 4; i++) {
+                var row = document.createElement('tr');
+                for (var j = 0; j < 4; j++) {
+                    var cell = document.createElement('td');
+                    cell.textContent = '';
+                    cell.classList.add('cell');
+                    cell.addEventListener('click', handleClick(i, j));
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function handleClick(i, j) {
+            return function() {
+                var cell = this;
+                if (cell.hasChildNodes() || selectedCells.length === 2) return;
+                var img = document.createElement('img');
+                img.src = board[i * 4 + j];
+                img.style.width = '200px';
+                img.style.height = '200px';
+                cell.appendChild(img);
+                selectedCells.push(cell);
+                if (selectedCells.length === 2) {
+                    var cells = document.querySelectorAll('.cell');
+                    cells.forEach(function(cell) {
+                        cell.removeEventListener('click', handleClick(i, j));
+                    });
+                    if (selectedCells[0].firstChild.src === selectedCells[1].firstChild.src) {
+                        foundPairs++;
+                        selectedCells = [];
+                        if (foundPairs === 8) {
+                            setTimeout(function() {
+                                alert('You won!');
+                            }, 1);
+                        }
+                        cells.forEach(function(cell) {
+                            cell.addEventListener('click', handleClick(i, j));
+                        });
+                    } else {
+                        setTimeout(function() {
+                            selectedCells[0].removeChild(selectedCells[0].firstChild);
+                            selectedCells[1].removeChild(selectedCells[1].firstChild);
+                            selectedCells = [];
+                            cells.forEach(function(cell) {
+                                cell.addEventListener('click', handleClick(i, j));
+                            });
+                        }, 500);
+                    }
+                }
+            };
+        }
+
+        createBoard();
+    </script>
+</body>
+</html>

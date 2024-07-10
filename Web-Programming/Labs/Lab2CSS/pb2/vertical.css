@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.listaMeniu {
+    display: flex;
+}
+
+#menu {
+    width: 20%;
+}
+
+#main {
+    width: 80%;
+}
+
+li {
+    border-bottom: 2px solid;
+}

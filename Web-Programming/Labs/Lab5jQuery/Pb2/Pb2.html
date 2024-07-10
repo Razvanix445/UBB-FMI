@@ -1,0 +1,141 @@
+<!--Un formular web va permite unui utilizator sa isi introduca numele, data nasterii, varsta si adresa de e-mail.
+    La apasarea unui buton “Trimite” se vor valida toate aceste campuri daca sunt completate si daca sunt completate corect.
+    Daca da, se va afisa un mesaj “Datele sunt completate corect”, altfel, se va afisa un mesaj de genul
+    “Campurile nume si varsta nu sunt completate corect”, aceste campuri fiind “incercuite” intr-o bordura rosie.
+    Toate aceste validari vor fi implementate pe client in JavaScript.
+    Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.-->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        .invalid {
+            border: 10px solid red;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input {
+            width: 800px;
+            height: 50px;
+            background-color: #6f82ff;
+            border-radius: 20px;
+            color: white;
+            margin-right: 10px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 20px;
+        }
+        label {
+            color: black;
+            margin-right: 10px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            color: black;
+            margin-right: 10px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm">
+    <div class="container">
+        <label for="nume">Nume:</label><br>
+        <input type="text" id="nume"><br>
+        <label for="dataNasterii">Data nașterii:</label><br>
+        <input type="date" id="dataNasterii"><br>
+        <label for="varsta">Vârstă:</label><br>
+        <input type="number" id="varsta"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br>
+        <br>
+        <input type="button" value="Trimite">
+        <p id="mesaj"></p>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function(){
+        function validare() {
+            var nume = $('#nume');
+            var dataNasterii = $('#dataNasterii');
+            var varsta = $('#varsta');
+            var email = $('#email');
+            var mesaj = $('#mesaj');
+
+            nume.removeClass('invalid');
+            dataNasterii.removeClass('invalid');
+            varsta.removeClass('invalid');
+            email.removeClass('invalid');
+            mesaj.text('');
+
+            if (!nume.val() || !dataNasterii.val() || !varsta.val() || !email.val() || varsta.val() <= 0) {
+
+                var mesajValidareNume = '';
+                var mesajValidareDataNasterii = '';
+                var mesajValidareVarsta = '';
+                var mesajValidareEmail = '';
+
+                if (!nume.val()) {
+                    nume.addClass('invalid');
+                    mesajValidareNume += 'nume';
+                }
+                if (!dataNasterii.val()) {
+                    dataNasterii.addClass('invalid');
+                    mesajValidareDataNasterii += 'data nasterii';
+                }
+                if (!varsta.val() || varsta.val() <= 0) {
+                    varsta.addClass('invalid');
+                    mesajValidareVarsta += 'varsta';
+                }
+                if (!email.val()) {
+                    email.addClass('invalid');
+                    mesajValidareEmail += 'email';
+                }
+                var mesajValidare = '';
+                if (mesajValidareNume !== '')
+                    mesajValidare += mesajValidareNume;
+                if (mesajValidareDataNasterii !== '' && mesajValidare !== '' && email.val() && varsta.val())
+                    mesajValidare = mesajValidare + ' si ' + mesajValidareDataNasterii;
+                else if (mesajValidareDataNasterii !== '' && mesajValidare !== '')
+                    mesajValidare = mesajValidare + ', ' + mesajValidareDataNasterii;
+                else if (mesajValidareDataNasterii !== '')
+                    mesajValidare += mesajValidareDataNasterii;
+                if (mesajValidareVarsta !== '' && mesajValidare !== '' && email.val())
+                    mesajValidare = mesajValidare + ' si ' + mesajValidareVarsta;
+                else if (mesajValidareVarsta !== '' && mesajValidare !== '')
+                    mesajValidare = mesajValidare + ', ' + mesajValidareVarsta;
+                else if (mesajValidareVarsta !== '')
+                    mesajValidare += mesajValidareVarsta;
+                if (mesajValidareEmail !== '' && mesajValidare !== '')
+                    mesajValidare = mesajValidare + ' si ' + mesajValidareEmail;
+                else if (mesajValidareEmail !== '')
+                    mesajValidare += mesajValidareEmail;
+                mesaj.text(`Câmpurile ${mesajValidare} nu sunt completate corect!`);
+                return;
+            }
+
+            mesaj.text('Datele sunt completate corect');
+        }
+
+        // Call the function when the button is clicked
+        $('input[type="button"]').click(validare);
+    });
+</script>
+
+</body>
+</html>
