@@ -1,0 +1,7 @@
+13,Ionel,212
+14,Vasile,213
+15,Ionica Ionel,212
+20,Miorita,211
+5,Emanuel Vasile,213
+6,Mihai Marian,212
+8,Vasile,212

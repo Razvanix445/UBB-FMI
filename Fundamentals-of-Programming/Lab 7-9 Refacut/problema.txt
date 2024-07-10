@@ -1,0 +1,7 @@
+13,Calculul sumei a doua numere a si b,2042-12-12
+14,Calculul diferentei dintre numerele a si b,2052-6-9
+10,Inmultirea a doua numere a si b,2052-1-1
+20,Se cere aflarea celui mai mare divizor comun,2029-5-5
+25,Se cere afisarea celui mai mare numar prim de trei cifre,2030-4-2
+18,Sa se imparta numarul a la b si sa se afiseze rezultatul,2035-2-2
+17,Calculati cea mai mare latura a unui patrulater cu latura de trei centimetri,2040-12-12

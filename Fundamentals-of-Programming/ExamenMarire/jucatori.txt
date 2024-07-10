@@ -1,0 +1,9 @@
+Vasile,Ion,177,Fundas
+Bogdan,Ioan,179,Fundas
+Vasilica,Muresan,166,Pivot
+Viorel,Cristian,205,Pivot
+Razvan,Ciro,200,Fundas
+Stran,Florin,209,Fundas
+Vasile,Ionica,143,Pivot
+Bogdan,Razvan,198,Extrema
+Uras,Nicolas,151,Fundas
