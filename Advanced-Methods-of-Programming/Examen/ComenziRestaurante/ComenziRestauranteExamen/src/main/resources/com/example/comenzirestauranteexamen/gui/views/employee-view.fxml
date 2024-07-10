@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comenzirestauranteexamen.gui.EmployeeController">
+   <children>
+      <Text layoutX="287.0" layoutY="36.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="288.94140625" AnchorPane.topAnchor="23.0" />
+      <TableView fx:id="placedOrdersTable" layoutX="36.0" layoutY="62.0" prefHeight="323.0" prefWidth="527.0">
+         <columns>
+            <TableColumn fx:id="orderIdColumn" prefWidth="74.79995727539062" text="Order ID" />
+            <TableColumn fx:id="orderDateColumn" prefWidth="160.80005645751953" text="Order Date" />
+            <TableColumn fx:id="orderedItemsColumn" minWidth="0.0" prefWidth="290.39998168945317" text="Ordered Items" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

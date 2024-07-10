@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab7.gui.UtilizatorController">
+
+   <stylesheets>
+      <URL value="@../error-label.css" />
+      <URL value="@../styles.css" />
+   </stylesheets>
+
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="357.0" prefWidth="147.0" style="-fx-background-color: #e3dede;" BorderPane.alignment="CENTER">
+               <effect>
+                  <Blend />
+               </effect>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleFindUser" prefHeight="25.0" prefWidth="178.0" text="Search" />
+                  <BorderPane prefHeight="30.0" prefWidth="146.0">
+                     <center>
+                        <TextField fx:id="dataForSearch" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../icons/Search.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                  </BorderPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Button layoutX="10.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleFindUser" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Search">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleRefreshTable" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Users">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                     <Button layoutX="10.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleAddRequest" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Add Request">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/AddFriend.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Delete Friend">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/DeleteFriend.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleRefreshFriendsTable" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Friends">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleCommunityOfLoggedUser" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Community">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Community.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="283.0" mnemonicParsing="false" onAction="#openChatWindow" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Chat">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/GoogleChat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="323.0" mnemonicParsing="false" onAction="#openFriendRequestsWindow" prefHeight="40.0" prefWidth="146.0" styleClass="transparent-background" stylesheets="@../chat-style.css" text="Friend Requests">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox style="-fx-background-color: #c5c5c5;" BorderPane.alignment="CENTER">
+               <effect>
+                  <Reflection />
+               </effect>
+               <children>
+                  <BorderPane prefHeight="43.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+                     <right>
+                        <Button mnemonicParsing="false" onAction="#handleUserProfileDetails" prefHeight="35.0" prefWidth="39.0" styleClass="radius" stylesheets="@../chat-style.css" BorderPane.alignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/EditProfile.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <BorderPane.margin>
+                              <Insets right="5.0" />
+                           </BorderPane.margin>
+                        </Button>
+                     </right>
+                     <left>
+                        <ImageView fitHeight="42.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../icons/Facebook.png" />
+                           </image>
+                           <BorderPane.margin>
+                              <Insets left="10.0" />
+                           </BorderPane.margin>
+                        </ImageView>
+                     </left>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <center>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Social Network App" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Comic Sans MS" size="24.0" />
+                           </font>
+                        </Text>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <HBox prefHeight="357.0" prefWidth="69.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="357.0" prefWidth="80.0" style="-fx-background-color: #e3dede;">
+                     <bottom>
+                        <Button mnemonicParsing="false" onAction="#handleExit" styleClass="radius" stylesheets="@../chat-style.css" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" />
+                           </BorderPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Close.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </bottom>
+                     <center>
+                        <VBox style="-fx-background-color: #e3dede;" BorderPane.alignment="CENTER" />
+                     </center>
+                     <right>
+                        <HBox BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <HBox BorderPane.alignment="CENTER" />
+                     </left>
+                     <top>
+                        <ComboBox prefWidth="150.0" BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </right>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="tableColumnNume" maxWidth="-1.0" minWidth="150.0" prefWidth="-1.0" style="-fx-font-size: 16;" text="Last Name" />
+                        <TableColumn fx:id="tableColumnPrenume" maxWidth="-1.0" minWidth="150.0" prefWidth="-1.0" style="-fx-font-size: 16;" text="First Name" />
+                        <TableColumn fx:id="tableColumnUsername" maxWidth="-1.0" minWidth="150.0" prefWidth="-1.0" style="-fx-font-size: 16;" text="Username" />
+                        <TableColumn fx:id="tableColumnEmail" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="-1.0" style="-fx-font-size: 16;" text="Email" />
+                     </columns>
+                  </TableView>
+                  <HBox maxHeight="40.0" prefHeight="40.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="40.0" prefHeight="40.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handlePreviousPage" text="&lt;">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <TextField fx:id="currentPageNumberField" onAction="#handlePageNumberChange" prefWidth="30.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="maximumNumberOfPagesText" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button mnemonicParsing="false" onAction="#handleNextPage" text="&gt;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="40.0" prefHeight="40.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Users/Page: " />
+                              <TextField fx:id="numberOfUsersField" onAction="#handleNumberOfUsersChange" prefWidth="30.0">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #cfcfcf;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="32.0" prefWidth="640.0">
+                     <center>
+                        <Label fx:id="errorMessageLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-font-size: 16;" styleClass="error-label" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Comic Sans MS" />
+                           </font>
+                        </Label>
+                     </center>
+                     <left>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Message: " BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets left="5.0" />
+                           </BorderPane.margin>
+                        </Text>
+                     </left>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.faptebuneexamen.gui.MainController">
+   <children>
+      <TabPane layoutX="12.0" layoutY="11.0" prefHeight="568.0" prefWidth="575.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doresc sa ajut!">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="595.0" prefWidth="577.0">
+                           <children>
+                              <TableView fx:id="nevoiTableView" prefHeight="270.0" prefWidth="577.0">
+                                <columns>
+                                  <TableColumn fx:id="titluColumn" prefWidth="117.19998741149902" text="Titlu" />
+                                  <TableColumn fx:id="descriereColumn" minWidth="8.0" prefWidth="208.4000244140625" text="Descriere" />
+                                  <TableColumn fx:id="dataColumn" minWidth="0.0" prefWidth="162.39996337890625" text="Deadline" />
+                                  <TableColumn fx:id="statusColumn" prefWidth="87.19998168945312" text="Status" />
+                                </columns>
+                              </TableView>
+                              <TableView fx:id="fapteBuneTableView" layoutY="270.0" prefHeight="246.0" prefWidth="575.0">
+                                <columns>
+                                    <TableColumn fx:id="titluFapteBuneColumn" prefWidth="117.19998741149902" text="Titlu" />
+                                    <TableColumn fx:id="descriereFapteBuneColumn" minWidth="8.0" prefWidth="208.4000244140625" text="Descriere" />
+                                    <TableColumn fx:id="dataFapteBuneColumn" minWidth="0.0" prefWidth="162.39996337890625" text="Deadline" />
+                                    <TableColumn fx:id="statusFapteBuneColumn" prefWidth="87.19998168945312" text="Status" />
+                                </columns>
+                              </TableView>
+                              <Text fx:id="confirmationText" layoutX="172.0" layoutY="554.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="230.93673706054688">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+          <Tab text="Doresc sa fiu ajutat!">
+               <content>
+                  <AnchorPane prefHeight="498.0" prefWidth="575.0">
+                     <children>
+                        <GridPane alignment="CENTER" layoutX="188.0" layoutY="66.0" prefHeight="200.0" AnchorPane.bottomAnchor="274.0" AnchorPane.topAnchor="66.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titlu" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descriere" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="titluNevoieNoua" GridPane.columnIndex="1" />
+                              <TextField fx:id="descriereNevoieNoua" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <DatePicker fx:id="deadlineNevoieNoua" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Text layoutX="150.0" layoutY="27.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creeaza-ti propria nevoie!" textAlignment="CENTER" wrappingWidth="274.5367126464844" AnchorPane.bottomAnchor="507.79999999999995" AnchorPane.topAnchor="14.0">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="adaugaNevoieNouaButton" layoutX="232.0" layoutY="378.0" mnemonicParsing="false" onAction="#onNewNevoiePressedButton" text="Creeaza nevoia">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+      <Text fx:id="confirmationNevoieText" layoutX="176.0" layoutY="613.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi!" textAlignment="CENTER" wrappingWidth="247.736572265625" AnchorPane.bottomAnchor="24.0390625" AnchorPane.topAnchor="600.05078125">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

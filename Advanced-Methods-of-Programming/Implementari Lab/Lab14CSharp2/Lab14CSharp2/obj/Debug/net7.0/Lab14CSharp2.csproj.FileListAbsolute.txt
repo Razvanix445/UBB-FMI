@@ -1,0 +1,15 @@
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.csproj.AssemblyReference.cache
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.AssemblyInfoInputs.cache
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.AssemblyInfo.cs
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\bin\Debug\net7.0\Lab14CSharp2.exe
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\bin\Debug\net7.0\Lab14CSharp2.deps.json
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\bin\Debug\net7.0\Lab14CSharp2.runtimeconfig.json
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\bin\Debug\net7.0\Lab14CSharp2.dll
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\bin\Debug\net7.0\Lab14CSharp2.pdb
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.dll
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\refint\Lab14CSharp2.dll
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.pdb
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\Lab14CSharp2.genruntimeconfig.cache
+C:\Users\razva\RiderProjects\Lab14CSharp2\Lab14CSharp2\obj\Debug\net7.0\ref\Lab14CSharp2.dll
