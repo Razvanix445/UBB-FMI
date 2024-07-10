@@ -150,37 +150,37 @@
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-Systems-for-Design-and-Impl">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-Systems-for-Design-and-Impl">
         <img src="https://via.placeholder.com/100?text=Medii+de+Proiectare+si+Programare" alt="Medii de Proiectare si Programare" />
       </a>
       <br>Medii de Proiectare si Programare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-Database-Management-Systems">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-Database-Management-Systems">
         <img src="https://via.placeholder.com/100?text=Sisteme+de+Gestiune+a+Bazelor+de+Date" alt="Sisteme de Gestiune a Bazelor de Date" />
       </a>
       <br>Sisteme de Gestiune a Bazelor de Date
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-Artificial-Intelligence">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-Artificial-Intelligence">
         <img src="https://via.placeholder.com/100?text=Inteligenta+Artificiala" alt="Inteligenta Artificiala" />
       </a>
       <br>Inteligenta Artificiala
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-Web-Programming">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-Web-Programming">
         <img src="https://via.placeholder.com/100?text=Programare+Web" alt="Programare Web" />
       </a>
       <br>Programare Web
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-Software-Systems-Engineering">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-Software-Systems-Engineering">
         <img src="https://via.placeholder.com/100?text=Ingineria+Sistemelor+Soft" alt="Ingineria Sistemelor Soft" />
       </a>
       <br>Ingineria Sistemelor Soft
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Razvanix445/S4-PsychoPedagogical-Module">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S4-PsychoPedagogical-Module">
         <img src="https://via.placeholder.com/100?text=Modul+Psihopedagogic" alt="Modul Psihopedagogic" />
       </a>
       <br>Modul Psihopedagogic
