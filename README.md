@@ -5,7 +5,7 @@
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Fundamentals-of-Programming">
-        <img src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" style="transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.filter='brightness(1.2)';" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';" />
+        <img src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" />
       </a>
       <br>Fundamentele Programarii
     </td>
