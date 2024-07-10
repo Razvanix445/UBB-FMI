@@ -1,45 +1,35 @@
 ## UBB FMI-RO University Projects
 
-<style>
-  .project-image {
-    transition: transform 0.3s, filter 0.3s;
-  }
-  .project-image:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-  }
-</style>
-
 ### Semestrul 1
 <table>
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Fundamentals-of-Programming">
-        <img class="project-image" src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" />
+        <img src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" style="transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.filter='brightness(1.2)';" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';" />
       </a>
       <br>Fundamentele Programarii
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Computer-Systems-Architecture">
-        <img class="project-image" src="https://via.placeholder.com/100?text=Arhitectura+Sistemelor+de+Calcul" alt="Arhitectura Sistemelor de Calcul" />
+        <img src="https://via.placeholder.com/100?text=Arhitectura+Sistemelor+de+Calcul" alt="Arhitectura Sistemelor de Calcul" />
       </a>
       <br>Arhitectura Sistemelor de Calcul
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Computational-Logic">
-        <img class="project-image" src="https://via.placeholder.com/100?text=Logica+Computionala" alt="Logica Computionala" />
+        <img src="https://via.placeholder.com/100?text=Logica+Computionala" alt="Logica Computionala" />
       </a>
       <br>Logica Computionala
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Algebra">
-        <img class="project-image" src="https://via.placeholder.com/100?text=Algebra" alt="Algebra" />
+        <img src="https://via.placeholder.com/100?text=Algebra" alt="Algebra" />
       </a>
       <br>Algebra
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Mathematical-Analysis">
-        <img class="project-image" src="https://via.placeholder.com/100?text=Analiza+Matematica" alt="Analiza Matematica" />
+        <img src="https://via.placeholder.com/100?text=Analiza+Matematica" alt="Analiza Matematica" />
       </a>
       <br>Analiza Matematica
     </td>
