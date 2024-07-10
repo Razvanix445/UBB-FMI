@@ -1,0 +1,48 @@
+Partea I:
+1. BFS - algoritm simplu de căutare (Parcurgere în lățime)
+2. DFS - algoritm de parcurgere care explorează muchiile vârfurilor nou descoperite (Parcurgere în adâncime)
+3. Kosaraju - algoritm pentru determinarea componentelor tare conex dintr-un graf orientat (DFS)
+4. Moore - algoritm pentru a găsi cel mai scurt drum / lanț
+5. Bellman-Ford - algoritm pentru găsirea drumului minim de la un nod sursă s (când avem și ponderi negative)
+6. Dijkstra - algoritm pentru găsirea drumului minim de la un nod sursă s la toate nodurile
+Link: https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+7. Bellman-Kalaba - algoritm pentru găsirea drumului minim de la orice nod la nodul s
+8. Floyd-Warshall - algoritm pentru găsirea drumului minim între toate perechile de noduri
+9. Johnson - algoritm pentru găsirea drumului minim între toate perechile de noduri
+
+Partea II:
+1. Kruskal - algoritm pentru găsirea costului minim
+Pas 1: Sortează toate nodurile descrescător după pondere;
+Pas 2: Alegem cel mai mic nod. Verificăm dacă formează un ciclu cu arborele format. Dacă da, îl ignorăm, dacă nu, îl adăugăm;
+Pas 3: Repetăm până la introducerea unui număr de V-1 noduri.
+Link: https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+
+2. Prim - algoritm pentru găsirea costului minim
+Pas 1: Alegem un nod la întâmplare;
+Pas 2: Căutăm nodurile "vecine" cu nodurile din arborele format;
+Pas 3: Alegem nodul cu cea mai mică pondere și îl adăugăm;
+Pas 4: Repetăm până nu mai sunt noduri "vecine".
+Link: https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
+
+3. Codare Prufer
+Link: https://forthright48.com/prufer-code-linear-representation-of-a-labeled-tree/
+4. Decodare Prufer
+Link: https://forthright48.com/prufer-code-linear-representation-of-a-labeled-tree/
+5. Codare Huffman
+6. Decodare Huffman
+
+7. Ford-Fulkerson - algoritm pentru rezolvarea problemei de flux maxim (DFS)
+Pas 1: Fluxul tuturor nodurilor este 0;
+Pas 2: Căutăm o augmented path cu DFS;
+Pas 3: Actualizăm fluxul tuturor nodurilor din augmented path cu cea mai mică capacitate din augmented path.
+Link: https://www.programiz.com/dsa/ford-fulkerson-algorithm
+
+8. Edmonds-Karp - algoritm pentru rezolvarea problemei de flux maxim (BFS)
+Pas 1: Fluxul tuturor nodurilor este 0;
+Pas 2: Căutăm o augmented path cu BFS;
+Pas 3: Actualizăm fluxul tuturor nodurilor din augmented path cu cea mai mică capacitate din augmented path.
+
+9. Push-Relabel - algoritm de pompare de preflux
+Link: https://www.youtube.com/watch?v=_QCWBZ_3Ci0
+
+10. Relabel-to-Front - algoritm de pompare topologică

@@ -1,0 +1,13 @@
+﻿  Edmonds-KarpAG.cpp
+C:\Users\razva\source\repos\Algoritmica Grafelor\Edmonds-KarpAG\Edmonds-KarpAG\Edmonds-KarpAG.cpp(18,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\razva\source\repos\Algoritmica Grafelor\Edmonds-KarpAG\Edmonds-KarpAG\Edmonds-KarpAG.cpp(82,45): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\razva\source\repos\Algoritmica Grafelor\Edmonds-KarpAG\Edmonds-KarpAG\Edmonds-KarpAG.cpp(86,50): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  Edmonds-KarpAG.vcxproj -> C:\Users\razva\source\repos\Algoritmica Grafelor\Edmonds-KarpAG\x64\Debug\Edmonds-KarpAG.exe

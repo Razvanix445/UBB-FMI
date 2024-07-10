@@ -1,0 +1,16 @@
+===================
+Stările unui proces
+===================
+
+HOLD   - proces pregătit pentru intrarea în sistem;
+READY  - procesul este în memorie și este gata de a fi servit de un procesor;
+RUN    - un procesor execută instrucțiuni mașină ale procesului;
+WAIT   - procesul așteaptă terminarea unei operații de intrare/ieșire;
+SWAP   - un proces este evacuat temporar pe disc pentru a face loc altui proces în memoria internă;
+FINISH - procesul s-a terminat, se livrează rezultatele.
+
+===================
+Fazele unui program
+===================
+
+Editarea textului sursă într-un limbaj de programare -> Compilarea -> Editarea de legături -> Execuția programului -> Testarea și depanarea programului.

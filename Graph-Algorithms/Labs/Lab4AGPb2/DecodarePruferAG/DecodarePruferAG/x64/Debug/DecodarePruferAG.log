@@ -1,0 +1,3 @@
+﻿  DecodarePruferAG.cpp
+C:\Users\razva\source\repos\Algoritmica Grafelor\DecodarePruferAG\DecodarePruferAG\DecodarePruferAG.cpp(13,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  DecodarePruferAG.vcxproj -> C:\Users\razva\source\repos\Algoritmica Grafelor\DecodarePruferAG\x64\Debug\DecodarePruferAG.exe

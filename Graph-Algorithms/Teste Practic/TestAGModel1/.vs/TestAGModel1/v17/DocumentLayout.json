@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\TestAGModel1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF258D0B-6729-41F6-ADF8-9C984413D076}|TestAGModel1\\TestAGModel1.vcxproj|C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\TestAGModel1\\TestAGModel1\\TestAGModel1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EF258D0B-6729-41F6-ADF8-9C984413D076}|TestAGModel1\\TestAGModel1.vcxproj|solutionrelative:TestAGModel1\\TestAGModel1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 265,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestAGModel1.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\TestAGModel1\\TestAGModel1\\TestAGModel1.cpp",
+              "RelativeDocumentMoniker": "TestAGModel1\\TestAGModel1.cpp",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\TestAGModel1\\TestAGModel1\\TestAGModel1.cpp",
+              "RelativeToolTip": "TestAGModel1\\TestAGModel1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-05T17:20:10.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

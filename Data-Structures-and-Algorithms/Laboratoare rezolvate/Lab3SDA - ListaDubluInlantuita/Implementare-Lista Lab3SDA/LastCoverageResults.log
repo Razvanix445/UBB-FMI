@@ -1,0 +1,21 @@
+[2023-05-05 18:23:47] [info] Start Program:
+Path:"C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\x64\Debug\Implementare-Lista Lab3SDA.exe"
+Arguments:
+Working directory: "C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\Implementare-Lista Lab3SDA\"
+Modules: Selected: C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\x64\Debug\Implementare-Lista Lab3SDA.exe Excluded: 
+Sources: Selected: C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\Implementare-Lista Lab3SDA Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\razva\AppData\Local\Temp\mqezjxcb.wm4 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-05-05 18:23:47] [info] Module: C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\x64\Debug\Implementare-Lista Lab3SDA.exe is selected because it matches selected pattern: C:\Users\razva\source\repos\Implementare-Lista Lab3SDA\x64\Debug\Implementare-Lista Lab3SDA.exe
+[2023-05-05 18:23:47] [info] ----------------------------------------------------
+[2023-05-05 18:23:47] [info] Coverage binary generated in file: C:\Users\razva\AppData\Local\Temp\mqezjxcb.wm4
+[2023-05-05 18:23:47] [info] ----------------------------------------------------

@@ -1,0 +1,441 @@
+//Arbore minim de acoperire Kruskal
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int ax, ay, noduri, muchii, subarbori[30000], s, nr;
+bool ok = true;
+
+typedef struct Muchie {
+	int nod1, nod2, pondere;
+};
+
+Muchie muchie[30000];
+
+int main() {
+	ifstream fin("input.txt");
+	fin >> noduri >> muchii;
+	for (int i = 0; i < muchii; i++)
+		fin >> muchie[i].nod1 >> muchie[i].nod2 >> muchie[i].pondere;
+
+	do {
+		ok = true;
+		for (int i = 0; i < muchii - 1; i++)
+			if (muchie[i].pondere > muchie[i + 1].pondere) {
+				swap(muchie[i], muchie[i + 1]);
+				ok = false;
+			}
+	} while (ok == false);
+
+	for (int i = 0; i < noduri; i++)
+		subarbori[i] = i;
+
+	for (int i = 0; i < muchii; i ++)
+		if (subarbori[muchie[i].nod1] != subarbori[muchie[i].nod2]) {
+			s += muchie[i].pondere;
+			nr++;
+			cout << muchie[i].nod1 << " " << muchie[i].nod2 << endl;
+
+			ax = subarbori[muchie[i].nod1];
+			ay = subarbori[muchie[i].nod2];
+			for (int j = 0; j < noduri; j++)
+				if (subarbori[j] == ay)
+					subarbori[j] = ax;
+		}
+	cout << nr << endl << s << endl;
+	return 0;
+}
+
+
+
+
+
+//Ciclu Eulerian
+#include <iostream>
+#include <fstream>
+#include <stack>
+#include <vector>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+int muchieVizitata[500000], noduri, muchii;
+vector<pair<int, int>> graf[100000];
+stack<int> stiva;
+
+void Euler() {
+	int nod, muchie, muchieUrmatoare;
+	stiva.push(0);
+	while (!stiva.empty()) {
+		nod = stiva.top();
+		if (graf[nod].size() == 0) {
+			stiva.pop();
+			fout << nod << " ";
+		}
+		else {
+			muchieUrmatoare = graf[nod].back().first;
+			muchie = graf[nod].back().second;
+			graf[nod].pop_back();
+			if (muchieVizitata[muchie] == 0) {
+				muchieVizitata[muchie] = 1;
+				stiva.push(muchieUrmatoare);
+			}
+		}
+	}
+}
+
+int main() {
+	int nod1, nod2;
+	fin >> noduri >> muchii;
+	for (int i = 0; i < muchii; i++) {
+		fin >> nod1 >> nod2;
+		graf[nod1].push_back({ nod2, i });
+		graf[nod2].push_back({ nod1, i });
+	}
+
+	Euler();
+
+	return 0;
+}
+
+
+
+
+
+//Codare Prufer
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <set>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+int n;
+vector<int> parinte, numarSuccesori, codPrufer;
+set<int> frunze;
+
+int main() {
+	fin >> n;
+	numarSuccesori.resize(n + 1);
+	parinte.resize(n + 1);
+
+	for (int i = 0; i < n; i++) {
+		fin >> parinte[i];
+		if (parinte[i] != -1)
+			numarSuccesori[parinte[i]]++;
+	}
+
+	for (int i = 0; i < n; i++)
+		if (numarSuccesori[i] == 0)
+			frunze.insert(i);
+
+	while (frunze.size() > 0) {
+		int f = *frunze.begin();
+		frunze.erase(frunze.begin());
+		if (parinte[f] != -1) {
+			int pr = parinte[f];
+			codPrufer.push_back(pr);
+			numarSuccesori[pr]--;
+			if (numarSuccesori[pr] == 0)
+				frunze.insert(parinte[f]);
+		}
+	}
+
+	fout << codPrufer.size() << endl;
+	for (int i = 0; i < codPrufer.size(); i++)
+		fout << codPrufer[i] << " ";
+	fout << endl;
+
+	return 0;
+}
+
+
+
+
+
+//Decodare Prufer
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <map>
+#include <vector>
+
+using namespace std;
+
+vector<int> parinte;
+queue<int> coada;
+map<int, int> numarAparitii, nuExista;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+int main() {
+	int n, m, element, y;
+	fin >> m;
+	n = m + 1;
+	parinte.resize(n);
+
+	for (int i = 0; i < n; i++) {
+		parinte[i] = -1;
+		nuExista[i] = 0;
+	}
+
+	for (int i = 0; i < m; i++) {
+		fin >> element;
+		coada.push(element);
+		numarAparitii[element]++;
+		nuExista.erase(element);
+	}
+
+	for (int i = 0; i < m; i++) {
+		element = coada.front();
+		coada.pop();
+		y = (*nuExista.begin()).first;
+		if (numarAparitii[element] == 1) {
+			numarAparitii.erase(element);
+			nuExista[element] = 1;
+		}
+		else
+			numarAparitii[element]--;
+
+		numarAparitii[y]++;
+		nuExista.erase(y);
+		parinte[y] = element;
+	}
+
+	fout << n << endl;
+	for (int i = 0; i < parinte.size(); i++)
+		fout << parinte[i] << " ";
+
+	return 0;
+}
+
+
+
+
+
+//Codare Huffman
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <queue>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+string s, cod[128];
+int fr[128];
+
+struct Nod {
+	int lt, rt, numarAparitii;
+	char c;
+} arbore[255];
+
+void codare(int a, string c)
+{
+	Nod& nod = arbore[a];
+	if (nod.lt == -1 && nod.rt == -1)
+		cod[(int)nod.c] = c;
+	else
+	{
+		codare(nod.lt, c + '0');
+		codare(nod.rt, c + '1');
+	}
+}
+
+int main() {
+	int n = 0, q = 0;
+	auto cmp = [](int lhs, int rhs) {
+		return arbore[lhs].numarAparitii > arbore[rhs].numarAparitii || (arbore[lhs].numarAparitii == arbore[rhs].numarAparitii && arbore[lhs].c > arbore[rhs].c);
+	};
+	priority_queue<int, vector<int>, decltype(cmp)> pq(cmp);
+	//citim si identificam caracterele si numaram frecventa
+	getline(fin, s);
+	for (auto c : s) {
+		if (fr[(int)c] == 0) n++;
+		fr[(int)c]++;
+	}
+	fout << n << endl;
+	//punem toate nodurile existente intr-o coada cu prioritati
+	for (int c = 0; c < 128; c++) {
+		if (fr[c] != 0) {
+			fout << (char)c << " " << fr[c] << endl;
+			Nod& nod = arbore[q];
+			nod.c = (char)c;
+			nod.lt = nod.rt = -1;
+			nod.numarAparitii = fr[c];
+			pq.push(q); q++;
+		}
+	}
+	//construim arborele
+	while (pq.size() >= 2) {
+		auto lt = pq.top(); pq.pop();
+		auto rt = pq.top(); pq.pop();
+
+		Nod& nod = arbore[q];
+		nod.numarAparitii = arbore[lt].numarAparitii + arbore[rt].numarAparitii;
+		nod.c = min(arbore[lt].c, arbore[rt].c);
+		nod.lt = lt;
+		nod.rt = rt;
+		pq.push(q); q++;
+	}
+	//parcurgem arborele si generam codul fiecarui caracter lipind la
+	//vectorul de string-uri 0 si 1
+	codare(q - 1, "");
+	for (auto c : s)
+		fout << cod[(int)c];
+
+	return 0;
+}
+
+
+
+
+
+//Decodare Huffman
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <queue>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+string s, linie;
+
+struct Nod {
+	int lt, rt, numarAparitii;
+	char c;
+} arbore[255];
+
+char decodare(int a, int& k) {
+	Nod& nod = arbore[a];
+	if (nod.lt == -1 && nod.rt == -1)
+		return nod.c;
+	else {
+		char ch = s[k];
+		k++;
+		if (ch == '0') return decodare(nod.lt, k);
+		else if (ch == '1') return decodare(nod.rt, k);
+		else return 0;
+	}
+}
+
+int main() {
+	auto cmp = [](int lhs, int rhs) { return arbore[lhs].numarAparitii > arbore[rhs].numarAparitii || (arbore[lhs].numarAparitii == arbore[rhs].numarAparitii && arbore[lhs].c > arbore[rhs].c); };
+	priority_queue<int, vector<int>, decltype(cmp)> pq(cmp);
+	int n, k = 0, q = 0;
+	fin >> n;
+	for (int i = 0; i < n; ++i) {
+		Nod& nod = arbore[q];
+		nod.lt = nod.rt = -1;
+		getline(fin, linie);
+		nod.c = fin.get();
+		fin.get();
+		fin >> nod.numarAparitii;
+		pq.push(q); q++;
+	}
+	//construim arborele
+	while (pq.size() >= 2) {
+		auto lt = pq.top(); pq.pop();
+		auto rt = pq.top(); pq.pop();
+
+		Nod& nod = arbore[q];
+		nod.numarAparitii = arbore[lt].numarAparitii + arbore[rt].numarAparitii;
+		nod.c = min(arbore[lt].c, arbore[rt].c);
+		nod.lt = lt;
+		nod.rt = rt;
+		pq.push(q); q++;
+	}
+	fin >> s;
+	while (k < s.size())
+		fout << decodare(q - 1, k);
+
+	return 0;
+}
+
+
+
+
+
+//Ford-Fulkerson - algoritm pentru rezolvarea problemei de flux maxim
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <queue>
+#include <climits>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+bool BFS(vector<vector<int>> graf, int s, int d, vector<int>& parinte) {
+	vector<bool> vizitat;
+	vizitat.resize(graf.size());
+	vizitat[s] = true;
+	parinte[s] = -1;
+	queue<int> coada;
+	coada.push(s);
+	while (!coada.empty()) {
+		int x = coada.front();
+		coada.pop();
+		for (int i = 0; i < graf[x].size(); i++) {
+			if (graf[x][i] != 0 && vizitat[i] == false) {
+				vizitat[i] = true;
+				parinte[i] = x;
+				coada.push(i);
+				if (i == d)
+					return true;
+			}
+		}
+	}
+	return false;
+}
+
+int FordFulkerson(vector<vector<int>> graf, int s, int d) {
+	vector<int> parinte;
+	parinte.resize(graf.size());
+	int fluxMaxim = 0;
+	while (BFS(graf, s, d, parinte)) {
+		int fluxCurent = INT_MAX;
+		for (int u = d; u != s; u = parinte[u]) {
+			int v = parinte[u];
+			fluxCurent = min(fluxCurent, graf[v][u]);
+		}
+		for (int u = d; u != s; u = parinte[u]) {
+			int v = parinte[u];
+			graf[v][u] -= fluxCurent;
+			graf[u][v] += fluxCurent;
+		}
+		fluxMaxim += fluxCurent;
+	}
+	return fluxMaxim;
+}
+
+int main() {
+	int n, m, x, y, z;
+	fin >> n >> m;
+	vector<vector<int>> graf;
+	for (int i = 0; i < n; i++) {
+		vector<int> linie(n);
+		graf.push_back(linie);
+	}
+	for (int i = 0; i < m; i++) {
+		fin >> x >> y >> z;
+		graf[x][y] = z;
+	}
+	fout << FordFulkerson(graf, 0, n - 1);
+}

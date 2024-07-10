@@ -1,0 +1,36 @@
+====================
+Conceptul de semafor
+====================
+
+semafor = pereche(v(s), c(s))
+v(s) - valoarea semaforului, număr întreg
+c(s) - coada de așteptare, conține pointeri la procesele în așteptare
+
+Operații indivizibile:
+P(s) (WAIT) - a trece de resursă - decreștere
+V(s) (SIGNAL) - a anunța eliberarea reursei - creștere
+
+=====================================
+Algoritmi de planificare a proceselor
+=====================================
+
+FCFS (First Come First Served) - procesele sunt servite în ordinea lor cronologică (FIFO)
+                               - algoritm simplu, dar nu prea eficient
+
+SJF (Shortest Job First) - primul este procesul care consumă cel mai puțin timp procesor
+                         - cel mai bun, însă presupune cunoașterea exactă a timpului procesor necesar execuției procesului
+
+Algoritmul bazat pe priorități - fiecare proces primește un număr de prioritate
+                               - procesele se ordonează după aceste priorități, apoi se execută în această ordine
+                               - cel mai des folosit
+Starvation (fenomen) - dacă apar multe procese cu prioritate mare, atunci cele cu prioritate mică așteaptă indefinit.
+
+Algoritmul bazat pe termene de terminare (deadline scheduling)
+                               - fiecărui proces i se atașează un termen de terminare;
+                               - planificatorul folosește aceste termene pentru a decide când, cărui proces și pentru cât timp să-i acorde procesorul în așa fel încât să se termine la timp.
+                               - este esențială cunoașterea exactă a duratei fiecărui proces.
+
+Round-Robin (planificare circulară) - se definește o cuantă de timp;
+                                    - pe durata fiecărei cuante, procesorul se alocă unui proces;
+                                    - după epuizarea acestei cuante, procesul este trecut la sfârșitul cozii și se preia al doilea proces.
+

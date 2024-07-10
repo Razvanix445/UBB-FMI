@@ -1,0 +1,51 @@
+$0         - numele comenzii
+$1 - $9    - argumentele din linia de comandă
+$* sau $@  - toate argumentele
+$#         - numarul de argumente din linia de comandă
+$?         - codul de ieșire al comenzii anterioare
+shift 3    - shiftează spre stânga argumentele
+echo     <=> print
+
+test -f a.txt      - verifică dacă există fișierul
+test -r a.txt      - verifică dacă are permisiuni de citire
+test -f $A <=> [ -f $A ]
+
+for A in a b c d; do
+   ...
+done
+
+
+for A in $@; do
+   ...
+done
+
+
+while true; do
+   read X
+   if test "$X" == "stop"; then             <=> if [ "$X" == "stop" ]
+      break
+   fi
+done
+
+
+1. Numără toate liniile din fișierele C din directorul dat ca argument și din subdirectoare, excluzând cele care sunt goale sau conțin doar spații:
+
+#!/bin/bash
+S=0
+for F in `find $1 -type f -name "*.c"`; do
+    N=`grep -E "[^ ]" $F | wc -l`
+    S=`expr $S + $N`
+done
+echo $S
+
+2. Caută toate fișierele din directorul dat ca argument cu mărime mai mare decât al doilea argument (din linia de comandă):
+
+#!/bin/bash
+D=$1
+S=$2
+find $D -type f | while read F; do
+   N=`ls -l $F | awk '{print $5}'`
+   if [ $N -gt $S ]; then
+      echo $F
+   fi
+done

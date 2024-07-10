@@ -1,0 +1,119 @@
+=============================
+Structură; calculul de adresă
+=============================
+
+Segmentarea - tehnică prin care un program executabil este decupat în entități distincte numite segmente.
+
+Memoria "cache" - conține cel mai recent utilizate informații de către CPU.
+                - capacitate mică, dar viteză de acces foarte mare
+
+Memoria operativă - conține programele și datele pentru toate procesele existente în sistem.
+                  - în momentul în care un proces este terminat și distrus, spațiul de memorie operativă pe care l-a ocupat este eliberat și va fi ocupat de alte procese.
+                  - capacitate 128Mo-8Go, viteză de acces mai mică decât la cache
+
+Memoria secundară - extensie a memoriei operative (doar la SO care dețin mecanisme de memorie virtuală)
+
+Memoria de arhivare - constă în fișiere, baze de date, etc. rezidente pe diferite suporturi magnetice
+                    - gestionată de utilizator
+
+Memoria internă = memoria "cache" + memoria operativă
+
+===================================
+Scheme simple de alocare a memoriei
+===================================
+
+Alocare reală - la SO monoutilizator - este disponibil aproape întreg spațiul de memorie
+              - la SO multiutilizator
+                   o cu partiții fixe (statică) - presupune decuparea memoriei în zone de lungime fixă numite partiții
+                         - absolută
+                         - relocabilă
+                   o cu partiții variabile (dinamică)
+
+Alocare virtuală - paginată
+                 - segmentată
+                 - segmentată și paginată
+
+Alocarea absolută - se face pentru programe pregătite de editorul de legături pentru a fi rulate într-o zonă de memorie prestabilită.
+
+Alocarea relocabilă - mai folosită
+                    - se face cu bază și deplasament
+                    - la încărcarea unui program în memorie, se pune în registrul lui de bază adresa de început a partiției.
+
+Alocarea paginată - pentru a evita fragmentarea excesivă
+                  - instrucțiunile și datele fiecărui program sunt împărțite în zone de lungime fixă, numite pagini virtuale
+                  - memoria operativă este împărțită în zone de lungime fixă, numite pagini fizice
+
+Diferența principală dintre alocarea paginată și alocarea segmentată este că segmentele sunt de lungimi diferite.
+
+Față de alocările pe partiții, alocarea segmentată mai are avantaje:
+                  - se pot crea segmente reentrante care pot fi folosite în comun de către mai multe procese
+                  - se poate realiza o foarte bună protecție a memoriei (fiecare segment poate primi alte drepturi de acces)
+
+Alocarea segmentată și paginată - alocarea spațiului pentru fiecare segment se face paginat
+                                - fiecare proces are o tabelă de segmente -> fiecare segment are o tabelă de pagini
+
+====================================
+Planificarea schimburilor cu memoria
+====================================
+
+===================
+Politici de plasare
+===================
+
+Cuvânt de control - un nod al unei liste înlănțuite care conține lungimea zonei de memorie și adresa următoarei zone libere
+
+First-Fit - alocă prima zonă de memorie liberă suficient de mare pentru a satisface cerințele procesului
+          - avantaje: timp de căutare mic
+          - dezavantaje: poate duce la fragmentare internă a memoriei
+
+Worst-Fit - alocă cea mai mare zonă de memorie liberă care poate îndeplini cerințele procesului
+          - avantaje: minimizarea fragmentării externe a memoriei (utilizare mai eficientă a spațiului total de memorie)
+          - dezavantaje: timp de căutare mare
+
+Best-Fit - alocă cea mai mică zonă de memorie liberă care poate satisface cerințele procesului
+         - avantaje: minimizarea fragmentării externe a memoriei
+         - dezavantaje: timp de căutare mare, poate duce la fragmentare internă
+
+Buddy-Sistem - împarte memoria disponibilă în blocuri de dimensiuni puteri ale lui 2.
+             - avantaje: minimizarea fragmentării externe, manipularea comodă a adreselor de zone
+             - dezavantaje: poate duce la fragmentare internă, gestionare mai complexă (pentru a urmări blocurile disponibile și alocările)
+
+=====================
+Politici de încărcare
+=====================
+
+Soluții:
+Încărcarea la început a tuturor paginilor - dispare mecanismul de paginare
+Încărcarea paginilor la cerere - cea mai naturală soluție, cea mai utilizată
+Încărcarea paginilor în avans - paginile vecine vor fi aduse în avans în memoria operativă în speranța că acestea vor fi folosite
+
+Memorie de lucru - este compusă din câteva pagini. Atunci când se cere aducerea unei pagini de pe disc, în memoria de lucru sunt încărcate câteva pagini vecine acesteia.
+
+=====================
+Politici de înlocuire
+=====================
+
+Metode de înlocuire:
+NRU (Not Recently Used) - înlocuirea unei pagini care nu a fost recent utilizată
+FIFO (First In First Out) - înlocuirea în ordinea încărcării paginilor
+LRU (Least Recently Used) - înlocuirea paginii nesolicitate cel mai mult timp
+
+Metoda NRU - fiecare pagină fizică are asociați doi biți. Bitul R (de referire) valoarea 0 la încărcarea paginii
+                                                                         valoarea 1 la fiecare referire a paginii
+                                                   Bitul M (de modificare) valoarea 0 la încărcarea paginii
+                                                                           valoarea 1 la fiecare scriere în pagină
+
+Clase, după prioritate (0 -> 1 -> 2 -> 3):
+00 - pagini nereferite și nemodificate
+01 - pagini nereferite și modificate
+10 - pagini referite și nemodificate
+11 - pagini referite și modificate
+
+Metoda FIFO - se creează o listă a paginilor în ordinea încărcării lor.
+     - lista se actualizează la fiecare nouă încărcare de pagină
+     - victima este prima pagină
+
+Metoda LRU - o pagină care a fost solicitată mult, va fi probabil solicitată mult în continuare.
+Rezolvări ale ținerii evidenței utilizărilor:
+Numărătorul de accese - se folosește un contor care este incrementat la fiecare acces. Pagina cu cea mai mică valoare a contorului se înlocuiește.
+Matricea de referințe - se folosește o matrice binară. Când se face referire la o pagină k, linia k a matricei este înlocuită peste tot cu 1, după care coloana k este înlocuită cu 0

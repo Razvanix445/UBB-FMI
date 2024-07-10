@@ -1,0 +1,54 @@
+1. Considerând că dimensiunea unui bloc este B și dimensiunea unei adrese este A, câte blocuri de date sunt adresate de indirectarea triplă a unui i-nod?
+
+(B/A)^3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Politici de plasare:
+
+1. First-Fit - această politică de plasare alocă prima zonă de memorie liberă suficient de mare pentru a satisface cerințele procesului.
+
+Avantaje - Eficiență în privința timplului de căutare și alocare a spațiului de memorie.
+         - Alocă rapid primul bloc de memorie liber care îndeplinește cerințele procesului.
+
+Dezavantaje - Poate duce la fragmentare internă a memoriei (există posibilitatea ca dimensiunea blocului alocat să fie mai mare decât cerințele reale ale procesului, lăsând o parte din memorie neutilizată în blocul alocat).
+
+2. Worst-Fit - această politică de plasare alocă cel mai mare bloc liber de memorie care poate îndeplini cerințele procesului.
+
+Avantaje - Ajută la minimizarea fragmentării externe a memoriei (deoarece încearcă să aloce blocurile de memorie rămase, ceea ce poate duce la o utilizare mai eficientă a spațiului total de memorie).
+
+Dezavantaje - Poate implica un timp de căutare mai mare pentru a găsi un bloc liber suficient de mare, deoarece caută între toate blocurile de memorie disponibile.
+
+3. Next-Fit - această politică de plasare începe căutarea de la începutul listei de blocuri de memorie disponibile la fiecare alocare (începe căutarea de la ultimul punct de oprire, continuând de acolo).
+
+Avantaje - Reduce timpul de căutare în comparație cu First-Fit (deoarece continuă căutarea de la ultimul punct de oprire).
+
+Dezavantaje - Poate genera fragmentare internă, deoarece blocurile alocate pot fi mai mari decât cerințele proceselor, lăsând spațiu neutilizat în blocuri.
+
+4. Best-Fit - această politică de plasare alocă cel mai mic bloc de memorie liber care poate satisface cerințele procesului.
+
+Avantaje - Poate minimiza fragmentarea externă (deoarece încearcă să utilizeze spațiul disponibil în mod eficient).
+         - Poate fi utilă în cazul în care există o variație mare a cerințelor de dimensiune a memoriei.
+
+Dezavantaje - Necesită timp suplimentar de căutare (deoarece trebuie să compare dimensiunile tuturor blocurilor disponibile pentru a-l găsi pe cel mai mic).
+            - Poate genera fragmentare internă (deoarece blocurile alocate pot fi mai mari decât cerințele proceselor).
+
+5. Buddy Allocation - această politică de plasare împarte memoria disponibilă în blocuri de dimensiuni puteri ale lui 2. Atunci când un proces solicită o anumită dimensiune de memorie, se alocă un bloc cel mai apropiat ca dimensiune de cerințele procesului. Dacă blocul alocat este mai mare decât cerințele, este împărțit în două jumătăți egale.
+
+Avantaje - Minimizează fragmentarea prin împărțirea memoriei în blocuri de dimensiuni puteri ale lui 2.
+	 - Oferă o eficiență bună pentru alocarea și eliberarea memoriei.
+
+Dezavantaje - Poate crea uneori fragmentare internă (deoarece blocurile pot fi mai mari decât cerințele proceselor, lăsând spațiu neutilizat).
+	    - Necesită o gestionare mai complexă pentru a urmări blocurile disponibile și alocările.

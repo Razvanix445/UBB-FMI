@@ -1,0 +1,23 @@
+﻿  DO.cpp
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(28,11): error C2365: 'Nod::element': redefinition; previous definition was 'data member'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(19,11): message : see declaration of 'Nod::element'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.cpp(326,22): error C2063: 'Nod::element': not a function
+  Iterator.cpp
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(28,11): error C2365: 'Nod::element': redefinition; previous definition was 'data member'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(19,11): message : see declaration of 'Nod::element'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\Iterator.cpp(65,33): error C2248: 'Nod::element': cannot access private member declared in class 'Nod'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(19,11): message : see declaration of 'Nod::element'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(16,7): message : see declaration of 'Nod'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\Iterator.cpp(65,33): error C2064: term does not evaluate to a function taking 0 arguments
+  TestExtins.cpp
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(28,11): error C2365: 'Nod::element': redefinition; previous definition was 'data member'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(19,11): message : see declaration of 'Nod::element'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\TestExtins.cpp(83,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\TestExtins.cpp(93,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\TestExtins.cpp(101,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\TestExtins.cpp(109,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\TestExtins.cpp(211,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  TestScurt.cpp
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(28,11): error C2365: 'Nod::element': redefinition; previous definition was 'data member'
+C:\Users\razva\source\repos\Structuri de date si algoritmi\Lab7SDA - DictionarOrdonat\Lab7 - DictionarOrdonat SDA\DO.h(19,11): message : see declaration of 'Nod::element'
+  Generating Code...

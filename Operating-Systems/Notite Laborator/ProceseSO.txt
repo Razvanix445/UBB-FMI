@@ -1,0 +1,23 @@
+returnează 0 în copil
+returnează PID-ul copilului în părinte
+
+Dacă procesul copil se încheie înainte ca părintele să apeleze wait, sistemul păstrează copilul în faza zombie (nu execută nimic, dar apare pe lista de procese). Procesul zombie se oprește când părintele apelează wait sau waitpid.
+
+
+for (i = 0; i < 3; i++) {
+    pid = fork();
+    if (pid == 0) {
+        exit(0);
+    }
+}
+for (i = 0; i < 3; i++) {
+    wait(0);
+}
+
+
+1. Când trece un proces din starea "RUN" în starea "READY"?
+
+ - Sfârșitul unei cuante de timp (time slice) - La sfârșitul cuantei de timp, procesul curent este întrerupt și trece în starea "READY", permițând altor procese să ruleze.
+ - Evenimente de întrerupere
+ - Blocaje (blocking)
+

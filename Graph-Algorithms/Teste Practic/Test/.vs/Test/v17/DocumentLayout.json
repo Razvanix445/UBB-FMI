@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|solutionrelative:Test\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|solutionrelative:Test\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02DCF4CC-4658-4CB2-B225-A53CBE7F38AA}|Test\\Test.vcxproj|solutionrelative:Test\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\Test.cpp",
+              "RelativeDocumentMoniker": "Test\\Test.cpp",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\Test.cpp",
+              "RelativeToolTip": "Test\\Test.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-06-07T11:32:23.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\input.txt",
+              "RelativeDocumentMoniker": "Test\\input.txt",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\input.txt",
+              "RelativeToolTip": "Test\\input.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2023-06-07T11:43:45.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "output.txt",
+              "DocumentMoniker": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\output.txt",
+              "RelativeDocumentMoniker": "Test\\output.txt",
+              "ToolTip": "C:\\Users\\razva\\source\\repos\\Algoritmica Grafelor\\Test\\Test\\output.txt",
+              "RelativeToolTip": "Test\\output.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2023-06-07T11:43:54.496Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

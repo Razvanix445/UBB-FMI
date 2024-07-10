@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab4SDA - Multidictionar", "Lab4SDA - Multidictionar\Lab4SDA - Multidictionar.vcxproj", "{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Debug|x64.ActiveCfg = Debug|x64
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Debug|x64.Build.0 = Debug|x64
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Debug|x86.Build.0 = Debug|Win32
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Release|x64.ActiveCfg = Release|x64
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Release|x64.Build.0 = Release|x64
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Release|x86.ActiveCfg = Release|Win32
+		{DE319AD7-813D-4CBE-B7D9-AAFE776EAB97}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78C39DF6-EAF1-4FC3-B3AE-1C4A2A2D82C6}
+	EndGlobalSection
+EndGlobal

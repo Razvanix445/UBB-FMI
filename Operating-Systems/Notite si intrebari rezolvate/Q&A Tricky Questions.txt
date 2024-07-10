@@ -1,0 +1,132 @@
+========================================================================================================================================================================
+1a. Ce face apelul sistem "read" în cazul în care pipe-ul este gol?
+
+Dacă pipe-ul este în modul blocat, apelul "read" va bloca procesul până când datele devin disponibile în pipe.
+Dacă pipe-ul este deblocat, va returna o valoare de eroare, indicând că pipe-ul este gol.
+
+========================================================================================================================================================================
+1b.Ce face apelul sistem "read" în cazul unui pipe gol fără O_NDELAY?
+
+Dacă pipe-ul are capătul de scriere deschis, va bloca procesul până datele devin disponibile în pipe sau până când toate capetele de scriere au fost închise;
+                                             procesul va fi pus în starea de WAIT
+Dacă pipe-ul are capătul de scriere închis, va returna valoarea 0 (EOF).
+
+========================================================================================================================================================================
+2. Ce face apelul sistem "open" înainte de a se întoarce din deschiderea fifo-ului?
+
+Verifică dacă FIFO-ul există deja;
+Alocă un descriptor de fișier pentru FIFO;
+Verifică permisiunile procesului apelant.
+
+========================================================================================================================================================================
+3a. When does a process change state from RUN to READY?
+
+Când este întrerupt de un eveniment extern (apăsarea unei taste sau primirea unui semnal) sau intern (gestionarea unor erori).
+Când expiră timpul de execuție alocat pentru el (cuanta de timp alocată).
+
+========================================================================================================================================================================
+3b. When does a process change state from RUN to WAIT?
+
+Când un proces efectuează o operație de I/O. Astfel, permite procesorului să execute alte procese în loc să aștepte finalizarea unei operații lente I/O.
+Când așteaptă ca o anumită condiție să fie îndeplinită.
+Când primește un semnal sau o întrerupere care necesită gestionare specială.
+
+========================================================================================================================================================================
+3c. When does a process change state from RUN to SWAP?
+
+Când nu există suficientă memorie disponibilă pentru a susține procesele active. Procesul este mutat în memoria operațională temporar.
+
+========================================================================================================================================================================
+4. What is a binary semaphore and what is the effect of its P method,
+when called by multiple concurrent processes/threads?
+
+Dacă semaforul binar este inițializat cu 1, primul proces sau thread care apelează metoda P va decrementa semaforul de la valoarea 1 la 0 și va accesa secțiunea critică.
+Dacă semaforul binar are valoarea 0, procesul va fi blocat sau suspendat, până semaforul va avea valoarea 1.
+
+========================================================================================================================================================================
+5. Why are zombie processes problematic?
+
+Procesele zombie ocupă o intrare în tabelul de procese și păstrează o mică cantitate de memorie. Mai multe procese zombie duc la consum "mare" de resurse.
+Poate ocupa tabela de procese și împiedica crearea și execuția de noi procese valide în sistem.
+
+========================================================================================================================================================================
+16. Given two set-associative caches, one with 2 sets of 4 pages and
+one with 4 sets of 2 pages, which would perform better for the following
+sequence of page request: 20, 9, 18, 27, 20, 9, 18, 27. Why?
+
+2 sets of 4 pages ->  _0____1__
+		     | 20 | 9  |
+		     | 18 | 27 |      x%2==...
+                     | 20 | 9  |
+                     | 18 | 27 |
+                      _________
+
+4 sets of 2 pages -> _0____1____2____3_
+                    | 20 | 9  | 18 |27 |    x%4==...
+                    | 20 | 9  | 18 |27 |
+                     __________________
+
+la egalitate, mai multe seturi sunt prioritare, deci, în acest caz, 4 sets of 2 pages!
+
+========================================================================================================================================================================
+6. Care sunt elementele unei adrese virtuale in cazul alocării paginat-segmentate și ce tabele sunt necesare pentru calculul adresei fizice?
+
+Elemente: numărul segmentului și numărul paginii în cadrul segmentului;
+Tabele pentru calculul adresei fizice: tabela de segmente, tabela de pagini. 
+
+========================================================================================================================================================================
+7. De ce operațiile I/O cauzează un proces să își schimbe starea din starea RUN în starea WAIT?
+
+Procesul trebuie să aștepte ca operația de intrare/ieșire să fie finalizată de dispozitivul extern cu care interacționează.
+Operațiile I/O pot necesita acces la resurse. Atunci când un proces realizează o operație de intrare/ieșire, este posibil să fie necesară blocarea accesului altor 
+procese la aceleași resurse. Procesul intră în starea WAIT pentru a permite utilizarea resurselor de către alt proces.
+
+========================================================================================================================================================================
+8. Cum este făcut calculul de adresă în cazul alocării partițiilor fixe absolute?
+
+calculul adresei fizice -> calcul de offset
+Adunăm offsetul cu adresa de bază a partiției.
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj alocare segmentată > alocare paginată
+
+avantaj   : permite gestionarea eficientă a resurselor, deoarece memoria este împărțită în segmente logice (cod, date, stivă)
+            segmentele pot fi alocate și eliberate mai simplu decât în cazul paginării (care implică divizarea memoriei în pagini mici și gestiunea tabelelor în pagini)
+dezavantaj: poate duce la fragmentarea externă a memoriei (în timp, segmentele libere și ocupate se pot răspândi în memoria fizică, lăsând spații neutilizabile între ele)
+            dacă un segment este alocat și ocupă un spațiu mare de memorie, dar utilizează doar o parte mică din acesta, va exista o irosire a resurselor.
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj thread-uri > procese.
+
+avantaj   : comunicarea între threaduri conduce la o încărcare mai mică a sistemului, thread-urile împart același spațiu de memorie
+            crearea unui thread cere mai puține resurse decât crearea unui proces
+            trecerea de la un thread la altul este foarte rapidă
+dezavantaj: având în vedere că thread-urile împart același spațiu de memorie, erorile sau bugurile pot afecta întregul proces
+            este necesară utilizarea mecanismelor de sincronizare (locks, semaphores, etc.)
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj alocare cu partiții variabile > alocare paginată.
+
+avantaj:    calcul de adresă mai simplu (la partiții variabile doar numărul partiției + offset, la paginată și tabela de pagini)
+dezavantaj: partiții variabile -> fragmentarea memoriei
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj alocare cu partiții fixe > alocare cu partiții realocabile.
+
+avantaj:    nu există calcul de adresă (programul se rulează pe partiția pe care e scris)
+dezavantaj: nu se pot rula două programe scrise pe aceeași partiție în același timp
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj cache set-asociativ > cache direct
+
+avantaj:    acces la date mai rapid (blocurile cache pot fi plasate în mai multe seturi)
+            coliziuni reduse
+dezavantaj: timp de acces mai mare
+            cere putere mai multă
+
+========================================================================================================================================================================
+Avantaj/Dezavantaj cache cu acces direct > cache asociativ
+
+avantaj:    consum de putere mai mic, timp de acces mic
+dezavantaj: are coliziuni care duc la trashing
+            flexibilitate limitată în ceea ce privește plasarea blocurilor (fiecare bloc poate fi plasat într-o singură locație)

@@ -1,0 +1,131 @@
+=======================================
+Tipuri de fișiere și sisteme de fișiere
+=======================================
+
+Un fișier director conține lista de nume și adrese pentru fișierele din el (subordonate lui).
+
+Principiul structurii arborescente de fișiere - orice fișier sau director are un singur părinte.
+Legătura naturală - legătura între un director/fișier și părinte.
+
+===================================
+Legături hard și legături simbolice
+===================================
+
+Legături suplimentare - permit referirea la un fișier pe alte căi decât pe cea naturală. (fișierul poate fi accesat de mai mulți utilizatori)
+                      - legături hard
+                      - legături simbolice (soft)
+
+Legăturile hard - identice cu legăturile naturale
+                - create doar de administratorul sistemului
+                - pot fi făcute numai în interiorul aceluiași sistem de fișiere
+
+Legăturile simbolice - pot puncta și în afara sistemului de fișiere
+
+În cazul ștergerii, în descriptorul fișierului există un câmp numit contor de legare. Are valoarea 1 la crearea fișierului 
+și crește cu 1 la fiecare nouă legătură. La ștergere, se radiază legătura din directorul părinte care a cerut ștergerea 
+și contorul de legare scade cu 1. Când contorul a ajuns la valoarea 0, fișierul va fi șters de pe disc și blocurile ocupate 
+de el vor fi eliberate.
+
+$ ln vechi linknou                                  - creare legătură hard
+$ ln -s  caleInStructuraDeDirectori numeSimbolic    - creare legătură simbolică
+
+====================
+Conceptul de montare
+====================
+
+Operația de montare - conectarea unui sistem de fișiere (de pe un anumit disc) la un director existent pe sistemul de fișiere implicit.
+
+$ mount [ optiuni ] sistemDeFisiere directorDeMontare
+$ /etc/unmount directorDeMontare
+
+=========================
+Protecția fișierelor Unix
+=========================
+
+umask 027      - dă implicit drepturile 777-027=750 (de exemplu)
+
+=================================
+Structura internă a discului Unix
+=================================
+___________________________
+|Blocul 0 - bloc de boot  |
+|Blocul 1 - Superbloc     |
+|Blocul 2 - inod          |
+|- - - - - - - - - - - - -|
+|Blocul n - inod          |
+|Blocul n+1 zona fişier   |
+|- - - - - - - - - - - - -|
+|Blocul n+m zona fişier   |
+|_________________________|
+
+Unitatea de schimb dintre disc și memorie este blocul. Un bloc are 512 octeți (vechi), 1Ko sau 4Ko.
+
+Blocul 0 - conține programul de încărcare al sistemului de operare. Se declanșează la pornirea sistemului (apăsarea butonului Reset sau Power). 
+Restul programului de boot (încărcare) se află stocat pe harddisk într-o zonă specială numită partiție sau segment de boot.
+
+Blocul 1 (superblocul) - conține informații precum:
+- numărul de inoduri;
+- numărul de zone definite pe disc;
+- pointeri spre harta de biți a alocării inodurilor;
+- pointeri spre harta de biți a spațiului liber pe disc;
+- dimensiunile zonelor de pe disc;
+
+Blocurile de la 2 la n - zona inodurilor (inod == descriptor fișier)
+Inodurile sunt memorate pe disc sub forma unei liste (i-listă).
+Numărul de ordine al unui inod în i-listă (se reprezintă pe 2 octeți) se numește i-număr. (i-număr == legătura dintre fișier și programele utilizator).
+
+Blocurile de la n+1 la n+m - zona fișierelor
+
+=======================================
+Apeluri sistem pentru lucrul cu fișiere
+=======================================
+
+Efectuare a operațiilor I/O - funcții standard (fopen, fclose, fgets, fprintf, fread, fwrite, fseek, etc.)
+                            - funcții standardizate POSIX (open, close, read, write, lseek, dup, dup2, fcntl, etc.)
+Open - întoarce un descriptor de fișier
+     - în caz de eșec, întoarce -1 (+ errno)
+int open (char *nume, int flag [, unsigned int drepturi ]);
+
+Moduri de deschidere:
+O_RDONLY - numai pentru citire
+O_WRONLY - numai pentru scriere
+O_RDWR   - pentru citire și scriere
+O_APPEND - pentru inserarea la sfârșitul fișierului
+O_CREAT  - creează un fișier nou dacă acesta nu există
+         - nu are efect dacă fișierul există
+O_TRUNC  - creează necondiționat, fie că există sau nu
+O_EXCL   - dacă fișierul există, open eșuează și semnalează eroare
+O_NDELAY - doar pentru PIPE sau FIFO!! (deblochează)
+
+Close - întoarce 0 la succes și -1 la eșec
+int close (int descriptor);
+
+Read/Write - întorc numărul de octeți efectiv transferați între memorie și suportul fizic al fișierului
+int read (int descriptor, void *sir_de_caractere, unsigned int numar_octeti);
+int write (int descriptor, const void *sir_de_caractere, unsigned int numar_octeti);
+
+Dup  - face o copie a descriptorului vechi în primul descriptor liber din tabela de fișiere a procesului.
+Dup2 - face o copie a descriptorului vechi în descriptorul nou, închizând, dacă este cazul, fișierul către care puncta înainte descriptorul nou.
+     - în caz de eșec, ambele întorc -1 (+ errno).
+int dup (int descrvechi);
+int dup2 (int descrvechi, int descrnou);
+
+===================
+Blocarea fișierelor
+===================
+
+Blocare conciliantă (advisory) - atunci când sistemul știe care fișiere au fost blocate și de către cine, iar procesele cooperează, 
+prin funcții de tip my_lock și my_unlock, la accesarea fișierului.
+
+Blocare obligatorie (mandatory) - atunci când sistemul verifică la fiecare scriere și citire dacă fișierul este blocat sau nu.
+
+Blocarea unui fișier - blocarea accesului la orice octet din fișier.
+
+Blocarea unui articol - blocarea accesului la un număr de octeți consecutivi din fișier.
+
+Blocare exclusivă - atunci când un singur proces are acces la fișier sau porțiunea din fișier.
+
+Blocare partajată - atunci când porțiunea rezervată poate fi citită, simultan, de mai multe procese, dar niciun proces nu scrie.
+
+lockf - poate bloca un fișier întreg sau o parte din el.
+flock - blochează numai conciliant și numai întregul fișier.
