@@ -1,5 +1,3 @@
-Link-uri explicatii Istvan:
-
 Alocare dinamica: https://youtu.be/DoVfxPB5W0w
 Memory leak: https://youtu.be/Oh2pSko0r40
 Vector dinamic: https://youtu.be/4ASLH0PWs_0
