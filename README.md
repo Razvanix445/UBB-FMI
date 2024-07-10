@@ -15,31 +15,31 @@
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Fundamentals-of-Programming">
-        <img src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" />
+        <img class="project-image" src="https://via.placeholder.com/100?text=Fundamentele+Programarii" alt="Fundamentele Programarii" />
       </a>
       <br>Fundamentele Programarii
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Computer-Systems-Architecture">
-        <img src="https://via.placeholder.com/100?text=Arhitectura+Sistemelor+de+Calcul" alt="Arhitectura Sistemelor de Calcul" />
+        <img class="project-image" src="https://via.placeholder.com/100?text=Arhitectura+Sistemelor+de+Calcul" alt="Arhitectura Sistemelor de Calcul" />
       </a>
       <br>Arhitectura Sistemelor de Calcul
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Computational-Logic">
-        <img src="https://via.placeholder.com/100?text=Logica+Computionala" alt="Logica Computionala" />
+        <img class="project-image" src="https://via.placeholder.com/100?text=Logica+Computionala" alt="Logica Computionala" />
       </a>
       <br>Logica Computionala
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Algebra">
-        <img src="https://via.placeholder.com/100?text=Algebra" alt="Algebra" />
+        <img class="project-image" src="https://via.placeholder.com/100?text=Algebra" alt="Algebra" />
       </a>
       <br>Algebra
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S1-Mathematical-Analysis">
-        <img src="https://via.placeholder.com/100?text=Analiza+Matematica" alt="Analiza Matematica" />
+        <img class="project-image" src="https://via.placeholder.com/100?text=Analiza+Matematica" alt="Analiza Matematica" />
       </a>
       <br>Analiza Matematica
     </td>
