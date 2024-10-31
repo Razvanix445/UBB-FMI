@@ -155,3 +155,21 @@
     </td>
   </tr>
 </table>
+
+### Semestrul 4
+<table>
+  <tr>
+    <td align="center" width="150">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Formal-Languages-and-Compiler-Techniques">
+        <img src="https://via.placeholder.com/100?text=Limbaje+Formale+si+Tehnici+de+Compilare" alt="Medii de Proiectare si Programare" />
+      </a>
+      <br>Medii de Proiectare si Programare
+    </td>
+    <td align="center" width="150">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Parallel-and-Distributed-Programming">
+        <img src="https://via.placeholder.com/100?text=Programare+Paralela+si+Distribuita" alt="Sisteme de Gestiune a Bazelor de Date" />
+      </a>
+      <br>Sisteme de Gestiune a Bazelor de Date
+    </td>
+  </tr>
+</table>
