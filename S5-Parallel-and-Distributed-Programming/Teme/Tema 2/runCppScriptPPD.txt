@@ -1,0 +1,5 @@
+Running the C++ Project from Command Prompt (works just for Visual Studio):
+
+1. Run the Following Command in Developer Command Prompt -> cd C:\Users\razva\source\repos\PPD\Tema2PPD\Tema2PPD
+2. Run the Following Command for Compiling the Files -> cl /std:c++20 /o1 /EHsc main.cpp DynamicMatrices.cpp /Fe:Tema2PPD.exe
+3. Run the Script with Powershell Properties -> powershell -File .\scriptC.ps1 4 10
