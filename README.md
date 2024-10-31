@@ -161,15 +161,15 @@
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Formal-Languages-and-Compiler-Techniques">
-        <img src="https://via.placeholder.com/100?text=Limbaje+Form+si+Tehn+de+Comp" alt="Limbaje Formale si Tehnici de Compilare" />
+        <img src="https://via.placeholder.com/100?text=Limbaje+Formale+si+Tehnici+de+Compilare" alt="Limbaje Formale si Tehnici de Compilare" />
       </a>
-      <br>Medii de Proiectare si Programare
+      <br>Limbaje Formale si Tehnici de Compilare
     </td>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Parallel-and-Distributed-Programming">
         <img src="https://via.placeholder.com/100?text=Programare+Paralela+si+Distribuita" alt="Programare Paralela si Distribuita" />
       </a>
-      <br>Sisteme de Gestiune a Bazelor de Date
+      <br>Programare Paralela si Distribuita
     </td>
   </tr>
 </table>
