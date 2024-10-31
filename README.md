@@ -161,7 +161,7 @@
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Formal-Languages-and-Compiler-Techniques">
-        <img src="https://via.placeholder.com/100?text=Limbaje+Formale+si+Tehnici+de+Compilare" alt="Limbaje Formale si Tehnici de Compilare" />
+        <img src="https://via.placeholder.com/100?text=Limbaje+Form+si+Tehn+de+Comp" alt="Limbaje Formale si Tehnici de Compilare" />
       </a>
       <br>Medii de Proiectare si Programare
     </td>
