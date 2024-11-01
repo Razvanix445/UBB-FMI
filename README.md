@@ -171,5 +171,11 @@
       </a>
       <br>Programare Paralela si Distribuita
     </td>
+    <td align="center" width="150">
+      <a href="https://github.com/Razvanix445/UBB-FMI/tree/main/S5-Smart-Robots">
+        <img src="https://github.com/user-attachments/assets/5cbd14ec-26c9-440d-899b-6c22c0841706" alt="Roboti Inteligenti" />
+      </a>
+      <br>Roboti Inteligenti
+    </td>
   </tr>
 </table>
