@@ -1,0 +1,17 @@
+<automat> ::= <numar_stari> <stari> <dimensiune_alfabet> <alfabet> <numar_tranzitii> <tranzitii> <stare_de_inceput> <numar_stari_finale> <stari_finale>
+
+<numar_stari> ::= CONST
+<stari> ::= <stare> | <stare> <stari>
+<stare> ::= q0 | q1 | q2 | q3 | q4 | q5 | ...
+
+<dimensiune_alfabet> ::= CONST
+<alfabet> ::= <simbol> | <simbol> <alfabet>
+<simbol> ::= 0 | 1 | 2 | 3 | 4 | 5 | ... | a | b | c | d | e | ...
+
+<numar_tranzitii> ::= CONST
+<tranzitii> ::= <tranzitie> | <tranzitie> <tranzitii>
+<tranzitie> ::= <stare> <simbol> <stare>
+
+<stare_de_inceput> ::= <stare>
+<numar_stari_finale> ::= CONST
+<stari_finale> ::= <stare> | <stare> <stari_finale>

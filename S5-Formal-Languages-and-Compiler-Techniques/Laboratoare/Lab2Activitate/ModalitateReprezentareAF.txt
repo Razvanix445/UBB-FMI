@@ -1,0 +1,26 @@
+Varianta 1:
+tranzitie
+    stare_sursa: String
+    intrare: String
+    stare_destinatie: String
+
+AutomatFinit
+    stari: Set<String>
+    alfabet: Set<String>
+    tranzitii: List<tranzitie>
+    stare_initiala: String
+    stari_finale: Set<String>
+
+
+Varianta 2:
+tranzitie
+    stare_sursa: string
+    intrare: string
+    stare_destinatie: string
+
+AutomatFinit
+    stari: UnorderedSet<string>
+    alfabet: UnorderedSet<string>
+    tranzitii: List<tranzitie>
+    stare_initiala: string
+    stari_finale: UnorderedSet<string>

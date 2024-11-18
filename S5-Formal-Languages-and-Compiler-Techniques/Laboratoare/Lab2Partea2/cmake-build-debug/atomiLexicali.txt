@@ -1,0 +1,29 @@
+Atom Lexical	Cod Atom
+--------------------------
+ID		0
+CONST		1
+#include		2
+<iostream>		3
+using		4
+namespace		5
+std		6
+;		7
+int		8
+,		9
+struct		10
+{		11
+double		12
+}		13
+(		14
+)		15
+cin		16
+>		17
+.		18
+=		19
++		20
+if		21
+<		22
+else		23
+while		24
+cout		25
+-		26

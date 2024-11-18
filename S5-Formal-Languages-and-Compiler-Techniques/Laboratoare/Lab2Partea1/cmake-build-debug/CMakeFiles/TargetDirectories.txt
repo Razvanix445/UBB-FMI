@@ -1,0 +1,3 @@
+C:/Users/razva/CLionProjects/LFTC/Lab2Partea1/cmake-build-debug/CMakeFiles/Lab2Partea1.dir
+C:/Users/razva/CLionProjects/LFTC/Lab2Partea1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/razva/CLionProjects/LFTC/Lab2Partea1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int x, y;
+struct {
+    int var;
+    double calcul;
+} results;
+int main() {
+    cin >> x;
+    cin >> y;
+    x = x + y;
+    if (x < y) {
+        y = y + x;
+    }
+    else {
+        x = x + y;
+    }
+    while (x > 5) {
+        cout << x;
+        cout << y;
+        x = x - 5;
+    }
+}

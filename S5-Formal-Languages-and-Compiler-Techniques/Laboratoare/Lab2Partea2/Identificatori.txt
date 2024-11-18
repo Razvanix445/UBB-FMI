@@ -1,0 +1,27 @@
+Identifiers
+An identifier is an arbitrarily long sequence of digits (0-9), underscores (_), lowercase (a-z) and uppercase (A-Z)
+Latin letters, and most Unicode characters.
+
+The first character of a valid identifier must be one of the following:
+
+- uppercase Latin letters A-Z
+- lowercase Latin letters a-z
+- underscore
+- any Unicode character with the Unicode property XID_Start
+
+Any other character of a valid identifier must be one of the following:
+
+- digits 0-9
+- uppercase Latin letters A-Z
+- lowercase Latin letters a-z
+- underscore
+- any Unicode character with the Unicode property XID_Continue
+
+The lists of characters with properties XID_Start and XID_Continue can be found in DerivedCoreProperties.txt.
+
+Identifiers are case-sensitive (lowercase and uppercase letters are distinct), and every character is significant.
+Every identifier must conform to Normalization Form C.
+
+Bibliography:
+https://en.cppreference.com/w/cpp/language/identifiers
+https://www.unicode.org/Public/UCD/latest/ucd/DerivedCoreProperties.txt

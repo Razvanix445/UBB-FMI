@@ -1,0 +1,3 @@
+C:/Users/razva/CLionProjects/LFTC/Lab1_AnalizorLexical/cmake-build-debug/CMakeFiles/Lab1_AnalizorLexical.dir
+C:/Users/razva/CLionProjects/LFTC/Lab1_AnalizorLexical/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/razva/CLionProjects/LFTC/Lab1_AnalizorLexical/cmake-build-debug/CMakeFiles/rebuild_cache.dir

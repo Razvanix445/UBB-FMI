@@ -1,0 +1,12 @@
+Pattern-uri Constante Reale:
+
+<integer part>.<fractional part>
+<integer part>.
+.<fractional part>
+<integer part>.<fractional part>e<exponent>  ||  <integer part>.<fractional part>E<exponent>
+<integer part>e<exponent>  ||  <integer part>E<exponent>
+<real number>f  ||  <real number>F
+<real number>l  ||  <real number>L
+
+Bibliografie:
+https://en.cppreference.com/w/cpp/language/floating_literal
