@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Tema2PPD"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Tema2PPD">
+				<Option output="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Tema2PPD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 Tema2PPD"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Tema2PPD/fast">
+				<Option output="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Tema2PPD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 Tema2PPD/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/DynamicMatrices.cpp">
+			<Option target="Tema2PPD"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/DynamicMatrices.h">
+			<Option target="Tema2PPD"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/main.cpp">
+			<Option target="Tema2PPD"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/razva/Desktop/c/Users/razva/CLionProjects/PPD/Tema2PPD/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

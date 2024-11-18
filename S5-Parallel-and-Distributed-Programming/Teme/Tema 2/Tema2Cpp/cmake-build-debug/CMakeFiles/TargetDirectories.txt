@@ -1,0 +1,3 @@
+C:/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug/CMakeFiles/Tema2PPD.dir
+C:/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/razva/CLionProjects/PPD/Tema2PPD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

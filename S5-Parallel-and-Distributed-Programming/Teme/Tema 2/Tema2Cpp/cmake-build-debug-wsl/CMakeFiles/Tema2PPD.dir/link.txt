@@ -1,0 +1,1 @@
+/usr/bin/g++-11 -g CMakeFiles/Tema2PPD.dir/main.cpp.o CMakeFiles/Tema2PPD.dir/DynamicMatrices.cpp.o -o Tema2PPD 
