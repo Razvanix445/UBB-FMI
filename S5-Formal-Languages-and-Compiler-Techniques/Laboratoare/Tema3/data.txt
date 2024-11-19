@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int x, y;
+struct {
+    int var;
+    double calcul;
+} results;
+daca a = 5 atunci a = a + 1 sfdaca
+int main() {
+    cin >> x;
+    cin >> y;
+    results.var = x + y;
+    if (x < y) {
+        results.var = y;
+    }
+    else {
+        results.calcul = x;
+    }
+    while (x > 51dea) {0110101lu
+        cout << results.var;de321
+        cout << results.calcul;0062
+        x = x - 5;0X34AFeull
+    }
+}

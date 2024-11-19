@@ -1,0 +1,212 @@
+%{
+
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "FIP.c"
+#include "TS.c"
+
+#define MAX_TOKENS 1000
+
+typedef struct {
+    char type[50];
+    char value[50];
+} Token;
+
+char uniqueSymbols[MAX_SYMBOLS][50];
+int uniqueSymbolCount = 0;
+Token tokens[MAX_TOKENS];
+int tokenCount = 0;
+int atomNo = 2;
+
+FIP fip;
+TS ts;
+
+int isUniqueToken(const char* symbol) {
+    for (int i = 0; i < uniqueSymbolCount; i++) {
+        if (strcmp(uniqueSymbols[i], symbol) == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void addUniqueToken(const char* symbol) {
+    if (uniqueSymbolCount < MAX_SYMBOLS) {
+        strcpy(uniqueSymbols[uniqueSymbolCount], symbol);
+        uniqueSymbolCount++;
+    } else {
+        printf("Error: Unique symbols list is full.\n");
+    }
+}
+
+void addToken(const char* type, const char* value) {
+    if (tokenCount < MAX_TOKENS) {
+        strcpy(tokens[tokenCount].type, type);
+        strcpy(tokens[tokenCount].value, value);
+        tokenCount++;
+    } else {
+        printf("Error: Token list is full.\n");
+    }
+}
+
+void printTokens() {
+    printf("\nTokens Found:\n");
+    printf("|ID    | Type         | Value        |\n");
+    printf("|------------------------------------|\n");
+    for (int i = 0; i < tokenCount; i++) {
+        printf("| %-4d | %-12s | %-12s |\n", i, tokens[i].type, tokens[i].value);
+    }
+}
+
+
+int yycolumn = 1;
+
+%}
+
+%option yylineno
+%option noyywrap
+
+HEADER     "#include"[ \t]+"<"[a-zA-Z0-9_./]+">"
+USING      "using"[ \t]+"namespace"[ \t]+"std;"
+KEYWORD    "int"|"double"|"void"|"struct"|"if"|"else"|"while"|"cin"|"cout"|"return"|"daca"|"atunci"|"sfdaca"
+IDENTIFIER [a-zA-Z_][a-zA-Z0-9_]*
+DECIMAL    [1-9][0-9]*([0-9']*[0-9])?(l|u|z|lu|ul|llu|ull|ll|uz|zu)?
+OCTAL      0[0-7]*([0-7']*[0-7])?(l|u|z|lu|ul|llu|ull|ll|uz|zu)?
+HEXA       0[xX][0-9a-fA-F]([0-9a-fA-F']*[0-9a-fA-F])?(l|u|z|lu|ul|llu|ull|ll|uz|zu)?
+BINARY     0[bB][01]([01']*[01])?(l|u|z|lu|ul|llu|ull|ll|uz|zu)?
+OPERATOR   \+|\-|\*|\/|\.|=|<|>|<=|>=|==|!=|<<|>>
+DELIMITER  \(|\)|\{|\}|;|,
+
+
+%%
+
+{HEADER} {
+    yycolumn += yyleng;
+    addToken("Header", yytext);
+    addFIPEntry(&fip, atomNo++, -1);
+}
+
+{USING} {
+    yycolumn += yyleng;
+    addToken("Directive", yytext);
+    addFIPEntry(&fip, atomNo++, -1);
+}
+
+{KEYWORD} {
+    yycolumn += yyleng;
+    if (isUniqueToken(yytext)) {
+        addUniqueToken(yytext);
+        addFIPEntry(&fip, atomNo++, -1);
+        addToken("Keyword", yytext);
+    }
+}
+
+{IDENTIFIER} {
+    yycolumn += yyleng;
+    int pos = findSymbol(&ts, yytext);
+    if (pos == -1) {
+        pos = addSymbol(&ts, yytext);
+    }
+    if (pos != -1) {
+        addFIPEntry(&fip, 0, pos);
+    }
+}
+
+{DECIMAL}|{OCTAL}|{HEXA}|{BINARY} {
+    yycolumn += yyleng;
+    int pos = findSymbol(&ts, yytext);
+    if (pos == -1) {
+        pos = addSymbol(&ts, yytext);
+    }
+    if (pos != -1) {
+        addFIPEntry(&fip, 0, pos);
+    }
+}
+
+{OPERATOR} {
+    yycolumn += yyleng;
+    if (isUniqueToken(yytext)) {
+        addUniqueToken(yytext);
+        addFIPEntry(&fip, atomNo++, -1);
+        addToken("Operator", yytext);
+    }
+}
+
+{DELIMITER} {
+    yycolumn += yyleng;
+    if (isUniqueToken(yytext)) {
+        addUniqueToken(yytext);
+        addFIPEntry(&fip, atomNo++, -1);
+        addToken("Delimiter", yytext);
+    }
+}
+
+[0-9]+[a-zA-Z_][a-zA-Z0-9_]* {
+    printf("Error: Invalid token '%s' at line %d, column %d\n", yytext, yylineno, yycolumn);
+    yycolumn += yyleng;
+}
+
+[ \t\n]+ {
+    for (int i = 0; i < yyleng; i++) {
+        if (yytext[i] == '\n') {
+            yycolumn = 1;
+        } else {
+            yycolumn++;
+        }
+    }
+}
+
+. {
+    printf("Error: Unknown character '%s' at line %d, column %d\n", yytext, yylineno, yycolumn);
+    yycolumn += yyleng;
+}
+
+%%
+
+
+
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        printf("Usage: %s <input_file>\n", argv[0]);
+        return 1;
+    }
+
+    addToken("ID", "0");
+    addToken("CONST", "1");
+
+    initFIP(&fip);
+    initTS(&ts);
+
+    FILE* file = fopen(argv[1], "r");
+    if (!file) {
+        printf("Error: Could not open file %s\n", argv[1]);
+        return 1;
+    }
+
+    yyin = file;
+    yylex();
+
+    FILE* fipFile = fopen("fip.txt", "w");
+    FILE* tsFile = fopen("ts.txt", "w");
+
+    if (fipFile && tsFile) {
+        saveFIP(&fip, fipFile);
+        saveTS(&ts, tsFile);
+        fclose(fipFile);
+        fclose(tsFile);
+    } else {
+        printf("Error: Could not open output files.\n");
+    }
+
+    printf("FIP:\n");
+    saveFIP(&fip, stdout);
+
+    printf("\nTS:\n");
+    saveTS(&ts, stdout);
+
+    printTokens();
+
+    fclose(file);
+    return 0;
+}
