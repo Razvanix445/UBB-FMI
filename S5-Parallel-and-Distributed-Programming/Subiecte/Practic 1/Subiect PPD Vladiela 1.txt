@@ -1,0 +1,142 @@
+Se considera un fisier “input.txt” care contine n numere reale. Se considera ca numarul de procese p divide n. 
+Se da polinomul P cu coeficientii  a0, a1,a2,a3,…, aN,  in fisierul “polinom.txt”. Se cere sa se calculeze valorile polinomului in punctele citite din fisierul “input.txt”. Valorile vor fi salvate in fisierul “output.txt”. 
+Cerinte:  
+Etapa 1: 
+	•	procesul 0 citeste coeficientii polinomului din fisierul “polinom.txt”; 
+	•	procesul 0 distribuie prin broadcast coeficientii polinomului. 
+	•	procesul 0 citeste toate numerele din fisierul“input.txt” si le stocheaza intr-un vector cu nume “date”.; 
+	•	procesul 0 distribuie parti egale din vectorul “input” astfel incat fiecare process contine un vector “segment” cu parti din vectorul “date”; 
+Etapa 2: 
+	•	fiecare proces calculeaza valorile polinomului in punctele din propriul vector “segment”; 
+	•	procesul 0 primeste de la fiecare proces valorile calculate; 
+Etapa 3: 
+	•	procesul 0 scrie rezultatul in fisierul “output.txt”. 
+ 
+Test case 1) 
+N=3 si n=4; p=2 
+a0=1 a1=2, a2=3, a3=4,  
+Input.txt: 1, 10,100,1000 
+Output.txt: 10,1234,1020304,1002003004 
+ 
+Test case 2) 
+Valori generate random 
+n=1000 si N=50 si p=10
+
+
+
+
+
+
+
+#include <mpi.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+// Funcția pentru calculul valorii unui polinom într-un punct
+double evaluate_polynomial(const vector<double>& coefficients, double x) {
+    double result = 0.0;
+    double power_of_x = 1.0; // x^0 = 1
+    for (double coeff : coefficients) {
+        result += coeff * power_of_x;
+        power_of_x *= x;
+    }
+    return result;
+}
+
+int main(int argc, char** argv) {
+    MPI_Init(&argc, &argv);
+
+    int rank, size;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    vector<double> coefficients; // Coeficienții polinomului
+    vector<double> data;         // Numerele din input.txt
+    vector<double> segment;      // Partea de date pentru fiecare proces
+    vector<double> local_results;
+
+    int n, N;
+
+    if (rank == 0) {
+        // Procesul 0 citește coeficienții polinomului din "polinom.txt"
+        ifstream poly_file("polinom.txt");
+        if (!poly_file) {
+            cerr << "Eroare la deschiderea fisierului polinom.txt\n";
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+
+        poly_file >> N; // Numărul maxim de coeficienți
+        coefficients.resize(N + 1);
+        for (int i = 0; i <= N; i++) {
+            poly_file >> coefficients[i];
+        }
+        poly_file.close();
+
+        // Procesul 0 citește numerele din "input.txt"
+        ifstream input_file("input.txt");
+        if (!input_file) {
+            cerr << "Eroare la deschiderea fisierului input.txt\n";
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+
+        input_file >> n; // Numărul de puncte din input
+        data.resize(n);
+        for (int i = 0; i < n; i++) {
+            input_file >> data[i];
+        }
+        input_file.close();
+    }
+
+    // Broadcast pentru coeficienții polinomului
+    int poly_size = coefficients.size();
+    MPI_Bcast(&poly_size, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    if (rank != 0) {
+        coefficients.resize(poly_size);
+    }
+    MPI_Bcast(coefficients.data(), poly_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+
+    // Distribuirea datelor către procese
+    int segment_size = 0;
+    if (rank == 0) {
+        segment_size = data.size() / size;
+    }
+    MPI_Bcast(&segment_size, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    segment.resize(segment_size);
+    MPI_Scatter(data.data(), segment_size, MPI_DOUBLE, segment.data(), segment_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+
+    // Calcularea valorilor polinomului pentru fiecare segment
+    local_results.resize(segment_size);
+    for (int i = 0; i < segment_size; i++) {
+        local_results[i] = evaluate_polynomial(coefficients, segment[i]);
+    }
+
+    // Procesul 0 adună rezultatele
+    vector<double> results;
+    if (rank == 0) {
+        results.resize(data.size());
+    }
+
+    MPI_Gather(local_results.data(), segment_size, MPI_DOUBLE, results.data(), segment_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+
+    // Procesul 0 scrie rezultatele în "output.txt"
+    if (rank == 0) {
+        ofstream output_file("output.txt");
+        if (!output_file) {
+            cerr << "Eroare la deschiderea fisierului output.txt\n";
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+
+        for (double result : results) {
+            output_file << result << endl;
+        }
+        output_file.close();
+    }
+
+    MPI_Finalize();
+    return 0;
+}

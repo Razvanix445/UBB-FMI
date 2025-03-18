@@ -1,0 +1,43 @@
+// Using Future
+ExecutorService executor = Executors.newSingleThreadExecutor();
+Future<String> future = executor.submit(() -> "Result");
+String result = future.get(); // blocks until complete
+
+// Using CompletableFuture
+CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> "Step 1")
+    .thenApply(s -> s + " Step 2")
+    .thenApply(s -> s + " Step 3");
+
+Example:
+// Simple example of Future usage
+public class FutureExample {
+    private ExecutorService executor = Executors.newSingleThreadExecutor();
+
+    public Future<Integer> calculateSum(int a, int b) {
+        return executor.submit(() -> {
+            Thread.sleep(1000); // Simulate long calculation
+            return a + b;
+        });
+    }
+
+    public static void main(String[] args) {
+        FutureExample example = new FutureExample();
+
+        // Start the calculation asynchronously
+        Future<Integer> future = example.calculateSum(5, 3);
+
+        // Do other work while calculation is running
+        System.out.println("Calculating...");
+
+        try {
+            // Get the result (will wait if not ready)
+            int result = future.get();
+            System.out.println("Result: " + result);
+
+            // Or get with timeout
+            result = future.get(2, TimeUnit.SECONDS);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

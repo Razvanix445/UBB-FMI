@@ -1,0 +1,1 @@
+Nu e 100% corect, dar s-a luat nota 9.

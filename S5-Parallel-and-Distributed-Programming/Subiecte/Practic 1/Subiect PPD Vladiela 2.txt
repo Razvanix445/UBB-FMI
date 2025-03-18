@@ -1,0 +1,25 @@
+	Se considera un fisier “input.txt” care contine N*N numere intregi. Aceste numere reprezinta o matrice cu N linii si N coloane stocata linie cu linie. 
+	Scrieti un program MPI cu p procese care calculeaza vectorul coloana obtinut prin adunarea tuturor coloanelor matricei. 
+	Rezultatul va fi salvat in fisierul “output.txt” (va contine N numere).
+
+Procesul 0: Repeta 
+	- citeste o linie “i” din fisierul input.txt. 
+	- imediat dupa citirea liniei “i” o transmite procesului cu id=i%(p-1)+1. 
+pana cand citeste tot fisierul.
+
+Procesele cu id>0: Repeta urmatoare actiuni: 
+	- Primesc cate o linie de la procesul 0; 
+	- Aduna elementele acesteia si adauga rezultatul intr-un vector rezultat. 
+In final, vor avea un vector rezultat care contine atatea valori cate linii a primit procesul respectiv. 
+La final, procesul 0 primeste de la celelalte procese vectori care contin elementele calculate si le salveaza in fisierul output.txt, astfel incat in acesta sa avem valorile coloanei rezultat in ordinea corecta.
+ 
+Test case 1: N=4 p=3 
+Matricea: 
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16 
+Procesul 1 calculeaza suma liniei 0 si suma liniei 2 => [ 10, 42].
+Procesul 2 calculeaza suma liniei 1 si suma liniei 3 => [26, 58].
+Coloana rezultat salvata in fisierul output.txt [10, 26, 42, 58].
+Test case 2: N=1000 (matrice generata random cu valori <50) p=5

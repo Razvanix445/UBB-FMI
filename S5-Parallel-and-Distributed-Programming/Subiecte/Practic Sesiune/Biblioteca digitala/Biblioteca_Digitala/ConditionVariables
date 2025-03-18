@@ -1,0 +1,17 @@
+class BoundedBuffer {
+    private final Lock lock = new ReentrantLock();
+    private final Condition notFull = lock.newCondition();
+    private final Condition notEmpty = lock.newCondition();
+
+    void put(Object x) throws InterruptedException {
+        lock.lock();
+        try {
+            while (isFull())
+                notFull.await();
+            // add to buffer
+            notEmpty.signal();
+        } finally {
+            lock.unlock();
+        }
+    }
+}

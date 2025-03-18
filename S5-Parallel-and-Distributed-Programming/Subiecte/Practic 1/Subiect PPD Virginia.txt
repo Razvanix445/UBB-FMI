@@ -1,0 +1,29 @@
+Se considera doua fisiere “inputA.txt” si “inputB.txt” care contin pe prima pozitia o valoare numar natural  (a in inputA.txt si b in inputB.txt) numarul n si apoi n valori numere reale. 
+Se cere sa se calculeze valoarea S= S((a_i^a)*(b_i^b)), 0<= i < n. 
+Cerinte: 
+Se creeaza M>2 , (M =2*N) procese! Se considera ca N divide n. 
+Etapa 1 
+procesul 0 citeste toate numerele din fisierul“inputA.txt” si le stocheaza variabila a si intr-un vector cu nume “dateA”.; 
+Procesul 0  trimite valoarea a tuturor proceselor pare. 
+procesul 0 distribuie parti  egale din vectorul “dateA” astfel incat fiecare proces par contine un vector “segmentA” cu parti din vectorul “dateA”;  
+procesul 1 citeste toate numerele din fisierul“inputB.txt” si le stocheaza in variabila b si intr-un vector cu nume “dateB”.; 
+Procesul 1 trimite valoarea b tuturor proceselor impare. 
+procesul 1 distribuie parti egale din vectorul “dateB” astfel incat fiecare proces impar contine un vector “segmentB” cu parti din vectorul “dateB”; 
+Etapa 3 
+-Fiecare proces calculeaza puterea elementelor din vectorul “segment?” (?=A sau ? =B) corespunzator (a_i^a sau b_i^b). 
+- procesele impare transmit proceselor pare vecine  segmentul lor - adica un proces impar cu rangul id trimite la procesul id-1
+- procesele pare calculeaza suma partiala S pentru elementele corespunzatoare din “segmentA “si  “segmentB” 
+-procesele pare cu id>0 trimit procesului 0 valorile sumelor lor; 
+-procesul 0 calculeaza suma totala si o afiseaza. 
+
+Caz testare 1)
+A= (1 2 3 1) a=2;
+B= (2 3 1 1) b=2;
+M=4 N=2 n=4
+ 
+S= 1*4+4*9+9*1+1*1= 4+36+9=40+9+1=50
+ 
+Caz testare 2:
+n= 1000
+A si B generate random cu valori pozitive <20;
+a=2 b=3

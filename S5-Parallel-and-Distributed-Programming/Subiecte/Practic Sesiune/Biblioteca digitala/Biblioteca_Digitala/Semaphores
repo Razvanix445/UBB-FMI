@@ -1,0 +1,47 @@
+// Using Semaphores
+Semaphore semaphore = new Semaphore(1);
+semaphore.acquire();
+// critical section
+semaphore.release();
+
+// Using ReentrantLock
+ReentrantLock lock = new ReentrantLock();
+lock.lock();
+try {
+    // critical section
+} finally {
+    lock.unlock();
+}
+
+
+
+Example:
+public class DatabaseConnectionPool {
+    private final Semaphore semaphore;
+    private final List<Connection> connections;
+
+    public DatabaseConnectionPool(int poolSize) {
+        semaphore = new Semaphore(poolSize);
+        connections = new ArrayList<>(poolSize);
+        // Initialize connections
+    }
+
+    public Connection getConnection() throws InterruptedException {
+        semaphore.acquire();  // Will block if no permits available
+        return getNextAvailableConnection();
+    }
+
+    public void releaseConnection(Connection connection) {
+        returnConnectionToPool(connection);
+        semaphore.release();  // Increase permit count
+    }
+}
+
+// Usage
+DatabaseConnectionPool pool = new DatabaseConnectionPool(10);
+Connection conn = pool.getConnection(); // Will block if all 10 connections are in use
+try {
+    // Use connection
+} finally {
+    pool.releaseConnection(conn);
+}
